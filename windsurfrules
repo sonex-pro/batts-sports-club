@@ -1,0 +1,25 @@
+# Development Rules
+
+## CSS/Design
+- Follow mobile-first approach (styles apply to mobile devices by default)
+- Use media queries for larger breakpoints
+- Use flexbox for responsive layouts
+- Do not use Grid layouts
+- Always use position static as first choice for position property
+- Static positioning is easy to manage and understand.
+
+## Components
+- Use NavBar component with NavBar.css for all pages
+- Use button component with button.css for all pages
+
+## Security
+- Never commit sensitive information
+- Use .gitignore to exclude sensitive files
+- GitHub username: sonex-pro
+
+## Project Structure
+- fonts Roboto and Georgia
+- Keep components modular and reusable
+- Follow consistent naming conventions
+- Document component props and usage
+- All pages should have their own css file
