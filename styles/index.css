@@ -1,0 +1,81 @@
+/* Main header styles */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+/* Main content styles */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.activities-section {
+    margin-bottom: 2rem;
+}
+
+.activities-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.activity-item {
+    flex: 0 0 calc(20% - 1rem);
+    min-width: 150px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.activity-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+}
