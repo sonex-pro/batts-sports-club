@@ -60,29 +60,7 @@ main {
     text-align: center;
 }
 
-/* Footer styles */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    background-color: #333;
-    color: #fff;
-}
-
-.footer-links {
-    margin-bottom: 1rem;
-}
-
-.footer-links a {
-    color: #fff;
-    margin: 0 0.5rem;
-}
-
-.copyright {
-    text-align: center;
-    font-size: 0.9rem;
-}
+/* Footer styles moved to footer.css */
 
 /* Media queries for responsive layouts */
 

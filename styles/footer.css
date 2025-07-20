@@ -1,0 +1,121 @@
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+.footer-address {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Media queries for responsive layouts */
+@media screen and (min-width: 768px) {
+    .footer-container {
+        gap: 2rem;
+    }
+    
+    .footer-links {
+        gap: 1.5rem;
+    }
+    
+    .social-icon img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer {
+        padding: 3rem 1.5rem;
+    }
+    
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer-links {
+        flex-basis: 50%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .footer-social {
+        flex-basis: 50%;
+        justify-content: flex-end;
+    }
+    
+    .footer-address {
+        flex-basis: 50%;
+        text-align: left;
+    }
+    
+    .copyright {
+        flex-basis: 100%;
+    }
+}
