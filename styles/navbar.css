@@ -22,8 +22,8 @@
     flex: 0 0 auto;
 }
 
-.nav-logo img {
-    height: 70px; /* Smaller size for mobile */
+.batts-navbar-image {
+    height: 48px; /* Smaller size for mobile */
     width: auto;
     display: block;
 }
@@ -37,13 +37,14 @@
     margin-right: 1rem; /* Smaller margin for mobile */
 }
 
-.social-link img {
-    height: 24px; /* Smaller size for mobile */
+.you-tube-navbar-image, .bribar-navbar-image {
+    height: 48px; /* Smaller size for mobile */
     width: auto;
     transition: transform 0.2s ease;
 }
 
-.social-link:hover img {
+.social-link:hover .you-tube-navbar-image, 
+.social-link:hover .bribar-navbar-image {
     transform: scale(1.1);
 }
 
@@ -208,8 +209,9 @@
 
 /* Media queries for desktop sizes */
 @media screen and (min-width: 768px) {
-    .nav-logo img {
-        height: 45px; /* Larger logo for desktop */
+    .batts-navbar-image {
+        height: 62px; /* Larger logo for desktop */
+        width: auto;
     }
     
     .nav-links {
@@ -217,8 +219,9 @@
         margin-right: 2.5rem; /* Larger margin for desktop */
     }
     
-    .social-link img {
-        height: 36px; /* Larger social icons for desktop */
+    .you-tube-navbar-image, .bribar-navbar-image {
+        height: 62px; /* Larger social icons for desktop */
+        width: auto;
     }
     
     .hamburger-btn {
