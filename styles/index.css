@@ -6,7 +6,6 @@
     align-items: center;
     padding: 3rem 1rem;
     text-align: center;
-    background-color: #f2f2f2;
 }
 
 /* Main content styles */
@@ -14,11 +13,11 @@ main {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .activities-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .activities-section h2 {
@@ -67,13 +66,13 @@ main {
     }
     
     .main-header {
-        padding: 3.5rem 1.5rem;
+        padding: 1.5rem 1.5rem;
     }
     
 
     
     .about-section {
-        padding: 2rem;
+        padding: 1rem;
     }
 }
 
@@ -87,7 +86,7 @@ main {
     
     main {
         width: 85%;
-        padding: 3rem 0;
+        padding: 1rem 0;
     }
 }
 
@@ -98,7 +97,7 @@ main {
     }
     
     .main-header {
-        padding: 4rem 2rem;
+        padding: 1rem 2rem;
     }
     
     main {
