@@ -37,8 +37,14 @@
     margin-right: 1rem; /* Smaller margin for mobile */
 }
 
-.you-tube-navbar-image, .bribar-navbar-image {
-    height: 48px; /* Smaller size for mobile */
+.you-tube-navbar-image {
+    height: 48px;
+    width: auto;
+    transition: transform 0.2s ease;
+}
+
+.bribar-navbar-image {
+    height: 58px; /* 20% larger than YouTube image */
     width: auto;
     transition: transform 0.2s ease;
 }
@@ -219,8 +225,13 @@
         margin-right: 2.5rem; /* Larger margin for desktop */
     }
     
-    .you-tube-navbar-image, .bribar-navbar-image {
-        height: 62px; /* Larger social icons for desktop */
+    .you-tube-navbar-image {
+        height: 62px;
+        width: auto;
+    }
+    
+    .bribar-navbar-image {
+        height: 74px; /* 20% larger than YouTube image */
         width: auto;
     }
     
