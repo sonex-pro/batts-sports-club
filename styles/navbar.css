@@ -73,6 +73,19 @@
     transition: all 0.3s ease;
 }
 
+/* Hamburger to X transformation */
+.hamburger-btn.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
 /* Mobile menu styles */
 .mobile-menu {
     display: none;

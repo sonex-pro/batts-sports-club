@@ -9,6 +9,10 @@
     background-color: #f2f2f2;
 }
 
+.main-header h1 {
+    font-family: Georgia, serif;
+}
+
 /* Main content styles */
 main {
     width: 90%;
