@@ -34,13 +34,13 @@ main {
 }
 
 .activity-item {
-    flex: 0 0 calc(20% - 1rem);
-    min-width: 150px;
+    flex: 0 0 100%; /* Full width on mobile */
     padding: 1rem;
     border: 1px solid #ddd;
     text-align: center;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    margin-bottom: 0.5rem;
 }
 
 .activity-item:hover {
@@ -78,4 +78,56 @@ footer {
 .copyright {
     text-align: center;
     font-size: 0.9rem;
+}
+
+/* Media queries for responsive layouts */
+
+/* Tablet layout */
+@media screen and (min-width: 768px) {
+    .activity-item {
+        flex: 0 0 calc(50% - 1rem); /* 2 columns on tablet */
+    }
+    
+    .main-header {
+        padding: 3.5rem 1.5rem;
+    }
+    
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .about-section {
+        padding: 2rem;
+    }
+}
+
+/* Desktop layout */
+@media screen and (min-width: 992px) {
+    .activity-item {
+        flex: 0 0 calc(33.333% - 1rem); /* 3 columns on smaller desktops */
+    }
+    
+    .main-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    main {
+        width: 85%;
+        padding: 3rem 0;
+    }
+}
+
+/* Large desktop layout */
+@media screen and (min-width: 1200px) {
+    .activity-item {
+        flex: 0 0 calc(20% - 1rem); /* 5 columns on large desktops */
+    }
+    
+    .main-header {
+        padding: 4rem 2rem;
+    }
+    
+    main {
+        width: 80%;
+    }
 }
