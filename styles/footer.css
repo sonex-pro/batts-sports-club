@@ -56,12 +56,6 @@ footer {
     transform: scale(1.1);
 }
 
-.footer-address {
-    margin: 0.5rem 0;
-    font-size: 0.8rem;
-    line-height: 1.2;
-}
-
 .copyright {
     font-size: 0.8rem;
     margin-top: 1rem;
@@ -107,11 +101,6 @@ footer {
     .footer-social {
         flex-basis: 50%;
         justify-content: flex-end;
-    }
-    
-    .footer-address {
-        flex-basis: 50%;
-        text-align: left;
     }
     
     .copyright {
