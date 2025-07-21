@@ -12,6 +12,14 @@
     text-align: center;
 }
 
+/* Video wrapper styles - mobile first approach */
+.video-wrapper {
+    background-color: yellow;
+    width: calc(100% - 4px); /* Full width with 2px margins on both sides */
+    height: 200px; /* Default height for portrait mobile */
+    margin: 0 2px 1rem 2px;
+}
+
 /* Main content styles */
 main {
     width: 90%;
@@ -63,6 +71,13 @@ main {
 
 /* Media queries for responsive layouts */
 
+/* Mobile landscape */
+@media screen and (min-width: 480px) and (orientation: landscape) {
+    .video-wrapper {
+        height: 345px; /* Mobile landscape height */
+    }
+}
+
 /* Tablet layout */
 @media screen and (min-width: 768px) {
     .activity-item {
@@ -73,10 +88,25 @@ main {
         padding: 1.5rem 1.5rem;
     }
     
-
+    /* Video wrapper tablet styles */
+    .video-wrapper {
+        width: 400px;
+        height: 202px;
+        float: left;
+        margin: 0 2px 1rem 2px;
+    }
+    
+    /* Adjust activities container to flow to the right of video */
+    .activities-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: calc(400px + 1rem); /* Space for video wrapper + gap */
+    }
     
     .about-section {
         padding: 1rem;
+        clear: both;
     }
 }
 
@@ -86,7 +116,22 @@ main {
         flex: 0 0 calc(33.333% - 1rem); /* 3 columns on smaller desktops */
     }
     
+    /* Video wrapper desktop styles */
+    .video-wrapper {
+        width: 660px;
+        height: 333px;
+    }
     
+    /* Adjust activities container layout for desktop */
+    .activities-section {
+        margin-left: calc(660px + 1rem); /* Space for video wrapper + gap */
+    }
+    
+    .activities-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+        gap: 1rem;
+    }
     
     main {
         width: 85%;
