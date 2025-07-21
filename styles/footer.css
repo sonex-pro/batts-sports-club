@@ -5,7 +5,7 @@ footer {
     align-items: center;
     padding: 1rem 1rem;
     background-color: #b2b7d0;
-    color: #333;
+    color: #000000;
     text-align: center;
     width: 100%;
 }
@@ -29,14 +29,14 @@ footer {
 }
 
 .footer-links a {
-    color: #333;
+    color: #000000;
     text-decoration: none;
     padding: 0.3rem 0.5rem;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: #ccc;
+    color: #dcedf9;
     text-decoration: underline;
 }
 
@@ -58,13 +58,12 @@ footer {
 
 .footer-address {
     margin: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.2;
 }
 
 .copyright {
     font-size: 0.8rem;
-    opacity: 0.8;
     margin-top: 1rem;
     text-align: center;
     line-height: 1.2;

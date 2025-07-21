@@ -1,10 +1,14 @@
+.about-section p {
+    text-align: left;
+}
+
 /* Main header styles */
 .main-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
 }
 
@@ -13,16 +17,16 @@ main {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .activities-section {
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .activities-section h2 {
     text-align: center;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .activities-container {
@@ -86,7 +90,7 @@ main {
     
     main {
         width: 85%;
-        padding: 1rem 0;
+        padding: 1.5rem 0;
     }
 }
 
@@ -97,7 +101,7 @@ main {
     }
     
     .main-header {
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem;
     }
     
     main {
