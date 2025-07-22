@@ -27,11 +27,12 @@ body {
 /* Video styling */
 .video-wrapper video {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: contain; /* Ensure the entire video is visible */
 }
 
 /* Controls styling */
@@ -107,21 +108,46 @@ main {
 
 /* Media queries for responsive layouts */
 
-/* Since we're using aspect ratio approach, we don't need to adjust the height of the video-wrapper
-   in most cases. However, we can fine-tune the padding-bottom for specific device ranges if needed */
+/* Media query adjustments for different screen sizes */
 
-/* Honor tablet specific adjustment if needed */
-@media (max-width: 686px) and (min-height: 990px) and (orientation: portrait) {
+/* Mobile devices (portrait) */
+@media screen and (max-width: 767px) and (orientation: portrait) {
     .video-wrapper {
-        /* Maintain aspect ratio approach but adjust if needed */
         padding-bottom: 50.5%; /* 1.98:1 aspect ratio */
     }
 }
 
-/* Landscape orientation - slightly different aspect ratio if needed */
-@media screen and (orientation: landscape) {
+/* Honor tablet specific adjustment */
+@media (max-width: 686px) and (min-height: 990px) and (orientation: portrait) {
     .video-wrapper {
-        padding-bottom: 50.5%; /* Maintain the same aspect ratio */
+        padding-bottom: 50.5%; /* 1.98:1 aspect ratio */
+    }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .video-wrapper {
+        padding-bottom: 40%; /* Slightly reduced height for landscape */
+    }
+}
+
+/* Tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .video-wrapper {
+        padding-bottom: 35%; /* Reduced height for tablets */
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 1024px) {
+    .video-wrapper {
+        padding-bottom: 30%; /* Further reduced height for desktop */
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
