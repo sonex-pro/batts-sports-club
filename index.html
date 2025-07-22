@@ -1,92 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BATTS Multi Activity Centre</title>
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <!-- Favicon links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-images/favicon-16x16.png">
-    <link rel="icon" href="images/favicon-images/favicon-32x32.png">
-    <!-- Component loader -->
-    <script src="components/component-loader.js" defer></script>
-    <!-- JavaScript for navigation bar -->
-    <script src="navbar.js" defer></script>
-    <!-- JavaScript for video controls -->
-    <script src="js/video-controls.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATTS Multi Activity Centre</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-images/favicon-16x16.png">
+  <link rel="icon" href="images/favicon-images/favicon-32x32.png">
+
+  <!-- Component loader & JS -->
+  <script src="components/component-loader.js" defer></script>
+  <script src="navbar.js" defer></script>
+  <script src="js/video-controls.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- Navbar Component Placeholder -->
-        <div id="navbar-container" data-component="navbar"></div>
-        
-        <div class="main-header">
-            <h1>BATTS Table Tennis and Multi Activity Centre</h1>
-        </div>
-        
-        <!-- Video wrapper div with video element -->
-        <div class="video-wrapper">
-            <video id="backgroundVideo" autoplay muted loop playsinline>
-                <source src="videos/home-page-video.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            
-            <div class="controls">
-                <button id="playPauseBtn">Pause</button>
-            </div>
-        </div>
-    </header>
+  <header>
+    <!-- Navbar component -->
+    <div id="navbar-container" data-component="navbar"></div>
+    <div class="main-header">
+      <h1>BATTS Table Tennis and Multi Activity Centre</h1>
+    </div>
+  </header>
 
-    <main>
-        <section class="activities-section">
-            <h2>Choose Your Sport/Activity</h2>
-            <div class="activities-container">
-                <div class="activity-item">
-                    <a href="#">Table Tennis</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Pickleball</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Badminton</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">More Activities</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Party Booking</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Calendar</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Contact us</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Our Location</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Batts-Shop</a>
-                </div>
-                <div class="activity-item">
-                    <a href="#">Competitions</a>
-                </div>
-            </div>
-            <div class="about-text">
-                <p>BATTS Multi Activity Centre now offers something for everyone great for parties there's a fully fitted kitchen/canteen, a dining area, conference room, a large hall for bouncy castles and free parking. Other Sports include Short mat bowls, 5 a side football and much more.</p>
-            </div>
-        </section>
-    </main>
+  <main>
+    <div class="content-wrapper">
+      <div class="video-wrapper">
+        <video id="backgroundVideo" autoplay muted loop playsinline>
+          <source src="videos/home-page-video.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="controls">
+          <button id="playPauseBtn">Pause</button>
+        </div>
+      </div>
 
-    <footer>
-        <!-- Footer Component Placeholder -->
-        <div id="footer-container" data-component="footer"></div>
-    </footer>
+      <section class="activities-section">
+        <h2>Choose Your Sport/Activity</h2>
+        <div class="activities-container">
+          <div class="activity-item"><a href="#">Table Tennis</a></div>
+          <div class="activity-item"><a href="#">Pickleball</a></div>
+          <div class="activity-item"><a href="#">Badminton</a></div>
+          <div class="activity-item"><a href="#">More Activities</a></div>
+          <div class="activity-item"><a href="#">Party Booking</a></div>
+          <div class="activity-item"><a href="#">Calendar</a></div>
+          <div class="activity-item"><a href="#">Contact us</a></div>
+          <div class="activity-item"><a href="#">Our Location</a></div>
+          <div class="activity-item"><a href="#">Batts-Shop</a></div>
+          <div class="activity-item"><a href="#">Competitions</a></div>
+        </div>
+        <div class="about-text">
+          <p>BATTS Multi Activity Centre offers something for everyone: great for parties, fully fitted kitchen/canteen, dining area, conference room, large hall for bouncy castles, free parking and more sports like short mat bowls and 5-a-side football.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Footer component -->
+    <div id="footer-container" data-component="footer"></div>
+  </footer>
 </body>
 </html>

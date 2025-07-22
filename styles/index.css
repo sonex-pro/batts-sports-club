@@ -1,230 +1,153 @@
-/* Full page background color */
-body {
-    background-color: #c0d6ed; /* Very light blue */
-}
+/* === Base Styles === */
 
-/* Main header container - wraps the site's header content including h1 */
-.main-header {
+body {
+    background-color: #c0d6ed;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .main-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 1rem 1rem;
     text-align: center;
-}
-
-/* Video wrapper styles - aspect ratio approach */
-.video-wrapper {
-    background-color: #000000;
-    width: calc(100% - 4px); /* Full width with 2px margins on both sides */
-    height: 0;
-    padding-bottom: 50.5%; /* 1.98:1 aspect ratio (100% ÷ 1.98 = 50.5%) */
-    margin: 0 2px 1rem 2px;
+    padding: 1rem;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Video wrapper: maintain 1.98:1 aspect ratio */
+  .video-wrapper {
     position: relative;
+    width: 100%;
+    aspect-ratio: 1.98 / 1;
+    background-color: #000;
     overflow: hidden;
-}
-
-/* Video styling */
-.video-wrapper video {
+  }
+  
+  .video-wrapper video {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
     height: 100%;
-    transform: translate(-50%, -50%); /* Center the video */
-    object-fit: contain; /* Ensure the entire video is visible */
-}
-
-/* Controls styling */
-.video-wrapper .controls {
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+  }
+  
+  .video-wrapper .controls {
     position: absolute;
     bottom: 10px;
     right: 10px;
     z-index: 10;
-}
-
-.video-wrapper .controls button {
+  }
+  
+  .video-wrapper .controls button {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
-}
-
-.video-wrapper .controls button:hover {
+  }
+  
+  .video-wrapper .controls button:hover {
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Main content styles - applies to all breakpoints */
-main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.5rem 0;
-}
-
-.activities-section {
-    margin-bottom: 0.6rem;
-}
-
-.activities-section h2 {
+  }
+  
+  /* Activities section */
+  .activities-section h2 {
     text-align: center;
     margin-bottom: 1rem;
-}
-
-.activities-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  }
+  
+  .activities-container {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
-}
-
-.activity-item {
-    flex: 0 0 100%; /* Full width on mobile */
+  }
+  
+  .activity-item {
     padding: 1rem;
-    border: 1px solid #ddd;
     text-align: center;
+    border: 1px solid #ddd;
     border-radius: 5px;
     transition: transform 0.3s ease;
-    margin-bottom: 0.5rem;
-}
-
-.activity-item:hover {
+  }
+  
+  .activity-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.about-text {
+  }
+  
+  .about-text {
     margin: 1rem 0;
     padding: 0.8rem;
-    border-radius: 6px;
     border: 2px solid #00a5e3;
+    border-radius: 6px;
     text-align: center;
-}
-
-/* Footer styles moved to footer.css */
-
-/* Media queries for responsive layouts */
-
-/* Media query adjustments for different screen sizes */
-
-/* Mobile devices (portrait) */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-    .video-wrapper {
-        padding-bottom: 50.5%; /* 1.98:1 aspect ratio */
-    }
-}
-
-/* Honor tablet specific adjustment */
-@media (max-width: 686px) and (min-height: 990px) and (orientation: portrait) {
-    .video-wrapper {
-        padding-bottom: 50.5%; /* 1.98:1 aspect ratio */
-    }
-}
-
-/* Landscape orientation for mobile */
-@media screen and (max-width: 767px) and (orientation: landscape) {
-    .video-wrapper {
-        padding-bottom: 40%; /* Slightly reduced height for landscape */
-    }
-}
-
-/* Tablet devices */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .video-wrapper {
-        padding-bottom: 35%; /* Reduced height for tablets */
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* Desktop screens */
-@media screen and (min-width: 1024px) {
-    .video-wrapper {
-        padding-bottom: 30%; /* Further reduced height for desktop */
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* Tablet layout - applies to screens 768px and wider */
-@media screen and (min-width: 768px) {
-    /* Creates a 2-column grid for activity items with 1rem gap between them */
-    .activity-item {
-        flex: 0 0 calc(50% - 1rem); /* 2 columns on tablet */
-    }
-    
-    /* Increases header padding for better spacing on larger screens */
+  }
+  
+  /* === Responsive Layouts === */
+  
+  /* Tablet and up */
+  @media (min-width: 768px) {
     .main-header {
-        padding: 1.5rem 1.5rem;
+      padding: 1.5rem;
     }
-    
-    /* Video wrapper tablet styles */
+  
+    .content-wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
     .video-wrapper {
-        width: 400px;
-        height: 400px;
-        float: left;
-        margin: 0 2px 1rem 2px;
+      flex: 0 0 400px;
     }
-    
-    /* Adjust activities container to flow to the right of video */
+  
     .activities-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: calc(400px + 1rem); /* Space for video wrapper + gap */
+      flex: 1;
     }
-    
-    .about-section {
-        padding: 1rem;
-        clear: both;
-    }
-}
-
-/* Desktop layout */
-@media screen and (min-width: 992px) {
-    .activity-item {
-        flex: 0 0 calc(33.333% - 1rem); /* 3 columns on smaller desktops */
-    }
-    
-    /* Video wrapper desktop styles */
-    .video-wrapper {
-        width: 660px;
-        height: 333px;
-    }
-    
-    /* Adjust activities container layout for desktop */
-    .activities-section {
-        margin-left: calc(660px + 1rem); /* Space for video wrapper + gap */
-    }
-    
+  
     .activities-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
-        gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
     }
-    
-    main {
-        width: 85%;
-        padding: 1.5rem 0;
+  }
+  
+  /* Small desktop and up */
+  @media (min-width: 992px) {
+    .video-wrapper {
+      flex: 0 0 660px;
     }
-}
-
-/* Large desktop layout */
-@media screen and (min-width: 1200px) {
-    .activity-item {
-        flex: 0 0 calc(20% - 1rem); /* 5 columns on large desktops */
+  
+    .activities-container {
+      grid-template-columns: repeat(3, 1fr);
     }
-    
+  
+    .content-wrapper {
+      width: 85%;
+    }
+  }
+  
+  /* Large desktop and up */
+  @media (min-width: 1200px) {
+    .activities-container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  
     .main-header {
-        padding: 1.5rem 2rem;
+      padding: 1.5rem 2rem;
     }
-    
-    main {
-        width: 80%;
+  
+    .content-wrapper {
+      width: 80%;
     }
-}
+  }
+  
