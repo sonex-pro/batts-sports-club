@@ -122,7 +122,7 @@ main {
     /* Video wrapper tablet styles */
     .video-wrapper {
         width: 400px;
-        height: 202px;
+        height: 300px;
         float: left;
         margin: 0 2px 1rem 2px;
     }
