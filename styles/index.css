@@ -1,3 +1,8 @@
+/* Full page background color */
+body {
+    background-color: #e6f2ff; /* Very light blue */
+}
+
 .about-section p {
     text-align: left;
 }
@@ -14,7 +19,7 @@
 
 /* Video wrapper styles - mobile first approach */
 .video-wrapper {
-    background-color: yellow;
+    background-color: #000000;
     width: calc(100% - 4px); /* Full width with 2px margins on both sides */
     height: 200px; /* Default height for portrait mobile */
     margin: 0 2px 1rem 2px;
@@ -122,7 +127,7 @@ main {
     /* Video wrapper tablet styles */
     .video-wrapper {
         width: 400px;
-        height: 300px;
+        height: 400px;
         float: left;
         margin: 0 2px 1rem 2px;
     }
