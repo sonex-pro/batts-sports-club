@@ -1,6 +1,6 @@
 /* Full page background color */
 body {
-    background-color: #e6f2ff; /* Very light blue */
+    background-color: #c0d6ed; /* Very light blue */
 }
 
 .about-section p {
@@ -108,7 +108,7 @@ main {
 /* Media queries for responsive layouts */
 
 /* Honor tablet Portrait view 686px x 990px */
-@media (max-width: 686px) {
+@media (max-width: 686px) and (min-height: 990px) and (orientation: portrait) {
     .video-wrapper {
         width: 100%;
         height: 345px;
