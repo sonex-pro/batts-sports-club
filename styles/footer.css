@@ -1,109 +1,181 @@
 /* Footer Styles */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 1rem;
-    background-color: #b2b7d0;
-    color: #000000;
-    text-align: center;
+.footer {
     width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px 0;
 }
 
 .footer-container {
-    width: 100%;
+    background-color: #6c757d;
+    border: 2px solid white;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 25px;
 }
 
-.footer-links {
-    margin-bottom: 1rem;
+/* Main Images Section */
+.footer-main-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
 }
 
-.footer-links a {
-    color: #000000;
-    text-decoration: none;
-    padding: 0.3rem 0.5rem;
-    transition: color 0.2s ease;
+.footer-main-images a {
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.footer-links a:hover {
-    color: #dcedf9;
-    text-decoration: underline;
+.footer-main-images a:hover {
+    transform: scale(1.05);
 }
 
-.footer-social {
+.footer-main-images img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Separation Line */
+.footer-separator {
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: #1e3a8a;
+    margin: 10px 20px;
+}
+
+/* Social Media Images Section */
+.footer-social-images {
     display: flex;
-    gap: 1rem;
-    margin: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
 
-.social-icon img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.2s ease;
+.footer-social-images a {
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.social-icon:hover img {
+.footer-social-images a:hover {
     transform: scale(1.1);
 }
 
-.copyright {
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    text-align: center;
-    line-height: 1.2;
+.footer-social-images img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
-/* Media queries for responsive layouts */
+/* Footer Text */
+.footer-text {
+    text-align: center;
+    color: white;
+    font-family: Georgia, serif;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.footer-text p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: #ddd;
+}
+
+/* Tablet Styles */
 @media screen and (min-width: 768px) {
     .footer-container {
-        gap: 1.5rem;
+        padding: 40px 30px;
+        gap: 30px;
     }
     
-    .footer-links {
-        gap: 1.5rem;
+    .footer-main-images {
+        gap: 20px;
     }
     
-    .social-icon img {
-        width: 36px;
-        height: 36px;
+    .footer-main-images img {
+        height: 70px;
+    }
+    
+    .footer-social-images {
+        gap: 15px;
+    }
+    
+    .footer-social-images img {
+        height: 45px;
+    }
+    
+    .footer-separator {
+        width: calc(100% - 60px);
+        margin: 15px 30px;
+    }
+    
+    .footer-text p {
+        font-size: 15px;
     }
 }
 
-@media screen and (min-width: 992px) {
-    footer {
-        padding: 2rem 1.5rem;
-    }
-    
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
     .footer-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        padding: 50px 40px;
+        gap: 35px;
     }
     
-    .footer-links {
-        flex-basis: 50%;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
+    .footer-main-images {
+        gap: 25px;
+        flex-wrap: nowrap;
     }
     
-    .footer-social {
-        flex-basis: 50%;
-        justify-content: flex-end;
+    .footer-main-images img {
+        height: 80px;
     }
     
-    .copyright {
-        flex-basis: 100%;
+    .footer-social-images {
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .footer-social-images img {
+        height: 50px;
+    }
+    
+    .footer-separator {
+        width: calc(100% - 80px);
+        margin: 20px 40px;
+    }
+    
+    .footer-text p {
+        font-size: 16px;
+    }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1200px) {
+    .footer-main-images {
+        gap: 30px;
+    }
+    
+    .footer-social-images {
+        gap: 25px;
     }
 }
