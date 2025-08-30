@@ -1,185 +1,187 @@
+ /* === Base Styles Can Apply === */
+
 /* === Base Styles === */
 
-/* Homepage-only overrides for h2 and p */
-h2, p {
-  color: #fff !important;
+/* h1 h2 and p colours are set here */
+/* h1 h2 and p sizes are set in base.css */
+h1, h2, p {
+  color: #fff;
 }
 
-
-.welcome-heading { /* for H1 overrides base styles */
-  font-family: 'Georgia', serif;
-  color: #ffffff; /* White for better visibility */
-  font-size: 1.5rem;
+.welcome-heading {
+  color: #fff;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
   width: 100%;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), /* Dark shadow for light backgrounds */
-               -1px -1px 0 #000, /* Outline effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+               -1px -1px 0 #000,
                1px -1px 0 #000,
                -1px 1px 0 #000,
                1px 1px 0 #000;
-  font-weight: bold; /* Added for better visibility */
+  font-weight: bold;
 }
 
-
 body {
-    background-color: #c0d6ed;
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  .main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Video wrapper: maintain 1.98:1 aspect ratio */
-  .video-wrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1.98 / 1;
-    background-color: #000;
-    overflow: hidden;
-  }
-  
-  .video-wrapper video { /* Video 1.98:1 aspect ratio */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* contain makes sure the whole video is visible inside the wrapper */
-    transform: translate(-50%, -50%);
-  }
+  background-color: #c0d6ed;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Video wrapper: maintain 1.98:1 aspect ratio */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.98 / 1;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+}
 
 /* Mobile portrait: make video visually bigger */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .video-wrapper {
     width: 100%;
-    padding-bottom: 56%;   /* 16:9 feel, makes video taller */
-    margin: 0;             /* remove left/right gaps */
+    padding-bottom: 56%; /* 16:9 feel, makes video taller */
+    margin: 0; /* remove left/right gaps */
   }
 }
-  
-  .video-wrapper .controls {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    z-index: 10;
+
+.video-wrapper .controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.video-wrapper .controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.video-wrapper .controls button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Activities section */
+.activities-section, .activities-section h2, .activities-section .activity-item, .activities-section a {
+  color: #fff;
+}
+
+.activities-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.activities-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.activity-item {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.activity-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border: 2px solid #00a5e3;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* === Responsive Layouts === */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .main-header {
+    padding: 1.5rem;
   }
-  
-  .video-wrapper .controls button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
+
+  .content-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
   }
-  
-  .video-wrapper .controls button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+
+  .video-wrapper {
+    flex: 0 0 400px;
   }
-  
-  /* Activities section */
-  .activities-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+
+  .activities-section {
+    flex: 1;
   }
-  
+
   .activities-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .activity-item {
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+}
+
+/* Small desktop and up */
+@media (min-width: 992px) {
+  .video-wrapper {
+    flex: 0 0 660px;
   }
-  
-  .activity-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  .activities-container {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .about-text {
-    margin: 1rem 0;
-    padding: 0.8rem;
-    border: 2px solid #00a5e3;
-    border-radius: 6px;
-    text-align: center;
+
+  .content-wrapper {
+    width: 85%;
   }
-  
-  /* === Responsive Layouts === */
-  
-  /* Tablet and up */
-  @media (min-width: 768px) {
-    .main-header {
-      padding: 1.5rem;
-    }
-  
-    .content-wrapper {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-  
-    .video-wrapper {
-      flex: 0 0 400px;
-    }
-  
-    .activities-section {
-      flex: 1;
-    }
-  
-    .activities-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+
+/* Large desktop and up */
+@media (min-width: 1200px) {
+  .activities-container {
+    grid-template-columns: repeat(5, 1fr);
   }
-  
-  /* Small desktop and up */
-  @media (min-width: 992px) {
-    .video-wrapper {
-      flex: 0 0 660px;
-    }
-  
-    .activities-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .content-wrapper {
-      width: 85%;
-    }
+
+  .main-header {
+    padding: 1.5rem 2rem;
   }
-  
-  /* Large desktop and up */
-  @media (min-width: 1200px) {
-    .activities-container {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  
-    .main-header {
-      padding: 1.5rem 2rem;
-    }
-  
-    .content-wrapper {
-      width: 80%;
-    }
+
+  .content-wrapper {
+    width: 80%;
   }
-  
+}
