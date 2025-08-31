@@ -161,7 +161,7 @@ body {
   }
 
   .video-wrapper {
-    flex: 0 0 400px;
+    flex: 0 0 40%;
   }
 
   .activities-section {
@@ -188,7 +188,7 @@ body {
   }
   
   .video-wrapper {
-    flex: 0 0 35%;
+    flex: 0 0 30%;
   }
   
   .activities-section {
@@ -209,7 +209,7 @@ body {
   }
 
   .video-wrapper {
-    flex: 0 0 660px;
+    flex: 0 0 45%;
   }
 
   .activities-section {
@@ -233,7 +233,7 @@ body {
   }
 
   .video-wrapper {
-    flex: 0 0 660px;
+    flex: 0 0 50%;
   }
 
   .activities-section {
