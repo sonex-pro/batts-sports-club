@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return response.text();
             })
             .then(html => {
+                console.log(`Loading component: ${componentName}`);
                 element.innerHTML = html;
                 
                 // Dispatch an event to notify that the component has been loaded
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     detail: { componentName: componentName }
                 });
                 document.dispatchEvent(event);
+                console.log(`Component loaded: ${componentName}`);
             })
             .catch(error => {
                 console.error('Error loading component:', error);

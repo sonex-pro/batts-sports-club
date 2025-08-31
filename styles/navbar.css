@@ -10,16 +10,28 @@
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0.8rem 5%;
     position: relative;
     width: 100%;
 }
 
+/* Nav item styles - equal flex basis for all 4 items */
+.nav-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Logo styles */
 .nav-logo {
-    flex: 0 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .batts-navbar-image {
@@ -28,14 +40,7 @@
     display: block;
 }
 
-/* Nav links styles */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Smaller gap for mobile */
-    margin-left: auto;
-    margin-right: 1rem; /* Smaller margin for mobile */
-}
+/* Remove old nav-links styles - no longer needed */
 
 .you-tube-navbar-image {
     height: 52px;
@@ -56,7 +61,10 @@
 
 /* Hamburger menu styles */
 .hamburger-container {
-    flex: 0 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 20;
 }
@@ -214,16 +222,11 @@
     background-color: #000;
 }
 
-/* Media queries for desktop sizes */
+/* Media queries for tablet and desktop sizes */
 @media screen and (min-width: 768px) {
     .batts-navbar-image {
-        height: 62px; /* Larger logo for desktop */
+        height: 62px; /* Larger logo for tablet/desktop */
         width: auto;
-    }
-    
-    .nav-links {
-        gap: 2rem; /* Larger gap for desktop */
-        margin-right: 2.5rem; /* Larger margin for desktop */
     }
     
     .you-tube-navbar-image {
@@ -237,7 +240,7 @@
     }
     
     .hamburger-btn {
-        height: 28px; /* Slightly larger hamburger for desktop */
+        height: 28px; /* Slightly larger hamburger for tablet/desktop */
         width: 34px;
     }
 }
