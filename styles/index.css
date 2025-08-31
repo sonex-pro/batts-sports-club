@@ -10,8 +10,8 @@ h1, h2, p {
 
 .welcome-heading {
   color: #fff;
-  margin: 0.5rem 0;
-  padding: 0.5rem 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
@@ -33,7 +33,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  padding: 5px 1rem 0rem 1rem;
+  margin: 0;
 }
 
 .content-wrapper {
