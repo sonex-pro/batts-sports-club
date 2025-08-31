@@ -230,6 +230,11 @@ body {
   .content-wrapper {
     width: 85%;
   }
+
+  /* Desktop spacing: give more breathing room under the activities heading */
+  .activities-section h2 {
+    margin-bottom: 1.8rem;
+  }
 }
 
 /* === LARGE DESKTOP (1200px+) === */
