@@ -1,0 +1,16 @@
+/* Design Credit Component Styles */
+.carls-design {
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    margin-bottom: 10px;
+    padding: 0 3px 0 3px;
+    z-index: 6;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #333;/* dark grey */
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
