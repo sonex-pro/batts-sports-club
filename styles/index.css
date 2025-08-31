@@ -233,7 +233,7 @@ body {
 
   /* Desktop spacing: give more breathing room under the activities heading */
   .activities-section h2 {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
   }
 }
 
