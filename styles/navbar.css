@@ -18,7 +18,7 @@
     width: 100%;
 }
 
-/* Nav item styles - equal flex basis for all 4 items */
+/* Nav item styles - each item takes equal space (flex: 1) */
 .nav-item {
     flex: 1;
     display: flex;
@@ -35,21 +35,20 @@
 }
 
 .batts-navbar-image {
-    height: 48px; /* Smaller size for mobile */
+    height: 40px; /* Small size for mobile devices */
     width: auto;
     display: block;
 }
 
-/* Remove old nav-links styles - no longer needed */
 
 .you-tube-navbar-image {
-    height: 52px;
+    height: 40px; /* Medium size for mobile devices */
     width: auto;
     transition: transform 0.2s ease;
 }
 
 .bribar-navbar-image {
-    height: 64px; /* 20% larger than YouTube image */
+    height: 40px; /* Large size for mobile devices - bigger than YouTube image */
     width: auto;
     transition: transform 0.2s ease;
 }
@@ -78,8 +77,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 24px;
-    width: 30px;
+    height: 24px; /* Compact size for mobile devices */
+    width: 30px; /* Compact width for mobile devices */
     transition: transform 0.2s ease;
     overflow: visible;
     position: relative;
@@ -225,22 +224,22 @@
 /* Media queries for tablet and desktop sizes */
 @media screen and (min-width: 768px) {
     .batts-navbar-image {
-        height: 62px; /* Larger logo for tablet/desktop */
+        height: 62px; /* Medium size for tablet and desktop */
         width: auto;
     }
     
     .you-tube-navbar-image {
-        height: 65px;
+        height: 65px; /* Medium-large size for tablet and desktop */
         width: auto;
     }
     
     .bribar-navbar-image {
-        height: 79px; /* 20% larger than YouTube image */
+        height: 79px; /* Large size for tablet and desktop - biggest navbar image */
         width: auto;
     }
     
     .hamburger-btn {
-        height: 28px; /* Slightly larger hamburger for tablet/desktop */
-        width: 34px;
+        height: 28px; /* Larger size for tablet and desktop - easier to tap */
+        width: 34px; /* Larger width for tablet and desktop */
     }
 }
