@@ -203,8 +203,17 @@ body {
 
 /* Small desktop and up */
 @media (min-width: 992px) {
+  .main-content-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   .video-wrapper {
     flex: 0 0 660px;
+  }
+
+  .activities-section {
+    flex: 1;
   }
 
   .activities-container {
@@ -218,6 +227,19 @@ body {
 
 /* Large desktop and up */
 @media (min-width: 1200px) {
+  .main-content-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .video-wrapper {
+    flex: 0 0 660px;
+  }
+
+  .activities-section {
+    flex: 1;
+  }
+
   .activities-container {
     grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
   }
