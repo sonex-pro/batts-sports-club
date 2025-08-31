@@ -52,33 +52,26 @@ body {
   gap: 1rem;
 }
 
-/* Video wrapper: maintain 1.98:1 aspect ratio */
+/* === VIDEO WRAPPER SETTINGS === */
+/* Base video container - maintains 1.98:1 aspect ratio across all devices */
 .video-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 1.98 / 1;
-  background-color: #00000000;
+  aspect-ratio: 1.98 / 1; /* Custom aspect ratio for home video */
+  background-color: transparent;
   overflow: hidden;
 }
 
+/* Video element positioning and scaling */
 .video-wrapper video {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  transform: translate(-50%, -50%);
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+  transform: translate(-50%, -50%); /* Perfect centering */
   background-color: transparent;
-}
-
-/* Mobile portrait: make video visually bigger */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-  .video-wrapper {
-    width: 100%;
-    padding-bottom: 56%; /* 16:9 feel, makes video taller */
-    margin: 0; /* remove left/right gaps */
-  }
 }
 
 .video-wrapper .controls {
@@ -147,9 +140,21 @@ body {
   text-align: center;
 }
 
-/* === Responsive Layouts === */
+/* === RESPONSIVE BREAKPOINTS === */
+/* Mobile-first approach with percentage-based video sizing */
 
-/* Tablet portrait and up */
+/* === MOBILE PORTRAIT (< 768px) === */
+/* Default: Column layout - video stacked above activities */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .video-wrapper {
+    width: 100%;
+    padding-bottom: 56%; /* 16:9 feel for mobile - makes video appear larger */
+    margin: 0;
+  }
+}
+
+/* === TABLET PORTRAIT (768px+) === */
+/* Side-by-side layout begins - video 40% width */
 @media (min-width: 768px) {
   .main-header {
     padding: 1.5rem;
@@ -161,7 +166,7 @@ body {
   }
 
   .video-wrapper {
-    flex: 0 0 40%;
+    flex: 0 0 40%; /* Video takes 40% width, activities get 60% */
   }
 
   .activities-section {
@@ -173,7 +178,8 @@ body {
   }
 }
 
-/* Tablet landscape specific - fix cramped layout */
+/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
+/* Optimized for tablet landscape - video 30% for better activity grid */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .content-wrapper {
     flex-direction: column;
@@ -188,11 +194,11 @@ body {
   }
   
   .video-wrapper {
-    flex: 0 0 30%;
+    flex: 0 0 30%; /* Smaller video = more space for 2-column activities */
   }
   
   .activities-section {
-    flex: 1;
+    flex: 1; /* Activities get 70% width for comfortable 2-column grid */
   }
   
   .about-text {
@@ -201,7 +207,8 @@ body {
   }
 }
 
-/* Small desktop and up */
+/* === SMALL DESKTOP (992px+) === */
+/* Desktop layout - video 45% width */
 @media (min-width: 992px) {
   .main-content-row {
     flex-direction: row;
@@ -209,7 +216,7 @@ body {
   }
 
   .video-wrapper {
-    flex: 0 0 45%;
+    flex: 0 0 45%; /* Balanced video size for desktop */
   }
 
   .activities-section {
@@ -225,7 +232,8 @@ body {
   }
 }
 
-/* Large desktop and up */
+/* === LARGE DESKTOP (1200px+) === */
+/* Large desktop layout - video 50% width for optimal viewing */
 @media (min-width: 1200px) {
   .main-content-row {
     flex-direction: row;
@@ -233,7 +241,7 @@ body {
   }
 
   .video-wrapper {
-    flex: 0 0 50%;
+    flex: 0 0 50%; /* Larger video for big screens */
   }
 
   .activities-section {
