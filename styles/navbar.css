@@ -34,21 +34,22 @@
     align-items: center;
 }
 
+/*mobile first sizes for desktop & tablet see media queries below*/
 .batts-navbar-image {
-    height: 40px; /* Small size for mobile devices */
+    height: 42px; /* Small size for mobile devices */
     width: auto;
     display: block;
 }
 
 
 .you-tube-navbar-image {
-    height: 40px; /* Medium size for mobile devices */
+    height: 50px; /* Medium size for mobile devices */
     width: auto;
     transition: transform 0.2s ease;
 }
 
 .bribar-navbar-image {
-    height: 40px; /* Large size for mobile devices - bigger than YouTube image */
+    height: 62px; /* Large size for mobile devices - bigger than YouTube image */
     width: auto;
     transition: transform 0.2s ease;
 }
