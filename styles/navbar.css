@@ -17,6 +17,16 @@
     position: relative;
     width: 100%;
 }
+/* 1px white line under nav container 90% width */
+.nav-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    background-color: white;
+}
 
 /* Nav item styles - each item takes equal space (flex: 1) */
 .nav-item {
