@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATTS - Page Title</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/design-credit.css">
+  
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-images/favicon-16x16.png">
+  <link rel="icon" href="images/favicon-images/favicon-32x32.png">
+
+  <!-- JavaScript files -->
+  <script src="components/component-loader.js" defer></script>
+  <script src="navbar.js" defer></script>
+  
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="styles/template.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar component -->
+    <div id="navbar-container" data-component="navbar"></div>
+    
+    <!-- Main heading - positioned 3px below navbar -->
+    <h1 class="page-heading">Page Title</h1>
+  </header>
+
+  <main>
+    <!-- Main content container - responsive wrapper -->
+    <div class="content-wrapper">
+      <div class="main-content">
+        <!-- Page content goes here -->
+        <p>This is a template page. Replace this content with your specific page content.</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <!-- Footer component -->
+    <div id="footer-container" data-component="footer"></div>
+    <!-- Design Credit component -->
+    <div id="design-credit-container" data-component="design-credit"></div>
+  </footer>
+</body>
+</html>

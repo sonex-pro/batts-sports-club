@@ -2,7 +2,7 @@
 
 /* === Base Styles === */
 
-/* h1 h2 and p colours are set here */
+/* h1 h2 and p colours are set here and not in base.css */
 /* h1 h2 and p sizes are set in base.css */
 h1, h2, p {
   color: #fff;
