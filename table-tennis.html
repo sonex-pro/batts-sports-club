@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATTS - Table Tennis</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/design-credit.css"> <!--my name and my contact email-->
+  
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-images/favicon-16x16.png">
+  <link rel="icon" href="images/favicon-images/favicon-32x32.png">
+
+  <!-- JavaScript files -->
+  <script src="components/component-loader.js" defer></script>
+  <script src="navbar.js" defer></script>
+  <script src="js/video-controls.js" defer></script>
+  
+  <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="styles/table-tennis.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar component -->
+    <div id="navbar-container" data-component="navbar"></div>
+    
+    <!-- Main heading - positioned 3px below navbar -->
+    <h1 class="page-heading">Table Tennis</h1>
+  </header>
+
+  <main>
+    <!-- Main content container - responsive wrapper -->
+    <div class="content-wrapper">
+      
+      <!-- Video and Activities Row - side by side on tablet+ -->
+      <div class="main-content-row">
+        
+        <!-- Video Section - maintains 1.768:1 aspect ratio -->
+        <div class="video-wrapper">
+          <video id="backgroundVideo" autoplay muted loop playsinline>
+            <source src="videos/batts-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="controls">
+            <button id="playPauseBtn">Pause</button>
+          </div>
+        </div>
+
+        <!-- Activities Section - responsive grid layout -->
+        <section class="activities-section">
+          <h2>Choose Your Table Tennis Activity</h2>
+          <div class="activities-container">
+            <div class="activity-item"><a href="#">Coaching Team</a></div>
+            <div class="activity-item"><a href="#">Junior Coaching</a></div>
+            <div class="activity-item"><a href="#">Club Practice</a></div>
+            <div class="activity-item"><a href="#">Competitions</a></div>
+            <div class="activity-item"><a href="#">Training Camps</a></div>
+            <div class="activity-item"><a href="#">Harlow League</a></div>
+            <div class="activity-item"><a href="#">British League</a></div>
+            <div class="activity-item"><a href="#">Membership Fees</a></div>
+          </div>
+        </section>
+      </div>
+      
+      <!-- About Text - spans full width below main content -->
+      <div class="about-text">
+        <p>YouTube 27 training videos Bronze and Silver presented by Keith Fung</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <!-- Footer component -->
+    <div id="footer-container" data-component="footer"></div>
+    <!-- Design Credit component -->
+    <div id="design-credit-container" data-component="design-credit"></div>
+  </footer>
+</body>
+</html>

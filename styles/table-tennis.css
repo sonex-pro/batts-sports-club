@@ -1,0 +1,448 @@
+/* === TABLE TENNIS CSS - Styles for table-tennis.html === */
+
+
+/* h1 h2 and p colours are set here and not in base.css */
+/* h1 h2 and p sizes are set in base.css */
+h1, h2, p {
+  color: #fff;
+}
+
+
+/* === PAGE HEADING STYLES === */
+/* Main heading styles with 3px spacing below navbar */
+.page-heading {
+  margin-top: 3px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+               -1px -1px 0 #000,
+               1px -1px 0 #000,
+               -1px 1px 0 #000,
+               1px 1px 0 #000;
+  font-weight: bold;
+}
+
+/* === CONTENT WRAPPER STYLES === */
+/* Main content container - responsive wrapper */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #00000000;
+  padding: 8px;
+  color: #fff;
+}
+
+/* Main content row layout */
+.main-content-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* === VIDEO WRAPPER SETTINGS === */
+/* Base video container - maintains 1.768:1 aspect ratio across all devices */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.768 / 1; /* Custom aspect ratio for batts video */
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Video element positioning and scaling */
+.video-wrapper video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  background-color: transparent;
+}
+
+.video-wrapper .controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.video-wrapper .controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.video-wrapper .controls button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Activities section */
+.activities-section, .activities-section h2, .activities-section .activity-item, .activities-section a {
+  color: #fff;
+}
+
+.activities-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.activities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.activity-item {
+  display: block;
+  padding: 2px 5px;
+  width: 146px;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+  border: 1px solid #00a5e3; /* mid blue */
+  transition: transform 0.3s ease;
+}
+
+.activity-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border: 1px solid #00a5e3; /* mid blue */
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* === TABLE TENNIS SPECIFIC STYLES === */
+
+/* Introduction section */
+.table-tennis-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.table-tennis-intro h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Activities grid layout */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Activity card styling */
+.activity-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.activity-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.activity-card h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.activity-card p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.activity-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.activity-link:hover {
+  background: linear-gradient(45deg, #0056b3, #004085);
+  transform: scale(1.05);
+}
+
+/* Training resources section */
+.training-resources {
+  margin-bottom: 3rem;
+}
+
+.training-resources h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resource-highlight {
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.resource-highlight h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.resource-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #ffd700, #ffb300);
+  color: #000;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+  background: linear-gradient(45deg, #ffb300, #ff8f00);
+  transform: scale(1.05);
+}
+
+/* Quick links section */
+.quick-links {
+  text-align: center;
+}
+
+.quick-links h2 {
+  margin-bottom: 1.5rem;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links-list li {
+  margin: 0.5rem;
+}
+
+.links-list a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.links-list a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+/* Mobile-first approach with percentage-based layouts */
+
+/* === MOBILE PORTRAIT (< 768px) === */
+/* Default: Column layout - video stacked above activities */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .content-wrapper {
+    width: 95%;
+    padding: 0.5rem;
+  }
+  
+  .page-heading {
+    padding: 3px;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .video-wrapper {
+    width: 100%;
+    padding-bottom: 56%; /* 16:9 feel for mobile - makes video appear larger */
+    margin: 0;
+  }
+}
+
+/* === TABLET PORTRAIT (768px+) === */
+/* Side-by-side layout begins - video 40% width */
+@media (min-width: 768px) {
+  .content-wrapper {
+    width: 90%;
+    gap: 1.5rem;
+  }
+  
+  .page-heading {
+    padding: 1rem;
+  }
+  
+  .main-content {
+    padding: 1.5rem;
+  }
+  
+  .main-content-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .video-wrapper {
+    flex: 0 0 40%; /* Video takes 40% width, activities get 60% */
+  }
+
+  .activities-section {
+    flex: 1;
+  }
+
+  .activities-container {
+    grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+  }
+}
+
+/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
+/* Optimized for tablet landscape - video 30% for better activity grid */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 85%;
+  }
+  
+  .main-content-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .video-wrapper {
+    flex: 0 0 30%; /* Smaller video = more space for 2-column activities */
+  }
+  
+  .activities-section {
+    flex: 1; /* Activities get 70% width for comfortable 2-column grid */
+  }
+  
+  .about-text {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .main-content {
+    padding: 2rem;
+  }
+}
+
+/* === SMALL DESKTOP (992px+) === */
+/* Desktop layout - video 45% width */
+@media (min-width: 992px) {
+  .main-content-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .video-wrapper {
+    flex: 0 0 45%; /* Balanced video size for desktop */
+  }
+
+  .activities-section {
+    flex: 1;
+  }
+
+  .activities-container {
+    grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+  }
+
+  .content-wrapper {
+    width: 85%;
+    gap: 2rem;
+  }
+  
+  .page-heading {
+    padding: 1.5rem;
+  }
+  
+  .main-content {
+    padding: 2.5rem;
+  }
+
+  /* Desktop spacing: give more breathing room under the activities heading */
+  .activities-section h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+/* === LARGE DESKTOP (1200px+) === */
+/* Large desktop layout - video 50% width for optimal viewing */
+@media (min-width: 1200px) {
+  .main-content-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .video-wrapper {
+    flex: 0 0 50%; /* Larger video for big screens */
+  }
+
+  .activities-section {
+    flex: 1;
+  }
+
+  .activities-container {
+    grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+  }
+
+  .content-wrapper {
+    width: 80%;
+    gap: 2.5rem;
+  }
+  
+  .page-heading {
+    padding: 2rem;
+  }
+  
+  .main-content {
+    padding: 3rem;
+  }
+}
