@@ -1,0 +1,22 @@
+/* === BATTS COLOR REFERENCE - Visual Color Palette === */
+
+/* CSS Variables for easy reference */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gold: #ffd700;
+  --light-blue: #add8e6;
+  --dark-grey: #333333;
+  --dark-blue: #0e0f26;
+  --off-white: #f1f1f1;
+  --off-blue: #d0e5ee;
+  --mid-blue: #00a5e3;
+  --blue-grey: #a0aebc;
+  --red: #ff0000;
+  --harlow-red: #d30606;
+  --teal: #00808c;
+  --pink-light: #c792c7;
+  --transparent: #00000000;
+  --blue-bright: #005b96;
+}
+

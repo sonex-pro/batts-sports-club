@@ -4,7 +4,7 @@
 /* h1 h2 and p colours are set here and not in base.css */
 /* h1 h2 and p sizes are set in base.css */
 h1, h2, p {
-  color: #fff;
+  color: #000000; /* if no colours are set in the file this will be the default colour */
 }
 
 
@@ -14,12 +14,7 @@ h1, h2, p {
   margin-top: 3px;
   padding: 5px;
   text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
-               -1px -1px 0 #000,
-               1px -1px 0 #000,
-               -1px 1px 0 #000,
-               1px 1px 0 #000;
+  color: #000000;/* text colour for h1 heading */
   font-weight: bold;
 }
 
@@ -36,7 +31,7 @@ h1, h2, p {
 
 /* Main content area */
 .main-content {
-  background-color: #00000000;
+  background-color: #00000000; /* transparent background */
   padding: 8px;
   color: #fff;
 }
@@ -92,7 +87,7 @@ h1, h2, p {
 
 /* Activities section */
 .activities-section, .activities-section h2, .activities-section .activity-item, .activities-section a {
-  color: #fff;
+  color: #000000; /* text colour for the buttons */
 }
 
 .activities-section h2 {
@@ -107,19 +102,19 @@ h1, h2, p {
   justify-items: center;
 }
 
-.activity-item {
+.activity-item { /* activity buttons */
   display: block;
-  padding: 2px 5px;
-  width: 146px;
+  padding: 8px 5px;
+  width: 170px;
   height: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
   text-align: center;
-  background-color: black;
+  background-color: #00808c; /* teal button background */
   border-radius: 8px;
-  border: 1px solid #00a5e3; /* mid blue */
+  border: 1px solid #000000; /* black */
   transition: transform 0.3s ease;
 }
 
@@ -131,9 +126,27 @@ h1, h2, p {
 .about-text {
   margin: 1rem 0;
   padding: 0.8rem;
-  border: 1px solid #00a5e3; /* mid blue */
+  border: 2px solid #000000;
   border-radius: 6px;
   text-align: center;
+}
+
+.youtube-link {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.youtube-icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.youtube-link:hover .youtube-icon {
+  transform: scale(1.1);
 }
 
 /* === TABLE TENNIS SPECIFIC STYLES === */

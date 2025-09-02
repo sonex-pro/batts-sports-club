@@ -4,7 +4,7 @@
 /* h1 h2 and p colours are set here and not in base.css */
 /* h1 h2 and p sizes are set in base.css */
 h1, h2, p {
-  color: #fff;
+  color: #000000;/* if no colours are set in the file this will be the default colour */
 }
 
 
@@ -14,12 +14,7 @@ h1, h2, p {
   margin-top: 3px;
   padding: 5px;
   text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
-               -1px -1px 0 #000,
-               1px -1px 0 #000,
-               -1px 1px 0 #000,
-               1px 1px 0 #000;
+  color: #000000; /* text colour for h1 heading */
   font-weight: bold;
 }
 
