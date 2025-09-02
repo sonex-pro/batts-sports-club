@@ -109,13 +109,20 @@ h1, h2, p {
   height: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem; /* mobile first */
   line-height: 1.2rem;
   text-align: center;
   background-color: #00808c; /* teal button background */
   border-radius: 8px;
   border: 1px solid #000000; /* black */
   transition: transform 0.3s ease;
+}
+
+/* Desktop font size */
+@media (min-width: 768px) {
+  .activity-item {
+    font-size: 1.1rem;
+  }
 }
 
 .activity-item:hover {
