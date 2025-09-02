@@ -72,16 +72,25 @@
     }
 
     .calendar-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 2rem 0;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .calendar-wrapper {
       display: flex;
       justify-content: center;
-      margin: 2rem 0;
-      overflow-x: auto;
+      min-width: 800px; /* Ensures full calendar visibility */
     }
 
     .calendar-iframe {
       border: solid 1px #777;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 800px;
+      height: 600px;
     }
 
     /* === RESPONSIVE BREAKPOINTS === */
@@ -103,16 +112,23 @@
         padding: 1rem;
       }
 
+      .calendar-container {
+        padding: 0 5px;
+      }
+
+      .calendar-wrapper {
+        min-width: 800px;
+      }
+
       .calendar-iframe {
-        width: 600px;
-        min-width: 600px;
+        width: 800px;
         height: 500px;
       }
     }
 
     /* === TABLET PORTRAIT (768px+) === */
     /* Enhanced layout for tablet screens */
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       .content-wrapper {
         width: 90%;
         gap: 1.5rem;
@@ -126,8 +142,16 @@
         padding: 1.5rem;
       }
 
+      .calendar-container {
+        padding: 0 10px;
+      }
+
+      .calendar-wrapper {
+        min-width: 800px;
+      }
+
       .calendar-iframe {
-        width: 700px;
+        width: 800px;
         height: 600px;
       }
     }
@@ -144,8 +168,13 @@
         padding: 2rem;
       }
 
+      .calendar-wrapper {
+        justify-content: flex-start;
+      }
+
       .calendar-iframe {
-        width: 750px;
+        width: 95%;
+        max-width: 900px;
         height: 600px;
       }
     }
@@ -166,8 +195,17 @@
         padding: 2.5rem;
       }
 
+      .calendar-container {
+        overflow-x: visible;
+      }
+
+      .calendar-wrapper {
+        justify-content: center;
+      }
+
       .calendar-iframe {
-        width: 800px;
+        width: 90%;
+        max-width: 1000px;
         height: 600px;
       }
     }
@@ -188,9 +226,18 @@
         padding: 3rem;
       }
 
+      .calendar-container {
+        overflow-x: visible;
+      }
+
+      .calendar-wrapper {
+        justify-content: center;
+      }
+
       .calendar-iframe {
-        width: 800px;
-        height: 600px;
+        width: 85%;
+        max-width: 1100px;
+        height: 650px;
       }
     }
   </style>
@@ -215,12 +262,14 @@
 
         <!-- Calendar container -->
         <div class="calendar-container">
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FLondon&hl=en_GB&mode=WEEK&src=YnJpZXJsZXkyMDA0QGJ0aW50ZXJuZXQuY29t&color=%230d3082"
-                  class="calendar-iframe"
-                  title="BATTS weekly calendar"
-                  width="800"
-                  height="600">
-          </iframe>
+          <div class="calendar-wrapper">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FLondon&hl=en_GB&mode=WEEK&src=YnJpZXJsZXkyMDA0QGJ0aW50ZXJuZXQuY29t&color=%230d3082"
+                    class="calendar-iframe"
+                    title="BATTS weekly calendar"
+                    width="800"
+                    height="600">
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
