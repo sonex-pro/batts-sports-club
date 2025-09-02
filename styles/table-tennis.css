@@ -122,12 +122,10 @@ h1, h2, p {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
+/* keith fung text */
 .about-text {
   margin: 1rem 0;
-  padding: 0.8rem;
-  border: 2px solid #000000;
-  border-radius: 6px;
+  background-color: #00000000;
   text-align: center;
 }
 
