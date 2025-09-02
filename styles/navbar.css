@@ -166,7 +166,7 @@
     max-height: 0;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 15;
+    z-index: 100;
 }
 
 .mobile-menu.show {
