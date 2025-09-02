@@ -124,7 +124,8 @@ h1, h2, p {
 }
 /* keith fung text */
 .about-text {
-  margin: 1rem 0;
+  font-style: italic;
+  margin: 1.1rem 0;
   background-color: #00000000;
   text-align: center;
 }
@@ -137,8 +138,8 @@ h1, h2, p {
 }
 
 .youtube-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   vertical-align: middle;
   transition: transform 0.2s ease;
 }
@@ -383,6 +384,11 @@ h1, h2, p {
   .main-content {
     padding: 2rem;
   }
+  
+  .youtube-icon {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /* === SMALL DESKTOP (992px+) === */
@@ -403,6 +409,11 @@ h1, h2, p {
 
   .activities-container {
     grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+  }
+  
+  .youtube-icon {
+    width: 50px;
+    height: 50px;
   }
 
   .content-wrapper {
@@ -455,5 +466,10 @@ h1, h2, p {
   
   .main-content {
     padding: 3rem;
+  }
+  
+  .youtube-icon {
+    width: 50px;
+    height: 50px;
   }
 }
