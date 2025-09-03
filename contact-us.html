@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATTS - Contact Us</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/design-credit.css"> <!--my name and my contact email-->
+  
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-images/favicon-16x16.png">
+  <link rel="icon" href="images/favicon-images/favicon-32x32.png">
+
+  <!-- JavaScript files -->
+  <script src="components/component-loader.js" defer></script>
+  <script src="navbar.js" defer></script>
+  
+  <!-- Tally form script -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+  
+  <!-- Contact Page Styles -->
+  <style>
+    /* Page-specific styles */
+    
+    /* === CONTACT PAGE CSS - Based on template.css === */
+
+    /* h1 h2 and p colours are set here and not in base.css */
+    /* h1 h2 and p sizes are set in base.css */
+    h1, h2, p {
+      color: #000000;/* if no colours are set in the file this will be the default colour */
+    }
+
+    /* === PAGE HEADING STYLES === */
+    /* Main heading styles with 3px spacing below navbar */
+    .page-heading {
+      margin-top: 3px;
+      padding: 5px;
+      text-align: center;
+      color: #000000; /* text colour for h1 heading */
+      font-weight: bold;
+    }
+
+    /* === CONTENT WRAPPER STYLES === */
+    /* Main content container - responsive wrapper */
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Main content area */
+    .main-content {
+      background-color: #00000000;
+      padding: 8px;
+      color: #000000;
+    }
+
+    /* === CONTACT SPECIFIC STYLES === */
+    .contact-info {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .contact-info p {
+      margin-bottom: 1rem;
+    }
+
+    .contact-info a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Tally form container */
+    .tally-form-container {
+      width: 100%;
+      height: 600px;
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .tally-form-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    /* === RESPONSIVE BREAKPOINTS === */
+    /* Mobile-first approach with percentage-based layouts */
+
+    /* === MOBILE PORTRAIT (< 768px) === */
+    /* Default: Single column layout */
+    @media screen and (max-width: 767px) and (orientation: portrait) {
+      .content-wrapper {
+        width: 95%;
+        padding: 0.5rem;
+      }
+      
+      .page-heading {
+        padding: 3px;
+      }
+      
+      .main-content {
+        padding: 1rem;
+      }
+
+      .tally-form-container {
+        height: 500px;
+      }
+
+      .contact-info {
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* === TABLET PORTRAIT (768px+) === */
+    /* Enhanced layout for tablet screens */
+    @media (min-width: 768px) {
+      .content-wrapper {
+        width: 90%;
+        gap: 1.5rem;
+      }
+      
+      .page-heading {
+        padding: 1rem;
+      }
+      
+      .main-content {
+        padding: 1.5rem;
+      }
+
+      .tally-form-container {
+        height: 650px;
+      }
+
+      .contact-info {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    /* === TABLET LANDSCAPE (768px-1024px, landscape) === */
+    /* Optimized for tablet landscape orientation */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      .content-wrapper {
+        width: 85%;
+        gap: 1.5rem;
+      }
+      
+      .main-content {
+        padding: 2rem;
+      }
+
+      .tally-form-container {
+        height: 600px;
+      }
+    }
+
+    /* === SMALL DESKTOP (992px+) === */
+    /* Desktop layout optimizations */
+    @media (min-width: 992px) {
+      .content-wrapper {
+        width: 85%;
+        gap: 2rem;
+      }
+      
+      .page-heading {
+        padding: 1.5rem;
+      }
+      
+      .main-content {
+        padding: 2.5rem;
+      }
+
+      .tally-form-container {
+        height: 700px;
+      }
+
+      .contact-info {
+        margin-bottom: 2rem;
+      }
+    }
+
+    /* === LARGE DESKTOP (1200px+) === */
+    /* Large desktop layout - optimal viewing experience */
+    @media (min-width: 1200px) {
+      .content-wrapper {
+        width: 80%;
+        gap: 2.5rem;
+      }
+      
+      .page-heading {
+        padding: 2rem;
+      }
+      
+      .main-content {
+        padding: 3rem;
+      }
+
+      .tally-form-container {
+        height: 750px;
+      }
+
+      .contact-info {
+        margin-bottom: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Navbar component -->
+    <div id="navbar-container" data-component="navbar"></div>
+    
+    <!-- Main heading - positioned 3px below navbar -->
+    <h1 class="page-heading">Contact Us</h1>
+  </header>
+
+  <main>
+    <!-- Main content container - responsive wrapper -->
+    <div class="content-wrapper">
+      <div class="main-content">
+        <!-- Contact information -->
+        <div class="contact-info">
+          <p>Get in touch with us using the form below or contact us directly:</p>
+          <p><strong>Email:</strong> <a href="mailto:info@battsharlow.com">info@battsharlow.com</a></p>
+          <p><strong>Phone:</strong> 01279 438199</p>
+          <p>We'd love to hear from you and will get back to you as soon as possible!</p>
+        </div>
+
+        <!-- Tally form container -->
+        <div class="tally-form-container">
+          <iframe data-tally-src="https://tally.so/r/nrLJgM?transparentBackground=1" 
+                  width="100%" 
+                  height="100%" 
+                  frameborder="0" 
+                  marginheight="0" 
+                  marginwidth="0" 
+                  title="BATTS Contact Form">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <!-- Footer component -->
+    <div id="footer-container" data-component="footer"></div>
+    <!-- Design Credit component -->
+    <div id="design-credit-container" data-component="design-credit"></div>
+  </footer>
+</body>
+</html>
