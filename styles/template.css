@@ -32,7 +32,7 @@ h1, h2, p {
 /* Main content area */
 .main-content {
   background-color: #00000000;
-  padding: 8px;
+  padding: 5px;
   color: #fff;
 }
 
@@ -52,7 +52,7 @@ h1, h2, p {
   }
   
   .main-content {
-    padding: 1rem;
+    padding: 5px;
   }
 }
 
@@ -65,11 +65,11 @@ h1, h2, p {
   }
   
   .page-heading {
-    padding: 1rem;
+    padding: 0.8rem;
   }
   
   .main-content {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 }
 
@@ -82,7 +82,7 @@ h1, h2, p {
   }
   
   .main-content {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -95,11 +95,11 @@ h1, h2, p {
   }
   
   .page-heading {
-    padding: 1.5rem;
+    padding: 0.8rem;
   }
   
   .main-content {
-    padding: 2.5rem;
+    padding: 1.2rem;
   }
 }
 
@@ -108,14 +108,14 @@ h1, h2, p {
 @media (min-width: 1200px) {
   .content-wrapper {
     width: 80%;
-    gap: 2.5rem;
+    gap: 2rem;
   }
   
   .page-heading {
-    padding: 2rem;
+    padding: 1rem;
   }
   
   .main-content {
-    padding: 3rem;
+    padding: 1.8rem;
   }
 }
