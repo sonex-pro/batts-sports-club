@@ -1,0 +1,97 @@
+/* Privacy Policy Page Specific Styles */
+
+/* Override body background color for privacy policy page */
+body {
+    background-color: #d0e5ee !important;
+}
+
+/* Style the page heading to match other sections */
+.page-heading {
+    background-color: white;
+    max-width: 50%;
+    margin: 10px auto 20px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+}
+
+.privacy-policy-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.privacy-section {
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.privacy-policy-content h1 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.privacy-policy-content h2 {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.privacy-policy-content p {
+    color: black;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.privacy-policy-content ul {
+    color: black;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.privacy-policy-content li {
+    color: black;
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+.privacy-policy-content a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.privacy-policy-content a:hover {
+    color: #004499;
+}
+
+/* Override any existing styles that might interfere */
+.main-content {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+/* Ensure proper spacing between sections */
+.privacy-policy-content > * + * {
+    margin-top: 10px;
+}
+
+.privacy-policy-content > h2 + * {
+    margin-top: 15px;
+}
