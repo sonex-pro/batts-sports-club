@@ -21,9 +21,9 @@ h1, h2, p {
                1px 1px 0 #000;
   font-weight: bold;
 }
-
+/* Override body background color for index page */
 body {
-  background-color: #00ff00 !important; /* horrible lime green for testing */
+  background-color: #0e0f26 !important; /* dark blue theme */
   margin: 0;
   font-family: sans-serif;
 }
