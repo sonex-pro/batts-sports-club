@@ -23,7 +23,7 @@ h1, h2, p {
 }
 
 body {
-  background-color: #c0d6ed;
+  background-color: #00ff00 !important; /* horrible lime green for testing */
   margin: 0;
   font-family: sans-serif;
 }
