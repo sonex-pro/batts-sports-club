@@ -1,0 +1,133 @@
+/* === TEMPLATE CSS - Common styles for all pages based on template.html === */
+
+
+/* h1 h2 and p colours are set here and not in base.css */
+/* h1 h2 and p sizes are set in base.css */
+h1, h2, p {
+  color: #000000;/* if no colours are set in the file this will be the default colour */
+}
+
+
+/* === PAGE HEADING STYLES === */
+/* Main heading styles with 3px spacing below navbar */
+.page-heading {
+  margin-top: 3px;
+  padding: 5px;
+  text-align: center;
+  color: #000000; /* text colour for h1 heading */
+  font-weight: bold;
+}
+
+/* === CONTENT WRAPPER STYLES === */
+/* Main content container - responsive wrapper */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* === TOP CONTENT STYLES === */
+.top-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+/* === top-content-inner styles === */
+.top-content-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #00000000;
+  padding: 5px;
+  color: #fff;
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+/* Mobile-first approach with percentage-based layouts */
+
+/* === MOBILE PORTRAIT (< 768px) === */
+/* Default: Single column layout */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .content-wrapper {
+    width: 95%;
+    padding: 0.5rem;
+  }
+  
+  .page-heading {
+    padding: 3px;
+  }
+  
+  .main-content {
+    padding: 5px;
+  }
+}
+
+/* === TABLET PORTRAIT (768px+) === */
+/* Enhanced layout for tablet screens */
+@media (min-width: 768px) {
+  .content-wrapper {
+    width: 90%;
+    gap: 1.5rem;
+  }
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
+/* Optimized for tablet landscape orientation */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content-wrapper {
+    width: 85%;
+    gap: 1.5rem;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+/* === SMALL DESKTOP (992px+) === */
+/* Desktop layout optimizations */
+@media (min-width: 992px) {
+  .content-wrapper {
+    width: 85%;
+    gap: 2rem;
+  }
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+  .main-content {
+    padding: 1.2rem;
+  }
+}
+
+/* === LARGE DESKTOP (1200px+) === */
+/* Large desktop layout - optimal viewing experience */
+@media (min-width: 1200px) {
+  .content-wrapper {
+    width: 80%;
+    gap: 2rem;
+  }
+  
+  .page-heading {
+    padding: 1rem;
+  }
+  
+  .main-content {
+    padding: 1.8rem;
+  }
+}
