@@ -108,8 +108,8 @@ h1, h2, p {
   }
 }
 
-/* === TABLET (768px - 1023px) === */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* === TABLET PORTRAIT (768px - 1023px, portrait) === */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
   .content-section {
     margin-left: 6px;
     margin-right: 6px;
@@ -136,6 +136,50 @@ h1, h2, p {
   
   .page-heading {
     padding: 0.75rem;
+  }
+}
+
+/* === TABLET LANDSCAPE (768px - 1023px, landscape) === */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  .content-section {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: calc(100% - 8px);
+    overflow-x: hidden;
+  }
+  
+  .content-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .location-items {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: stretch;
+    max-width: 100%;
+  }
+  
+  .google-image-wrapper {
+    flex: 0 0 35%;
+    height: 280px;
+    max-width: 35%;
+  }
+  
+  .google-map-wrapper {
+    flex: 1;
+    min-width: 0;
+    max-width: calc(65% - 0.5rem);
+    height: 280px;
+  }
+  
+  .google-map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .page-heading {
+    padding: 0.5rem;
   }
 }
 
