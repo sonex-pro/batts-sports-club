@@ -8,7 +8,7 @@ h1, h2, p {
 }
 
 
-/* === PAGE HEADING STYLES === */
+/* === PAGE HEADING STYLES "DESK TOP" VIEW === */
 /* Main heading styles with 3px spacing below navbar */
 .page-heading {
   margin-top: 3px;
@@ -68,11 +68,10 @@ h1, h2, p {
 /* Remove old main-content styles - no longer needed */
 
 /* === RESPONSIVE BREAKPOINTS === */
-/* Mobile-first approach with percentage-based layouts */
+/* Mobile-first approach with clean breakpoints */
 
-/* === MOBILE PORTRAIT (< 768px) === */
-/* Default: Single column layout */
-@media screen and (max-width: 767px) and (orientation: portrait) {
+/* === MOBILE (up to 767px) === */
+@media (max-width: 767px) {
   .content-section {
     margin-left: 4px;
     margin-right: 4px;
@@ -84,18 +83,33 @@ h1, h2, p {
     gap: 1rem;
   }
   
+  .google-image-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .google-image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+  
   .google-map-wrapper {
-    min-width: 300px;
+    width: 100%;
+    min-width: unset;
+    height: 300px;
   }
   
   .page-heading {
-    padding: 3px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 }
 
-/* === TABLET PORTRAIT (768px+) === */
-/* Enhanced layout for tablet screens */
-@media (min-width: 768px) {
+/* === TABLET (768px - 1023px) === */
+@media (min-width: 768px) and (max-width: 1023px) {
   .content-section {
     margin-left: 6px;
     margin-right: 6px;
@@ -103,17 +117,28 @@ h1, h2, p {
   }
   
   .location-items {
+    flex-direction: row;
     gap: 1.5rem;
   }
   
+  .google-image-wrapper {
+    width: 45%;
+    height: 350px;
+  }
+  
+  .google-map-wrapper {
+    width: 55%;
+    min-width: unset;
+    height: 350px;
+  }
+  
   .page-heading {
-    padding: 0.8rem;
+    padding: 0.75rem;
   }
 }
 
-/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
-/* Optimized for tablet landscape orientation */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* === DESKTOP (1024px+) === */
+@media (min-width: 1024px) {
   .content-section {
     margin-left: 8px;
     margin-right: 8px;
@@ -121,39 +146,19 @@ h1, h2, p {
   }
   
   .location-items {
+    flex-direction: row;
     gap: 2rem;
   }
-}
-
-/* === SMALL DESKTOP (992px+) === */
-/* Desktop layout optimizations */
-@media (min-width: 992px) {
-  .content-section {
-    margin-left: 8px;
-    margin-right: 8px;
-    width: calc(100% - 16px);
+  
+  .google-image-wrapper {
+    width: auto;
+    height: 410px;
   }
   
-  .location-items {
-    gap: 2.5rem;
-  }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-}
-
-/* === LARGE DESKTOP (1200px+) === */
-/* Large desktop layout - optimal viewing experience */
-@media (min-width: 1200px) {
-  .content-section {
-    margin-left: 8px;
-    margin-right: 8px;
-    width: calc(100% - 16px);
-  }
-  
-  .location-items {
-    gap: 3rem;
+  .google-map-wrapper {
+    width: 100%;
+    min-width: 500px;
+    height: 410px;
   }
   
   .page-heading {
