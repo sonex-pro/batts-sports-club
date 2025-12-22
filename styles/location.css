@@ -118,17 +118,19 @@ h1, h2, p {
   
   .location-items {
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;
+    align-items: stretch;
   }
   
   .google-image-wrapper {
-    width: 45%;
+    flex: 0 0 42%;
     height: 350px;
+    max-width: 42%;
   }
   
   .google-map-wrapper {
-    width: 55%;
-    min-width: unset;
+    flex: 1;
+    min-width: 0;
     height: 350px;
   }
   
