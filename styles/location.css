@@ -63,6 +63,7 @@ h1, h2, p {
   min-width: 500px; /* === this is to ensure the map is not too small === */
   height: 410px;
   gap: 1rem;
+  margin-right: 2rem;
 }
 
 /* Remove old main-content styles - no longer needed */
