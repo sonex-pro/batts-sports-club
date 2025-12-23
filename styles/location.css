@@ -24,7 +24,7 @@ h1, h2, p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -34,6 +34,21 @@ h1, h2, p {
   background-color: #00000000;
   padding: 5px;
   color: #fff;
+}
+
+.location-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.google-image-wrapper img {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
