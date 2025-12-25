@@ -37,6 +37,7 @@ h1, h2, p {
   padding: 5px;
   color: #fff;
 }
+/* === flex-wrap: wrap; To wrap on small screens go down to media queries (< 768px) === */
 
 .location-items {
   display: flex;
@@ -82,6 +83,11 @@ h1, h2, p {
   
   .main-content {
     padding: 5px;
+  }
+/* === items will wrap on small screens === */
+
+  .location-items {
+    flex-wrap: wrap;
   }
 }
 
