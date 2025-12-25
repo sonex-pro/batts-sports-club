@@ -9,7 +9,6 @@ h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
 
-
 /* === PAGE HEADING STYLES === */
 /* Main heading styles with 3px spacing below navbar */
 .page-heading {
@@ -31,30 +30,41 @@ h1, h2, p {
   margin: 0 auto;
 }
 
-/* Main content area */
 .main-content {
-  background-color: #00000000;
+  background-color: transparent;
   padding: 5px;
   color: #fff;
 }
 
-
-/* === LOCATION CSS - Common styles for all pages based on template.html === */
 /* === LOCATION ITEMS CONTAINER === */
 .location-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 0.8rem; /* Default gap */
+  gap: 0.8rem;
 }
 
 .google-image-wrapper,
 .google-map-wrapper {
   max-width: 100%;
-  height: auto; /* Let height be responsive */
+  height: 440px;
 }
 
+.google-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 440px;
+}
+
+.google-map-wrapper {
+  max-width: 100%;
+  height: 440px;
+}
+/* === code for the image === */
 .google-image-wrapper img {
   max-width: 100%;
   height: auto;
@@ -65,21 +75,28 @@ h1, h2, p {
 /* === RESPONSIVE BREAKPOINTS === */
 
 /* === MOBILE PORTRAIT (< 768px) === */
+/* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .content-wrapper {
     padding: 0.5rem;
   }
+  
+  .page-heading {
+    padding: 3px;
+  }
+  
+  .main-content {
+    padding: 5px;
+  }
+/* === items will wrap on small screens === */
 
   .location-items {
-    gap: 0.5rem; /* Adjust gap on smaller screens */
+    gap: 0.5rem;
   }
 
-  .google-image-wrapper {
-    height: 300px; /* Smaller height for images */
-  }
-
+  .google-image-wrapper,
   .google-map-wrapper {
-    height: 300px; /* Adjust map size for small screens */
+    height: 300px;
   }
 }
 
@@ -89,10 +106,13 @@ h1, h2, p {
     width: 90%;
     gap: 1.5rem;
   }
-
-  .google-image-wrapper,
-  .google-map-wrapper {
-    height: 440px; /* Adjust height for larger screens */
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+  .main-content {
+    padding: 1rem;
   }
 
   .location-items {
@@ -106,7 +126,11 @@ h1, h2, p {
     width: 85%;
     gap: 1.5rem;
   }
-
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
   .location-items {
     gap: 0.5rem;
   }
@@ -118,13 +142,21 @@ h1, h2, p {
     width: 85%;
     gap: 2rem;
   }
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+  .main-content {
+    padding: 1.2rem;
+  }
 
   .google-image-wrapper {
-    width: 40%; /* Adjust width for larger screen sizes */
+    width: 40%;
   }
 
   .google-map-wrapper {
-    width: 30%; /* Adjust width for map */
+    width: 30%;
   }
 
   .location-items {
@@ -138,7 +170,6 @@ h1, h2, p {
     width: 80%;
     gap: 2rem;
   }
-
   
   .page-heading {
     padding: 1rem;
