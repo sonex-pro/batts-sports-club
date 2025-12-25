@@ -1,6 +1,6 @@
- /* === Base Styles Can Apply === */
-
-/* === Base Styles === */
+/* === Mobile-First design (code for smaller screens first) ===*/
+/* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
 
 /* h1 h2 and p colours are set here and not in base.css */
 /* h1 h2 and p sizes are set in base.css */
@@ -144,7 +144,7 @@ body {
 /* Mobile-first approach with percentage-based video sizing */
 
 /* === MOBILE PORTRAIT (< 768px) === */
-/* Default: Column layout - video stacked above activities */
+/* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .video-wrapper {
     width: 100%;
@@ -154,7 +154,7 @@ body {
 }
 
 /* === TABLET PORTRAIT (768px+) === */
-/* Side-by-side layout begins - video 40% width */
+/* === screens 768px or larger ===*/
 @media (min-width: 768px) {
   .main-header {
     padding: 1.5rem;
@@ -179,7 +179,7 @@ body {
 }
 
 /* === TABLET LANDSCAPE (768px-1024px, landscape) === */
-/* Optimized for tablet landscape - video 30% for better activity grid */
+/* === screens 768px or larger but not exceeding 1024px in width ===*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .content-wrapper {
     flex-direction: column;
@@ -208,7 +208,7 @@ body {
 }
 
 /* === SMALL DESKTOP (992px+) === */
-/* Desktop layout - video 45% width */
+/* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
   .main-content-row {
     flex-direction: row;
@@ -238,7 +238,7 @@ body {
 }
 
 /* === LARGE DESKTOP (1200px+) === */
-/* Large desktop layout - video 50% width for optimal viewing */
+/* === screens 1200px or larger in width ===*/
 @media (min-width: 1200px) {
   .main-content-row {
     flex-direction: row;

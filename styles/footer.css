@@ -1,3 +1,6 @@
+/* === Mobile-First design (code for smaller screens first) ===*/
+/* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
 /* Footer Styles */
 .footer {
     width: 100%;
@@ -103,7 +106,8 @@
     color: #ddd;
 }
 
-/* Tablet Styles */
+/* === TABLET PORTRAIT (768px+) === */
+/* === screens 768px or larger ===*/
 @media screen and (min-width: 768px) {
     .footer-container {
         padding: 20px 15px;
@@ -136,7 +140,8 @@
     }
 }
 
-/* Desktop Styles */
+/* === SMALL DESKTOP (992px+) === */
+/* === screens 992px or larger in width ===*/
 @media screen and (min-width: 1024px) {
     .footer-container {
         padding: 25px 20px;
@@ -171,7 +176,8 @@
     }
 }
 
-/* Large Desktop Styles */
+/* === LARGE DESKTOP (1200px+) === */
+/* === screens 1200px or larger in width ===*/
 @media screen and (min-width: 1200px) {
     .footer-main-images {
         gap: 30px;

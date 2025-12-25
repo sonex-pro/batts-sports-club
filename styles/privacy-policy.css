@@ -1,3 +1,6 @@
+/* === Mobile-First design (code for smaller screens first) ===*/
+/* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
 /* Privacy Policy Page Specific Styles */
 
 /* Override body background color for privacy policy page */

@@ -1,4 +1,9 @@
- /* Reset and base styles */
+ /* === Mobile-First design (code for smaller screens first) ===*/
+ /* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
+/* Reset and base styles, This CSS reset ensures consistent styling across*/
+/*different browsers by eliminating their default spacing variations*/
+/*and establishing a predictable box model for the entire website.*/
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +41,8 @@ p {
   font-weight: 500;
 }
 
+/* === TABLET PORTRAIT (768px+) === */
+/* === screens 768px or larger ===*/
 @media (min-width: 768px) {
   h1 {
     font-size: 1.8rem;

@@ -1,3 +1,6 @@
+/* === Mobile-First design (code for smaller screens first) ===*/
+/* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
 /* Sporty Navigation Bar Styles */
 .sporty-nav {
     position: sticky;
@@ -232,7 +235,8 @@
     background-color: #000;
 }
 
-/* Media queries for tablet and desktop sizes */
+/* === TABLET PORTRAIT (768px+) === */
+/* === screens 768px or larger ===*/
 @media screen and (min-width: 768px) {
     .batts-navbar-image {
         height: 62px; /* Medium size for tablet and desktop */
