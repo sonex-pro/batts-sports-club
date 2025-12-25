@@ -37,14 +37,14 @@ h1, h2, p {
   padding: 5px;
   color: #fff;
 }
-/* === flex-wrap: wrap; To wrap on small screens go down to media queries (< 768px) === */
+/* === flex-wrap: wrap; To wrap on small screens === */
 
 .location-items {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  align-items: flex-start;
+  gap: 0.8rem;
 }
 
 
@@ -52,6 +52,7 @@ h1, h2, p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 98%;
 }
 
@@ -87,8 +88,13 @@ h1, h2, p {
 /* === items will wrap on small screens === */
 
   .location-items {
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 }
 
 /* === TABLET PORTRAIT (768px+) === */
@@ -106,6 +112,15 @@ h1, h2, p {
   .main-content {
     padding: 1rem;
   }
+  /* === items will wrap on small screens === */
+
+  .location-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 /* === TABLET LANDSCAPE (768px-1024px, landscape) === */
@@ -118,6 +133,14 @@ h1, h2, p {
   
   .main-content {
     padding: 1rem;
+  }
+  
+  .location-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
 
@@ -146,6 +169,15 @@ h1, h2, p {
 
   .google-map-wrapper {
     width: 30%;
+  }
+  
+
+  .location-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 
 }
