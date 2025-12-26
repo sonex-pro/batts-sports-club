@@ -33,11 +33,11 @@ h1, h2, p {
 /* === CONTENT WRAPPER STYLES === */
 .image-1-wrapper {
   max-width: 1200px;  /* Limit max width for better readability */
-  width: 600px;
+  width: 400px;
   height: auto;
 }
 .image-1-wrapper img {
-  width: 600px;
+  width: 400px;
   height: auto;
 }
 .image-1-wrapper p {
@@ -45,8 +45,8 @@ h1, h2, p {
   padding-top: 1.5rem;
 }
 .google-iframe-wrapper {
-  width: 600px;
-  height: 480px;
+  width: 500px;
+  height: 380px;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
