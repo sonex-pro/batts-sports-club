@@ -45,7 +45,7 @@ h1, h2, p {
   padding-top: 1.5rem;
 }
 .google-iframe-wrapper {
-  width: 500px;
+  width: 400px;
   height: 380px;
 }
 
@@ -55,27 +55,7 @@ h1, h2, p {
 /* === MOBILE PORTRAIT (< 768px) === */
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
-  .image-1-wrapper {
-      width: 600px;
-      height: auto;
-    padding: 0.5rem;
-  }
-  .image-1-wrapper img {
-  width: 600px;
-  height: auto;
-}
-.google-iframe-wrapper {
-  width: 600px;
-  height: 480px;
-}
-  
-  .page-heading {
-    padding: 3px;
-  }
-  
-  .section1 {
-    padding: 5px;
-  }
+ 
 }
 
 /* === TABLET PORTRAIT (768px+) === */
