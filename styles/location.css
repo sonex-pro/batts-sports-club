@@ -57,16 +57,16 @@ h1, h2, p {
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .image-1-wrapper {
-    width: 370px;
+    width: 150px;
     height: auto;
     padding: 0.5rem;
   }
   .image-1-wrapper img {
-    width: 370px;
+    width: 150px;
     height: auto;
 }
 .google-iframe-wrapper {
-  width: 370px;
+  width: 150px;
   height: 480px;
 }
   
