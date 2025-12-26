@@ -8,7 +8,14 @@ overridden by media queries. === */
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
-
+/* === PAGE HEADING H1 STYLES === */
+/* Main heading styles with 3px spacing below navbar */
+.page-heading {
+  margin-top: 3px;
+  text-align: center;
+  color: #000000;/* text colour for h1 heading */
+  font-weight: bold;
+}
 
 /* === PAGE SECTION 1 STYLES === */
 /* Main section styles with 3px spacing below navbar */
@@ -22,7 +29,6 @@ h1, h2, p {
   margin-top: 0.4rem;
   margin-bottom: 1rem;
   padding: 6px;
-  text-align: center;
 }
 
 /* === CONTENT WRAPPER STYLES === */
@@ -36,6 +42,9 @@ h1, h2, p {
   align-items: flex-start;
   gap: 0.8rem;
   width: 100%;
+}
+.content-1-wrapper p {
+  text-align: center;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
