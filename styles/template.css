@@ -8,6 +8,7 @@ overridden by media queries. === */
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
+/* === YOUR MOBILE LANDSCAPE HERE === */
 /* === PAGE HEADING H1 STYLES === */
 /* Main heading styles with 3px spacing below navbar */
 .page-heading {
@@ -48,6 +49,7 @@ h1, h2, p {
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
+/* === YOUR MOBILE AND TABLET PORTRAIT HERE (< 768px) === */
 /* Mobile-first approach with percentage-based layouts */
 
 /* === MOBILE PORTRAIT (< 768px) === */
@@ -67,7 +69,7 @@ h1, h2, p {
   }
 }
 
-/* === TABLET PORTRAIT (768px+) === */
+/* === TABLET PORTRAIT ? (768px+) === */
 /* === screens 768px or larger ===*/
 @media (min-width: 768px) {
   .content-1-wrapper {
@@ -97,7 +99,7 @@ h1, h2, p {
   }
 }
 
-/* === SMALL DESKTOP (992px+) === */
+/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
 /* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
   .content-1-wrapper {
@@ -113,8 +115,7 @@ h1, h2, p {
     padding: 1.2rem;
   }
 }
-
-/* === LARGE DESKTOP (1200px+) === */
+/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
 /* === screens 1200px or larger in width ===*/
 @media (min-width: 1200px) {
   .content-1-wrapper {

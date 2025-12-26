@@ -5,6 +5,7 @@
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
+/* === YOUR MOBILE LANDSCAPE HERE === */
 
 /* === PAGE HEADING H1 STYLES === */
 /* Main heading styles with 3px spacing below navbar */
@@ -33,11 +34,11 @@ h1, h2, p {
 /* === CONTENT WRAPPER STYLES === */
 .image-1-wrapper {
   max-width: 1200px;  /* Limit max width for better readability */
-  width: 400px;
+  width: 440px;
   height: auto;
 }
 .image-1-wrapper img {
-  width: 400px;
+  width: 440px;
   height: auto;
 }
 .image-1-wrapper p {
@@ -45,20 +46,40 @@ h1, h2, p {
   padding-top: 1.5rem;
 }
 .google-iframe-wrapper {
-  width: 400px;
+  width: 440px;
   height: 380px;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
 /* Mobile-first approach with percentage-based layouts */
 
-/* === MOBILE PORTRAIT (< 768px) === */
+/* === YOUR MOBILE AND TABLET PORTRAIT HERE (< 768px) === */
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
- 
+  .image-1-wrapper {
+    width: 370px;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .image-1-wrapper img {
+    width: 370px;
+    height: auto;
+}
+.google-iframe-wrapper {
+  width: 370px;
+  height: 480px;
+}
+  
+  .page-heading {
+    padding: 3px;
+  }
+  
+  .section1 {
+    padding: 5px;
+  }
 }
 
-/* === TABLET PORTRAIT (768px+) === */
+/* === TABLET PORTRAIT ? (768px+) === */
 /* === screens 768px or larger ===*/
 @media (min-width: 768px) {
   .image-1-wrapper {
@@ -106,7 +127,7 @@ h1, h2, p {
   }
 }
 
-/* === SMALL DESKTOP (992px+) === */
+/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
 /* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
   .image-1-wrapper {
@@ -132,7 +153,7 @@ h1, h2, p {
   }
 }
 
-/* === LARGE DESKTOP (1200px+) === */
+/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
 /* === screens 1200px or larger in width ===*/
 @media (min-width: 1200px) {
   .image-1-wrapper {
