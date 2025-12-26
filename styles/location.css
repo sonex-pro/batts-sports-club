@@ -6,6 +6,9 @@ h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
 /* === YOUR MOBILE LANDSCAPE HERE === */
+body {
+    background-color: #f5f5f5;/* off white*/
+}
 
 /* === PAGE HEADING H1 STYLES === */
 /* Main heading styles with 3px spacing below navbar */
@@ -56,17 +59,17 @@ h1, h2, p {
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .image-1-wrapper {
-    width: 300px;
+    width: 100%;
     height: auto;
     padding: 0.5rem;
   }
   .image-1-wrapper img {
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 .google-iframe-wrapper {
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  height: 375px;
 }
   
   .page-heading {
