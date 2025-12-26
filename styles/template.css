@@ -50,9 +50,7 @@ h1, h2, p {
 
 /* === RESPONSIVE BREAKPOINTS === */
 /* === YOUR MOBILE AND TABLET PORTRAIT HERE (< 768px) === */
-/* Mobile-first approach with percentage-based layouts */
 
-/* === MOBILE PORTRAIT (< 768px) === */
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .content-1-wrapper {
