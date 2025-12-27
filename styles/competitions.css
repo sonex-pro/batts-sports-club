@@ -1,0 +1,222 @@
+/* === Mobile-First design (code for smaller screens first) ===*/
+/* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
+
+/* h1 h2 and p colours are set here and not in base.css */
+/* h1 h2 and p sizes are set in base.css */
+h1, h2, p {
+  color: #000000;/* if no colours are set in the file this will be the default colour */
+}
+/* === YOUR MOBILE LANDSCAPE HERE === */
+/* === PAGE HEADING H1 STYLES === */
+/* Main heading styles with 3px spacing below navbar */
+.page-heading {
+  margin-top: 3px;
+  text-align: center;
+  color: #000000;/* text colour for h1 heading */
+  font-weight: bold;
+}
+
+/* Main section */
+
+/* Wrapper */
+
+.wrapper-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  background: transparent;
+}
+
+/* Card */
+
+.card {
+  width: 370px;
+  height: 280px;
+  background: transparent;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+
+.card-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Inner flex layout */
+
+.card-inner {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+}
+
+/* Left side */
+
+.card-left {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+/* Right side */
+
+.card-right {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* Image */
+
+.card-image {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+/* Button */
+
+.button-secondary {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+
+  background: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+
+  padding: 3px 4px 3px 4px;
+
+  display: inline-block;
+  cursor: pointer;
+
+  transition: 
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* Hover (mouse interaction) */
+.button-secondary:hover {
+  background: #111111;
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.25);
+}
+
+/* Focus (keyboard + accessibility) */
+.button-secondary:focus,
+.button-secondary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #000000;
+}
+
+/* Active / pressed */
+.button-secondary:active {
+  transform: scale(0.97);
+  background: #000000;
+  box-shadow: none;
+}
+
+/* Disabled support */
+.button-secondary[disabled],
+.button-secondary.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+/* === YOUR MOBILE AND TABLET PORTRAIT HERE (< 768px) === */
+
+/* === screens smaller than 768px in width === */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .competitions-card-wrapper {
+    gap: 0.8rem;
+  }
+  
+  .page-heading {
+    padding: 3px;
+  }
+  
+  .section1 {
+    padding: 5px;
+  }
+}
+
+/* === TABLET PORTRAIT ? (768px+) === */
+/* === screens 768px or larger ===*/
+@media (min-width: 768px) {
+  .competitions-card-wrapper {
+    gap: 1rem;
+  }
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+  .section1 {
+    padding: 1rem;
+  }
+}
+
+/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
+/* === screens 768px or larger but not exceeding 1024px in width ===*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .competitions-card-wrapper {
+    gap: 1rem;
+  }
+  
+  .section1 {
+    padding: 1rem;
+  }
+}
+
+/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
+/* === screens 992px or larger in width ===*/
+@media (min-width: 992px) {
+  .competitions-card-wrapper {
+    gap: 1rem;
+  }
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+  .section1 {
+    padding: 1.2rem;
+  }
+}
+/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
+/* === screens 1200px or larger in width ===*/
+@media (min-width: 1200px) {
+  .competitions-card-wrapper {
+    gap: 1rem;
+  }
+  
+  .page-heading {
+    padding: 1rem;
+  }
+  
+  .section1 {
+    padding: 1.8rem;
+  }
+}

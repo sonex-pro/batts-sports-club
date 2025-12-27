@@ -35,7 +35,6 @@ h1, h2, p {
 /* === CONTENT WRAPPER STYLES === */
 .content-1-wrapper {
   max-width: 1200px;  /* Limit max width for better readability */
-  width: 100%;
   margin: 0 auto; /* Center the content */
   display: flex;
   flex-wrap: wrap;
