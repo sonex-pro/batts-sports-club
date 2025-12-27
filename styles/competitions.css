@@ -88,60 +88,27 @@ h1, h2, p {
 
 /* Button */
 
+/* Hover (mouse interaction) */
 .button-secondary {
-  font-family: "Roboto", sans-serif;
+  display: block;
+  padding: 3px 4px;
+  width: 146px;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.2rem;
-
-  color: #ffffff;
   text-align: center;
-  text-decoration: none;
-
-  background: #000000;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-
-  padding: 3px 4px 3px 4px;
-
-  display: inline-block;
-  cursor: pointer;
-
-  transition: 
-    background 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.1s ease;
+  color: #ffffff;
+  background-color: black;
+  border-radius: 8px;
+  border: 1px solid #ffffff; /* mid blue */
+  transition: transform 0.3s ease;
 }
 
-/* Hover (mouse interaction) */
 .button-secondary:hover {
-  background: #111111;
-  border-color: #ffffff;
-  box-shadow: 0 0 10px rgba(255,255,255,0.25);
-}
-
-/* Focus (keyboard + accessibility) */
-.button-secondary:focus,
-.button-secondary:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #000000;
-}
-
-/* Active / pressed */
-.button-secondary:active {
-  transform: scale(0.97);
-  background: #000000;
-  box-shadow: none;
-}
-
-/* Disabled support */
-.button-secondary[disabled],
-.button-secondary.is-disabled {
-  opacity: 0.5;
-  pointer-events: none;
-  cursor: default;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
