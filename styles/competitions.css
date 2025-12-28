@@ -23,7 +23,7 @@ h1, h2, p {
 
 .wrapper-flex {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
   padding: 24px;
   justify-content: center;
@@ -93,6 +93,7 @@ h1, h2, p {
 
 .card-left p {
   margin-top: auto; /* Pushes the paragraph to the bottom of the card */
+  padding-left: 16px;
 }
 
 /* Button */
@@ -203,9 +204,6 @@ h1, h2, p {
 /* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
 
-  .card-left p {
-  margin-top: auto;
-}
 
   .card {
     width: 380px;
@@ -239,9 +237,6 @@ h1, h2, p {
 /* === screens 1200px or larger in width ===*/
 @media (min-width: 1200px) {
 
-  .card-left p {
-  margin-top: auto;
-}
 
   .card {
     width: 380px;
