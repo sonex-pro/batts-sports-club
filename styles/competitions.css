@@ -15,6 +15,7 @@ h1, h2, p {
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
+  color: #008080;
 }
 
 /* Main section */
@@ -29,6 +30,7 @@ h1, h2, p {
   justify-content: center;
   align-items: flex-start;
   background: transparent;
+  margin-top: 5px;
 }
 
 /* Card */
@@ -36,7 +38,7 @@ h1, h2, p {
 .card {
   display:flex;
   width: 345px;
-  height: 280px;
+  height: 260px;
   background: transparent;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
   padding: 16px;
@@ -49,6 +51,7 @@ h1, h2, p {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 12px;
+  color: #008080;
 }
 
 /* Inner flex layout */
@@ -66,7 +69,7 @@ h1, h2, p {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  width: 158px;
+  width: 150px;
   font-size: 0.9rem;
   line-height: 1.2rem;
 }
@@ -134,13 +137,13 @@ h1, h2, p {
 
   .card {
     width: 345px;
-    height: 280px;
+    height: 260px;
   }
   .card-header {
     font-size: 1.1rem;
   }
   .card-left {
-  width: 158px;
+  width: 150px;
   font-size: 0.9rem;
   line-height: 1.2rem;
 }
