@@ -34,12 +34,12 @@ h1, h2, p {
 /* Card */
 
 .card {
+  display:flex;
   width: 345px;
   height: 280px;
   background: transparent;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
   padding: 16px;
-  display: flex;
   flex-direction: column;
 }
 
@@ -62,7 +62,11 @@ h1, h2, p {
 /* Left side */
 
 .card-left {
-  flex: 1;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 158px;
   font-size: 0.9rem;
   line-height: 1.2rem;
 }
@@ -70,7 +74,7 @@ h1, h2, p {
 /* Right side */
 
 .card-right {
-  width: 140px;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,15 +85,21 @@ h1, h2, p {
 /* Image */
 
 .card-image {
-  width: 120px;
+  
+  width: 110px;
   height: auto;
   display: block;
+}
+
+.card-left p {
+  margin-top: auto; /* Pushes the paragraph to the bottom of the card */
 }
 
 /* Button */
 
 /* Hover (mouse interaction) */
 .button-secondary {
+  margin-top: auto; /* Pushes the button to the bottom of the card */
   display: block;
   padding: 3px 4px;
   width: 146px;
@@ -116,6 +126,31 @@ h1, h2, p {
 
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
+
+  .card-left p {
+  margin-top: auto;
+}
+
+  .card {
+    width: 345px;
+    height: 280px;
+  }
+  .card-header {
+    font-size: 1.1rem;
+  }
+  .card-left {
+  width: 158px;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.card-right {
+  width: auto;
+}
+.card-image {
+  max-width: 110px;
+}
+
+  
   .competitions-card-wrapper {
     gap: 0.8rem;
   }
@@ -124,14 +159,19 @@ h1, h2, p {
     padding: 3px;
   }
   
-  .section1 {
-    padding: 5px;
-  }
 }
 
 /* === TABLET PORTRAIT ? (768px+) === */
 /* === screens 768px or larger ===*/
 @media (min-width: 768px) {
+
+  .card-left p {
+  margin-top: auto;
+}
+
+  .card-image {
+  max-width: 100%;
+}
   .competitions-card-wrapper {
     gap: 1rem;
   }
@@ -140,26 +180,32 @@ h1, h2, p {
     padding: 0.8rem;
   }
   
-  .section1 {
-    padding: 1rem;
-  }
 }
 
 /* === TABLET LANDSCAPE (768px-1024px, landscape) === */
 /* === screens 768px or larger but not exceeding 1024px in width ===*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .competitions-card-wrapper {
-    gap: 1rem;
+
+    .card-left p {
+  margin-top: auto;
+}
+  
+  .card-image {
+    max-width: 100%;
   }
   
-  .section1 {
-    padding: 1rem;
+  .competitions-card-wrapper {
+    gap: 1rem;
   }
 }
 
 /* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
 /* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
+
+  .card-left p {
+  margin-top: auto;
+}
 
   .card {
     width: 380px;
@@ -169,14 +215,15 @@ h1, h2, p {
     font-size: 1.6rem;
   }
     .card-left {
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+  width: 170px;
+  font-size: 1.075rem;
+  line-height: 1.2rem;
 }
 .card-right {
-  width: 150px;
+  width: auto;
 }
 .card-image {
-  width: 130px;
+  max-width: 100%;
 }
   
   .competitions-card-wrapper {
@@ -187,13 +234,14 @@ h1, h2, p {
     padding: 0.8rem;
   }
   
-  .section1 {
-    padding: 1.2rem;
-  }
 }
 /* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
 /* === screens 1200px or larger in width ===*/
 @media (min-width: 1200px) {
+
+  .card-left p {
+  margin-top: auto;
+}
 
   .card {
     width: 380px;
@@ -203,14 +251,15 @@ h1, h2, p {
     font-size: 1.6rem;
   }
   .card-left {
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+  width: 170px;
+  font-size: 1.075rem;
+  line-height: 1.2rem;
 }
 .card-right {
-  width: 150px;
+  width: auto;
 }
 .card-image {
-  width: 130px;
+  max-width: 100%;
 }
 
   .competitions-card-wrapper {
@@ -221,7 +270,4 @@ h1, h2, p {
     padding: 1rem;
   }
   
-  .section1 {
-    padding: 1.8rem;
-  }
 }
