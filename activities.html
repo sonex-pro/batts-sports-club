@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATTS Activities</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/design-credit.css"> <!--my name and my contact email-->
+  
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-images/favicon-16x16.png">
+  <link rel="icon" href="images/favicon-images/favicon-32x32.png">
+
+  <!-- JavaScript files -->
+  <script src="components/component-loader.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="styles/activities.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar component -->
+    <div id="navbar-container" data-component="navbar"></div>
+    
+    <!-- Main heading - positioned 3px below navbar -->
+    <h1 class="page-heading">BATTS Activities</h1>
+  </header>
+
+  <main class="outer-activity-wrapper">
+
+  <p class="top-text">
+    Top activity overview text
+  </p>
+
+  <!-- CARD 1 -->
+  <div class="class-card">
+
+    <div class="left-description">
+      <h2 class="activity-title">Activity Title 1</h2>
+
+      <p class="activity-text">
+        This is a rich text description for activity one.  
+        <span class="price-label">Price:</span>
+        <span class="price-amount">£15</span>
+      </p>
+    </div>
+
+    <div class="image-right-side">
+      <!-- Add image if needed -->
+    </div>
+
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="class-card">
+
+    <div class="left-description">
+      <h2 class="activity-title">Activity Title 2</h2>
+
+      <p class="activity-text">
+        Description text for activity two.  
+        <span class="price-label">Price:</span>
+        <span class="price-amount">£15</span>
+      </p>
+    </div>
+
+    <div class="image-right-side"></div>
+
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="class-card">
+
+    <div class="left-description">
+      <h2 class="activity-title">Activity Title 3</h2>
+
+      <p class="activity-text">
+        Description text for activity three.  
+        <span class="price-label">Price:</span>
+        <span class="price-amount">£15</span>
+      </p>
+    </div>
+
+    <div class="image-right-side"></div>
+
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="class-card">
+
+    <div class="left-description">
+      <h2 class="activity-title">Activity Title 4</h2>
+
+      <p class="activity-text">
+        Description text for activity four.  
+        <span class="price-label">Price:</span>
+        <span class="price-amount">£15</span>
+      </p>
+    </div>
+
+    <div class="image-right-side"></div>
+
+  </div>
+
+</main>
+  
+  <footer>
+    <!-- Footer component -->
+    <div id="footer-container" data-component="footer"></div>
+    <!-- Design Credit component edit in styles/design-credit.css -->
+    <div id="design-credit-container" data-component="design-credit"></div>
+  </footer>
+</body>
+</html>

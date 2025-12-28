@@ -1,0 +1,186 @@
+/* === Mobile-First design (code for smaller screens first) ===*/
+/* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
+
+/* h1 h2 and p colours are set here and not in base.css */
+/* h1 h2 and p sizes are set in base.css */
+h1, h2, p {
+  color: #000000;/* if no colours are set in the file this will be the default colour */
+}
+/* === YOUR MOBILE LANDSCAPE HERE === */
+/* === PAGE HEADING H1 STYLES === */
+/* Main heading styles with 3px spacing below navbar */
+
+/* Override body background color for index page */
+body {
+  background-color: #d0e5ee !important; /* off blue theme */
+}
+.page-heading {
+  margin-top: 4px;
+  text-align: center;
+  color: red;/* text colour for h1 heading */
+  font-weight: bold;
+}
+
+/* OUTER WRAPPER — flex column layout for page content */
+.outer-activity-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: transparent;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* TOP TEXT (not inside a card) */
+.top-text {
+  background: #a0aebc;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  height: 1.4rem;
+  width: 100%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
+  padding: 6px 10px;
+}
+
+/* CARD WRAPPER — contains left text + right image */
+.class-card {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 12px;
+}
+
+/* LEFT CONTENT PANEL */
+.left-description {
+  display: flex;
+  flex-direction: column;
+  background: #a0aebc;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
+  padding: 12px;
+
+  /*
+    flex: 1 1 300px;
+    flex-grow:   1 → allows this panel to expand if space is available
+    flex-shrink: 1 → allows it to shrink on small screens
+    flex-basis: 300px → preferred starting width
+    RESULT: responsive panel that starts at 300px and adjusts as needed
+  */
+  flex: 1 1 300px;
+}
+
+/* ACTIVITY TITLE */
+.activity-title {
+  color: red;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  height: 1.4rem;
+  margin: 0 0 8px;
+}
+
+/* MAIN DESCRIPTION TEXT */
+.activity-text {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: black; /* default text colour (reinforced here for clarity) */
+  margin: 0;
+}
+
+/*
+  PRICE LABEL + AMOUNT
+  These are inside <span> tags because span = inline element
+  It lets us style only parts of the sentence without breaking lines
+*/
+.price-label {
+  color: black; /* "Price:" text remains black */
+}
+
+.price-amount {
+  color: red;   /* £15 shown in red */
+}
+
+/* IMAGE PANEL (right side of card) */
+.image-right-side {
+  width: 450px;
+  height: 335px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
+  background: #e5e5e5; /* placeholder background */
+  flex-shrink: 0;      /* prevents image panel from shrinking */
+}
+
+
+/* === RESPONSIVE BREAKPOINTS === */
+/* === YOUR MOBILE AND TABLET PORTRAIT HERE (< 768px) === */
+
+/* === screens smaller than 768px in width === */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .content-1-wrapper {
+    width: 95%;
+    padding: 0.5rem;
+  }
+  
+  .page-heading {
+    padding: 3px;
+  }
+  
+}
+
+/* === TABLET PORTRAIT ? (768px+) === */
+/* === screens 768px or larger ===*/
+@media (min-width: 768px) {
+  .content-1-wrapper {
+    width: 90%;
+    gap: 1.5rem;
+  }
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+
+}
+
+/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
+/* === screens 768px or larger but not exceeding 1024px in width ===*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content-1-wrapper {
+    width: 85%;
+    gap: 1.5rem;
+  }
+  
+}
+
+/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
+/* === screens 992px or larger in width ===*/
+@media (min-width: 992px) {
+  .content-1-wrapper {
+    width: 85%;
+    gap: 2rem;
+  }
+  
+  .page-heading {
+    padding: 0.8rem;
+  }
+  
+}
+/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
+/* === screens 1200px or larger in width ===*/
+@media (min-width: 1200px) {
+  .content-1-wrapper {
+    width: 80%;
+    gap: 2rem;
+  }
+  
+  .page-heading {
+    padding: 1rem;
+  }
+  
+}

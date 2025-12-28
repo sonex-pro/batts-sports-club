@@ -10,9 +10,9 @@ h1, h2, p {
 }
 /* === YOUR MOBILE LANDSCAPE HERE === */
 /* === PAGE HEADING H1 STYLES === */
-/* Main heading styles with 3px spacing below navbar */
+/* Main heading styles with 4px spacing below navbar */
 .page-heading {
-  margin-top: 3px;
+  margin-top: 4px;
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
