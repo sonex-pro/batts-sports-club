@@ -150,6 +150,20 @@ body {
 
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
+
+  .left-description {
+    width:  100%;
+    height: auto;
+  }
+  .image-right-side {
+    width: 100%;
+    height: auto;
+  }
+  .image-right-side img {
+    width: 100%;
+    height: auto;
+  }
+  
   .content-1-wrapper {
     width: 95%;
     padding: 0.5rem;
