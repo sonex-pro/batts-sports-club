@@ -104,8 +104,8 @@ body {
 .activity-text {
   font-family: "Merriweather", serif;
   font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
   color: black; /* default text colour (reinforced here for clarity) */
   margin: 0;
 }
@@ -123,8 +123,8 @@ body {
   color: #bb3f3f;/* colour dull red */
   font-weight: bold;
   font-family: "Merriweather", serif;
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
 }
 
 /* DIV BLOCK IMAGE WRAPPER (right side of card) aspect ratio 1.333*/
@@ -215,6 +215,14 @@ body {
     line-height: 1.6rem;
     margin-bottom: 15px;
 }
+.activity-text {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.price-amount {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
   
 }
 /* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
@@ -236,5 +244,13 @@ body {
     font-size: 1.5rem;
     line-height: 1.6rem;
     margin-bottom: 15px;
+}
+.activity-text {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.price-amount {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
 }
 }
