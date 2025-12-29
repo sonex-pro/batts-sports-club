@@ -30,7 +30,7 @@ body {
 .outer-activity-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
   background: transparent;
   max-width: 1200px;
   width: 100%;
@@ -99,7 +99,7 @@ body {
   text-align: center;
 }
 
-/* MAIN DESCRIPTION TEXT */
+/* DESCRIPTION TEXT IN CARD */
 .activity-text {
   font-family: "Merriweather", serif;
   font-weight: 700;
@@ -126,7 +126,8 @@ body {
   line-height: 1.6rem;
 }
 
-/* IMAGE PANEL (right side of card) aspect ratio 1.333*/
+/* DIV BLOCK IMAGE WRAPPER (right side of card) aspect ratio 1.333*/
+/* SET .image-right-side img THE SAME SIZE*/
 .image-right-side {
   width: 450px;
   height: 337px;
@@ -138,7 +139,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+/* aspect ratio 1.333 */
+.image-right-side img {
+  width: 450px;
+  height: 337px;
+}
 
 /* === RESPONSIVE BREAKPOINTS === */
 /* === YOUR MOBILE AND TABLET PORTRAIT HERE (< 768px) === */
