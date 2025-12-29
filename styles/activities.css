@@ -130,8 +130,8 @@ body {
 /* DIV BLOCK IMAGE WRAPPER (right side of card) aspect ratio 1.333*/
 /* SET .image-right-side img THE SAME SIZE*/
 .image-right-side {
-  width: 450px;
-  height: 337px;
+  width: 100%;
+  height: auto;
   padding: 12px 20px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
   background: #e5e5e5; /* placeholder background */
@@ -142,8 +142,8 @@ body {
 }
 /* aspect ratio 1.333 */
 .image-right-side img {
-  width: 450px;
-  height: 337px;
+  width: 100%;
+  height: auto;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
