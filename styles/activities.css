@@ -126,10 +126,10 @@ body {
   line-height: 1.6rem;
 }
 
-/* IMAGE PANEL (right side of card) */
+/* IMAGE PANEL (right side of card) aspect ratio 1.333*/
 .image-right-side {
   width: 450px;
-  height: 335px;
+  height: 337px;
   padding: 12px 20px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
   background: #e5e5e5; /* placeholder background */
