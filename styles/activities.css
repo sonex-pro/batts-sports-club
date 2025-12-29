@@ -21,8 +21,8 @@ body {
   color: #bb3f3f;/* text colour dull red for h1 heading */
   font-weight: bold;
   font-family: "Merriweather", serif;
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
   margin-bottom: 10px;
 }
 
@@ -94,9 +94,9 @@ body {
   color: #bb3f3f;/* text colour dull red */
   font-family: "Merriweather", serif;
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.6rem;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -209,6 +209,12 @@ body {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }
+
+  .activity-title {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin-bottom: 15px;
+}
   
 }
 /* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
@@ -220,8 +226,15 @@ body {
     line-height: 2.4rem;
     margin-bottom: 20px;
   }
+
 .top-text {
   font-size: 1.2rem;
   line-height: 1.6rem;
+}
+
+.activity-title {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin-bottom: 15px;
 }
 }
