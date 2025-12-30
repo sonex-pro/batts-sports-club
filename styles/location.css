@@ -5,13 +5,14 @@
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
-/* === YOUR MOBILE LANDSCAPE HERE === */
+
 body {
     background-color: #f5f5f5;/* off white*/
 }
+/* === ***** YOUR HONOR MOBILE "LANDSCAPE" HERE, NOT PORTRAIT ***** === */
 
-/* === PAGE HEADING H1 STYLES === */
-/* Main heading styles with 3px spacing below navbar */
+ /* === PAGE HEADING H1 STYLES === */
+
 .page-heading {
   margin-top: 3px;
   text-align: center;
@@ -55,7 +56,7 @@ body {
 
 /* === RESPONSIVE BREAKPOINTS === */
 
-/* === YOUR MOBILE AND TABLET PORTRAIT HERE (< 768px) === */
+/* === YOUR HONOR MOBILE PORTRAIT HERE (< 768px) === */
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .image-1-wrapper {

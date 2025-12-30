@@ -21,111 +21,177 @@ h1, h2, p {
 
 /* === PAGE SECTION 1 STYLES === */
 /* Main section styles with 3px spacing below navbar */
-.section1  {
+
+/* MAIN WRAPPER */
+.outer-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  gap: 0.8rem;
+
+  gap: 0;
   width: 100%;
-  margin-top: 0.4rem;
-  margin-bottom: 1rem;
-  padding: 6px;
+  margin-top: 14px;
+  background: transparent;
 }
 
-/* === CONTENT WRAPPER STYLES === */
-.content-1-wrapper {
-  max-width: 1200px;  /* Limit max width for better readability */
-  margin: 0 auto; /* Center the content */
+/* CARD */
+.card {
+  background: #00a5e3;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.8rem;
-  width: 100%;
+
+  width: 90%;
+  gap: 30px;
+
+  border: 2px solid #fff;
+  border-radius: 5px;
+
+  padding: 10px;
 }
-.content-1-wrapper p {
-  text-align: center;
+
+/* IMAGE */
+.image-left-side {
+  width: 117px;
+  height: 129px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  background: transparent;
+  border-radius: 50vh;
+  border: none;
+
+  object-fit: cover;
 }
+
+/* LEFT COLUMN WRAPPER */
+.left-wrapper {
+  display: block;
+  background: transparent;
+  flex: 1;
+}
+
+/* PLAYER NAME */
+.player-name {
+  margin-top: 3px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+
+  color: black;
+  text-align: left;
+}
+
+/* ABOUT COACH TEXT */
+.about-coach {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+
+  color: white;
+
+  font-size: 1rem;
+  line-height: 1.4rem;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* BUTTON WRAPPER */
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  gap: 30px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* BUTTONS */
+.read-more,
+.contact-coach {
+  background: black;
+
+  border: 1px solid white;
+  border-radius: 10px;
+
+  padding: 2px 5px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+
+  color: white;
+
+  font-size: 1rem;
+  line-height: 1.4rem;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 /* === RESPONSIVE BREAKPOINTS === */
 /* === ***** YOUR HONOR MOBILE AND  PORTRAIT HERE (< 768px) ***** === */
 
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
-  .content-1-wrapper {
-    width: 95%;
-    padding: 0.5rem;
-  }
+ 
   
   .page-heading {
     padding: 3px;
   }
   
-  .section1 {
-    padding: 5px;
-  }
 }
 
 /* === TABLET PORTRAIT ? (768px+) === */
 /* === screens 768px or larger ===*/
 @media (min-width: 768px) {
-  .content-1-wrapper {
-    width: 90%;
-    gap: 1.5rem;
-  }
+
   
   .page-heading {
     padding: 0.8rem;
   }
   
-  .section1 {
-    padding: 1rem;
-  }
-}
 
 /* === TABLET LANDSCAPE (768px-1024px, landscape) === */
 /* === screens 768px or larger but not exceeding 1024px in width ===*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .content-1-wrapper {
-    width: 85%;
-    gap: 1.5rem;
-  }
+
   
-  .section1 {
-    padding: 1rem;
-  }
+
 }
 
 /* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
 /* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
-  .content-1-wrapper {
-    width: 85%;
-    gap: 2rem;
-  }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-  
-  .section1 {
-    padding: 1.2rem;
-  }
-}
-/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
-/* === screens 1200px or larger in width ===*/
-@media (min-width: 1200px) {
-  .content-1-wrapper {
-    width: 80%;
-    gap: 2rem;
-  }
+ 
   
   .page-heading {
     padding: 1rem;
   }
   
-  .section1 {
-    padding: 1.8rem;
+}
+/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
+/* === screens 1200px or larger in width ===*/
+@media (min-width: 1200px) {
+
+  
+  .page-heading {
+    padding: 1rem;
   }
+  
 }
