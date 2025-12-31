@@ -113,8 +113,9 @@ h1, h2, p {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
+/* Contact + Read More buttons share the same style */
 /* BUTTONS */
+
 .read-more,
 .contact-coach {
   background: black;
