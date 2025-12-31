@@ -118,11 +118,11 @@ h1, h2, p {
   background-color: black;
   border-radius: 8px;
   border: 1px solid #ffffff;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Adds a smooth jump hover effect */
 }
 
 .button-secondary:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Pushes the button up when hovered */
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 

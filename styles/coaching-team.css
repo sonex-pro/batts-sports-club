@@ -51,18 +51,16 @@ h1, h2, p {
   padding: 10px;
 }
 
-/* IMAGE */
+/* IMAGE RATIO 1.1569 */
 .image-left-side {
-  width: 117px;
-  height: 129px;
-
+  width: 120px;
+  height: 139px;
   padding-top: 4px;
   padding-bottom: 4px;
-
   background: transparent;
   border-radius: 50vh;
   border: none;
-
+  overflow: hidden;
   object-fit: cover;
 }
 
@@ -118,23 +116,27 @@ h1, h2, p {
 
 .read-more,
 .contact-coach {
-  background: black;
 
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+  display: block;
+  background: black;
   border: 1px solid white;
   border-radius: 10px;
-
   padding: 2px 5px;
-
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-
   color: white;
-
   font-size: 1rem;
   line-height: 1.4rem;
-
+  text-align: center;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 0.3s ease; /* Adds a smooth jump hover effect */
+}
+.read-more:hover,
+.contact-coach:hover {
+  transform: translateY(-5px); /* Pushes the button up when hovered */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 
@@ -150,6 +152,13 @@ h1, h2, p {
 
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {
+
+   .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
  
   
   .page-heading {
@@ -179,7 +188,11 @@ h1, h2, p {
 /* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
 /* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
- 
+
+   .card {
+    width: 70%;
+  }
+
   
   .page-heading {
     padding: 1rem;
@@ -189,6 +202,10 @@ h1, h2, p {
 /* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
 /* === screens 1200px or larger in width ===*/
 @media (min-width: 1200px) {
+
+  .card {
+    width: 70%;
+  }
 
   
   .page-heading {
