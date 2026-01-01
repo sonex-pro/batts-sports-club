@@ -8,7 +8,7 @@ overridden by media queries. === */
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
-/* === ***** YOUR HONOR MOBILE "LANDSCAPE" HERE, NOT PORTRAIT ***** === */
+ /* === ***** YOUR HONOR MOBILE "LANDSCAPE" HERE, NOT PORTRAIT ***** === */
 
  /* === PAGE HEADING H1 STYLES === */
 
@@ -19,10 +19,10 @@ h1, h2, p {
   font-weight: bold;
 }
 
-/* === PAGE SECTION 1 STYLES === */
-/* Main section styles with 3px spacing below navbar */
+ /* === PAGE SECTION 1 STYLES === */
+ /* Main section styles with 3px spacing below navbar */
 
-/* MAIN WRAPPER */
+ /* MAIN WRAPPER */
 .outer-wrapper {
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ h1, h2, p {
   background: transparent;
 }
 
-/* CARD */
+ /* CARD */
 .card {
   background: #00a5e3;
   display: block;
@@ -45,14 +45,14 @@ h1, h2, p {
   padding: 10px;
 }
 
-/* IMAGE WRAPPER */
+ /* IMAGE WRAPPER */
 
 .image-left-wrapper {
   display: block;
 }
 
-/* IMAGE RATIO 1.0 make image square */
-/* CIRCLE IMAGE AND FLOAT TO THE RIGHT SIDE OF THE CARD */
+ /* IMAGE RATIO 1.0 make image square */
+ /* CIRCLE IMAGE AND FLOAT TO THE RIGHT SIDE OF THE CARD */
 
 .image-left-side {
   display: block;
@@ -69,13 +69,13 @@ h1, h2, p {
 }
 
 
-/* LEFT COLUMN WRAPPER */
+ /* LEFT COLUMN WRAPPER */
 .left-wrapper {
   display: block;
   background: transparent;
 }
 
-/* PLAYER NAME */
+ /* PLAYER NAME */
 .player-name {
   margin-top: 3px;
 
@@ -90,7 +90,7 @@ h1, h2, p {
   text-align: left;
 }
 
-/* ABOUT COACH TEXT */
+ /* ABOUT COACH TEXT */
 .about-coach {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -102,7 +102,7 @@ h1, h2, p {
   padding-bottom: 6px;
 }
 
-/* BUTTON WRAPPER */
+ /* BUTTON WRAPPER */
 .button-wrapper {
   display: flex;
   flex-direction: row;
@@ -111,8 +111,8 @@ h1, h2, p {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* Contact + Read More buttons share the same style */
-/* BUTTONS */
+ /* Contact + Read More buttons share the same style */
+ /* BUTTONS */
 
 .read-more,
 .contact-coach {
@@ -139,23 +139,22 @@ h1, h2, p {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* === RESPONSIVE BREAKPOINTS === */
+ /* === RESPONSIVE BREAKPOINTS === */
 
-/* === TABLET PORTRAIT ? (768px+) === */
-/* === screens 768px or larger ===*/
+ /* === TABLET PORTRAIT ? (768px+) === */
+ /* === screens 768px or larger ===*/
 @media (min-width: 768px) {
 
 
-
-/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
-/* === screens 768px or larger but not exceeding 1024px in width ===*/
+ /* === TABLET LANDSCAPE (768px-1024px, landscape) === */
+ /* === screens 768px or larger but not exceeding 1024px in width ===*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
  
 
 }
 
-/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
-/* === screens 992px or larger in width ===*/
+ /* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
+ /* === screens 992px or larger in width ===*/
 @media (min-width: 992px) {
 
    .card {
