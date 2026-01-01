@@ -52,17 +52,30 @@ h1, h2, p {
 }
 
 /* IMAGE RATIO 1.1569 */
-.image-left-side {
+/* CIRCLE MASK */
+.image-left-wrapper {
   width: 120px;
   height: 139px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background: transparent;
+
   border-radius: 50vh;
-  border: none;
   overflow: hidden;
-  object-fit: cover;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* IMAGE SIZING — THIS IS KEY */
+/* The image inside the circular mask should fill the wrapper while maintaining aspect ratio */
+/* It will be cropped to fit the circular mask while keeping the subject centered */
+.image-left-side {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center; /* Center the image (face in the middle) */
+  padding: 30px;
+}
+
 
 /* LEFT COLUMN WRAPPER */
 .left-wrapper {
