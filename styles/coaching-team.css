@@ -52,12 +52,12 @@ h1, h2, p {
 }
 
 /* IMAGE RATIO 1.0 make image square */
-/* CIRCLE IMAGE */
+/* CIRCLE IMAGE AND FLOAT TO THE RIGHT SIDE OF THE CARD */
 
 .image-left-side {
   display: block;
   position: static;
-  float: right;
+  float: right; /* Float image to the right */
   width: 110px;
   height: 110px;
   margin: 4px 5px 4px 0px;
@@ -173,13 +173,12 @@ h1, h2, p {
    height:200px;
   }
 
-  
 }
   /* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
   /* === screens 1200px or larger in width ===*/
 @media (min-width: 1200px) {
 
-    .card {
+  .card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -187,21 +186,21 @@ h1, h2, p {
     gap: 10px;
     width: 60%;
   }
+  
   /* IMAGE WRAPPER */
+  .image-left-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
-.image-left-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
   /* IMAGE RATIO 1.0 make image square */
   /* CIRCLE IMAGE */
-  
   .image-left-side {
-  width: 200px;
-  height: 200px;
+    width: 160px;
+    height: 160px;
   }
 
 }
