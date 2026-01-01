@@ -49,7 +49,7 @@ h1, h2, p {
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
-/* === ***** YOUR HONOR MOBILE AND  PORTRAIT HERE (< 768px) ***** === */
+/* === ***** YOUR HONOR MOBILE PORTRAIT HERE (< 768px) ***** === */
 
 /* === screens smaller than 768px in width === */
 @media screen and (max-width: 767px) and (orientation: portrait) {

@@ -64,8 +64,8 @@ h1, h2, p {
 /* CIRCLE IMAGE */
 
 .image-left-side {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   background: transparent;
   border-radius: 50vh; /* first create image as a square, this makes image circle */
   border: none;
@@ -150,30 +150,6 @@ h1, h2, p {
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
-/* === ***** YOUR HONOR MOBILE AND  PORTRAIT HERE (< 768px) ***** === */
-
-/* === screens smaller than 768px in width === */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-
-   .card {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  /* IMAGE RATIO 1.0 make image square */
-  /* CIRCLE IMAGE */
-
-  .image-left-side {
-  width: 110px;
-  height: 110px;
-  }
-  
-  .page-heading {
-    padding: 3px;
-  }
-  
-}
 
 /* === TABLET PORTRAIT ? (768px+) === */
 /* === screens 768px or larger ===*/
