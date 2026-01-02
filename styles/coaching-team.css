@@ -106,11 +106,10 @@ h1, h2, p {
 .button-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
+  gap: 60px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-top: 15px;
+  margin-top: 15px
 }
  /* Contact + Read More buttons share the same style */
  /* BUTTONS */
@@ -201,6 +200,11 @@ h1, h2, p {
   .image-left-side {
     width: 160px;
     height: 160px;
+  }
+  .button-wrapper {
+    gap: 180px;
+    margin-top: 60px;
+    margin-left: 60px;;
   }
 
 }
