@@ -181,34 +181,12 @@ h1, h2, p {
   /* === screens 1750px or larger in width ===*/
 @media (min-width: 1750px) {
 
-  .card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    width: 65%;
-  }
-  
-  /* IMAGE WRAPPER */
-  .image-left-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
   /* IMAGE RATIO 1.0 make image square */
   /* CIRCLE IMAGE */
   .image-left-side {
     width: 160px;
     height: 160px;
   }
-  .button-wrapper {
-    gap: 180px;
-    margin-top: 60px;
-    margin-left: 60px;;
-  }
+ 
 
 }
