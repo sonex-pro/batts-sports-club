@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATTS - Page Title</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/design-credit.css"> <!--my name and my contact email-->
+  
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-images/favicon-16x16.png">
+  <link rel="icon" href="images/favicon-images/favicon-32x32.png">
+
+  <!-- JavaScript files -->
+  <script src="components/component-loader.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="styles/popup-template.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar component -->
+    <div id="navbar-container" data-component="navbar"></div>
+    
+    <!-- Main heading - positioned 3px below navbar -->
+    <h1 class="page-heading">Popup Template</h1>
+  </header>
+
+  <main>
+
+  <!-- POPUP WRAPPER -->
+  <div class="pop-up-wrapper">
+
+    <!-- POPUP CONTENT -->
+    <div class="pop-up-content">
+
+      <!-- TOP WRAPPER -->
+      <div class="top-wrapper">
+
+        <!-- PERSON IMAGE -->
+        <img
+          class="person-image"
+          src="person-placeholder.jpg"
+          alt="Profile photo"
+        />
+
+        <!-- CLOSE BUTTON -->
+        <button class="button-close">
+          Close
+        </button>
+
+      </div>
+
+      <!-- PERSON NAME -->
+      <h2 class="persons-name">
+        Person’s Name
+      </h2>
+
+      <!-- ABOUT PERSON TEXT BLOCK -->
+      <div class="about-person">
+        This is an example about-person text block. Replace this text with your own
+        biography or description content. The container scrolls if content exceeds
+        the height.
+      </div>
+
+    </div>
+
+  </main>
+  
+  <footer>
+    <!-- Footer component -->
+    <div id="footer-container" data-component="footer"></div>
+    <!-- Design Credit component edit in styles/design-credit.css -->
+    <div id="design-credit-container" data-component="design-credit"></div>
+  </footer>
+</body>
+</html>
