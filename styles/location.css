@@ -14,7 +14,7 @@ body {
  /* === PAGE HEADING H1 STYLES === */
 
 .page-heading {
-  margin-top: 3px;
+  margin-top: 4px;
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
@@ -38,11 +38,12 @@ body {
 /* === CONTENT WRAPPER STYLES === */
 .image-1-wrapper {
   max-width: 1200px;  /* Limit max width for better readability */
-  width: 440px;
+  width: 100%;
   height: auto;
+  padding: 0.5rem;
 }
 .image-1-wrapper img {
-  width: 440px;
+  width: 100%;
   height: auto;
 }
 .image-1-wrapper p {
@@ -50,47 +51,22 @@ body {
   padding-top: 1.5rem;
 }
 .google-iframe-wrapper {
-  width: 440px;
-  height: 380px;
+  width: 100%;
+  height: 375x;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
 
-/* === YOUR HONOR MOBILE PORTRAIT HERE (< 768px) === */
-/* === screens smaller than 768px in width === */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-  .image-1-wrapper {
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
-  }
-  .image-1-wrapper img {
-    width: 100%;
-    height: auto;
-}
-.google-iframe-wrapper {
-  width: 100%;
-  height: 375px;
-}
-  
-  .page-heading {
-    padding: 3px;
-  }
-  
-  .section1 {
-    padding: 5px;
-  }
-}
+/* === TABLET 950px+ (MY HONOR TABLET 1143PX WIDE === */
+/* === SCREENS 950px OR LARGER IN WIDTH ===*/
+@media (min-width: 950px) {
 
-/* === TABLET PORTRAIT ? (768px+) === */
-/* === screens 768px or larger ===*/
-@media (min-width: 768px) {
-  .image-1-wrapper {
-      width: 600px;
-      height: auto;
-    gap: 1.5rem;
-  }
-  .image-1-wrapper img {
+.image-1-wrapper {
+  width: 600px;
+  height: auto;
+  gap: 1.5rem;
+}
+.image-1-wrapper img {
   width: 600px;
   height: auto;
 }
@@ -98,36 +74,6 @@ body {
   width: 600px;
   height: 480px;
 }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-  
-  .section1 {
-    padding: 1rem;
-  }
-}
-
-/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
-/* === screens 768px or larger but not exceeding 1024px in width ===*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .image-1-wrapper {
-      width: 600px;
-      height: auto;
-    gap: 1.5rem;
-  }
-  .image-1-wrapper img {
-  width: 600px;
-  height: auto;
-}
-.google-iframe-wrapper {
-  width: 600px;
-  height: 480px;
-}
-  
-  .section1 {
-    padding: 1rem;
-  }
 }
 
 /* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
@@ -146,38 +92,29 @@ body {
   width: 600px;
   height: 480px;
 }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-  
-  .section1 {
-    padding: 1.2rem;
-  }
 }
 
-/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
-/* === screens 1200px or larger in width ===*/
+/* === LAPTOP 1200px+) === */
+/* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
-  .image-1-wrapper {
-    width: 600px;
-    height: auto;
-    gap: 2rem;
-  }
-  .image-1-wrapper img {
-  width: 600px;
-  height: auto;
+
+.image-1-wrapper img {
+  width: 640px;
 }
+
 .google-iframe-wrapper {
-  width: 600px;
-  height: 480px;
+  width: 640px;
 }
-  
-  .page-heading {
-    padding: 1rem;
-  }
-  
-  .section1 {
-    padding: 1.8rem;
-  }
+}
+/* === LARGE DESKTOP HERE (1750px+) === */
+/* === screens 1750px or larger in width ===*/
+@media (min-width: 1750px) {
+
+.image-1-wrapper img {
+  width: 660px;
+}
+
+.google-iframe-wrapper {
+  width: 660px;
+}
 }
