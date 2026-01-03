@@ -37,7 +37,6 @@ body {
 
 /* === CONTENT WRAPPER STYLES === */
 .image-1-wrapper {
-  max-width: 1200px;  /* Limit max width for better readability */
   width: 100%;
   height: auto;
   padding: 0.5rem;
@@ -61,17 +60,21 @@ body {
 /* === SCREENS 950px OR LARGER IN WIDTH ===*/
 @media (min-width: 950px) {
 
+  .section1 {
+    gap: 1.5rem;
+  }
+
 .image-1-wrapper {
-  width: 600px;
+  width: 350px;
   height: auto;
   gap: 1.5rem;
 }
 .image-1-wrapper img {
-  width: 600px;
+  width: 350px;
   height: auto;
 }
 .google-iframe-wrapper {
-  width: 600px;
+  width: 350px;
   height: 480px;
 }
 }
@@ -82,7 +85,6 @@ body {
   .image-1-wrapper {
     width: 600px;
     height: auto;
-    gap: 2rem;
   }
   .image-1-wrapper img {
   width: 600px;
