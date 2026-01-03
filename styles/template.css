@@ -34,7 +34,7 @@ h1, h2, p {
 }
 
 /* === CONTENT WRAPPER STYLES === */
-.content-1-wrapper {
+.tempory-wrapper {
   max-width: 1200px;  /* Limit max width for better readability */
   margin: 0 auto; /* Center the content */
   display: flex;
@@ -44,88 +44,37 @@ h1, h2, p {
   gap: 0.8rem;
   width: 100%;
 }
-.content-1-wrapper p {
+.tempory-wrapper p {
   text-align: center;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
-/* === ***** YOUR HONOR MOBILE PORTRAIT HERE (< 768px) ***** === */
 
-/* === screens smaller than 768px in width === */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-  .content-1-wrapper {
-    width: 95%;
-    padding: 0.5rem;
-  }
-  
-  .page-heading {
-    padding: 3px;
-  }
-  
-  .section1 {
-    padding: 5px;
-  }
+ /* === TABLET 950px+ (MY HONOR TABLET 1143PX WIDE === */
+ /* === SCREENS 950px OR LARGER IN WIDTH ===*/
+@media (min-width: 950px) {
+
+.tempory-wrapper {
+  width: 70%;
+}
 }
 
-/* === TABLET PORTRAIT ? (768px+) === */
-/* === screens 768px or larger ===*/
-@media (min-width: 768px) {
-  .content-1-wrapper {
-    width: 90%;
-    gap: 1.5rem;
-  }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-  
-  .section1 {
-    padding: 1rem;
-  }
-}
-
-/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
-/* === screens 768px or larger but not exceeding 1024px in width ===*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .content-1-wrapper {
-    width: 85%;
-    gap: 1.5rem;
-  }
-  
-  .section1 {
-    padding: 1rem;
-  }
-}
-
-/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
-/* === screens 992px or larger in width ===*/
-@media (min-width: 992px) {
-  .content-1-wrapper {
-    width: 85%;
-    gap: 2rem;
-  }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-  
-  .section1 {
-    padding: 1.2rem;
-  }
-}
-/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
-/* === screens 1200px or larger in width ===*/
+ /* === LAPTOP 1200px+) === */
+ /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
-  .content-1-wrapper {
-    width: 80%;
-    gap: 2rem;
-  }
-  
-  .page-heading {
-    padding: 1rem;
-  }
-  
-  .section1 {
-    padding: 1.8rem;
-  }
+
+.tempory-wrapper {
+  width: 65%;
 }
+}
+
+/* === LARGE DESKTOP HERE (1750px+) === */
+/* === screens 1750px or larger in width ===*/
+@media (min-width: 1750px) {
+
+.tempory-wrapper {
+  width: 60%;
+}
+
+}
+
