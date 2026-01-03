@@ -83,12 +83,18 @@ body {
 /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
 
+.image-1-wrapper {
+  width: 600px;
+  height: auto;
+  gap: 1.6rem;
+}
+
 .image-1-wrapper img {
-  width: 640px;
+  width: 600px;
 }
 
 .google-iframe-wrapper {
-  width: 640px;
+  width: 600px;
 }
 }
 /* === LARGE DESKTOP HERE (1750px+) === */
@@ -96,10 +102,10 @@ body {
 @media (min-width: 1750px) {
 
 .image-1-wrapper img {
-  width: 660px;
+  width: 630px;
 }
 
 .google-iframe-wrapper {
-  width: 660px;
+  width: 630px;
 }
 }
