@@ -79,23 +79,6 @@ body {
 }
 }
 
-/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
-/* === screens 992px or larger in width ===*/
-@media (min-width: 992px) {
-  .image-1-wrapper {
-    width: 600px;
-    height: auto;
-  }
-  .image-1-wrapper img {
-  width: 600px;
-  height: auto;
-}
-.google-iframe-wrapper {
-  width: 600px;
-  height: 480px;
-}
-}
-
 /* === LAPTOP 1200px+) === */
 /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
