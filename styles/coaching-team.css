@@ -53,6 +53,7 @@ h1, h2, p {
 
  /* IMAGE RATIO 1.0 make image square */
  /* CIRCLE IMAGE AND FLOAT TO THE RIGHT SIDE OF THE CARD */
+ /* MAKE IMAGE SQUARE IN GIMP */
 
 .image-left-side {
   display: block;
@@ -142,10 +143,21 @@ h1, h2, p {
 
  /* === RESPONSIVE BREAKPOINTS === */
 
+  /* === TABLET 950px+) === */
+ /* === SCREENS 950px OR LARGER IN WIDTH ===*/
+@media (min-width: 950px) {
+
+  .card {
+    width: 70%;
+  }
+
+}
+
  /* === LAPTOP 1200px+) === */
  /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
 
+/* === CARD WAS BLOCK AND NOW CHANGED TO FLEX BLOCK === */
   .card {
     display: flex;
     flex-direction: row;
@@ -154,7 +166,8 @@ h1, h2, p {
     gap: 10px;
     width: 65%;
   }
-  
+
+  /* === IMAGE WRAPPER WAS BLOCK AND NOW CHANGED TO FLEX BLOCK === */
   /* IMAGE WRAPPER */
   .image-left-wrapper {
     display: flex;
@@ -164,7 +177,7 @@ h1, h2, p {
     justify-content: center;
   }
 
-  /* IMAGE RATIO 1.0 make image square */
+  /* IMAGE RATIO 1.0 make image square in Gimp */
   /* CIRCLE IMAGE */
   .image-left-side {
     width: 130px;
