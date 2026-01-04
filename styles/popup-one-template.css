@@ -1,14 +1,14 @@
 /* === Mobile-First design (code for smaller screens first) ===*/
 /* === BASE STYLES Applies to all screen by default unless
 overridden by media queries. === */
-/* === TEMPLATE CSS - Common styles for all pages based on template.html === */
+/* === COPY OF TEMPLATE CSS - Common styles for all pages based on template.html === */
 
 /* h1 h2 and p colours are set here and not in base.css */
 /* h1 h2 and p sizes are set in base.css */
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
-/* === ***** YOUR HONOR MOBILE "LANDSCAPE" HERE, NOT PORTRAIT ***** === */
+/* === ***** YOUR HONOR MOBILE STYLES HERE ***** === */
 
  /* === PAGE HEADING H1 STYLES === */
 
@@ -19,16 +19,16 @@ h1, h2, p {
   font-weight: bold;
 }
 
-
 /* POPUP CSS - STYLES FOR POPUP CONTENT */
+
 /* =========================================
    POP UP WRAPPER — MOBILE FIRST
    ========================================= */
 
 .pop-up-wrapper {
-  display: flex; /* default hidden, flex visible */
+  display: none; /* default is none, flex visible */
   position: fixed;
-  top: 80px;
+  top: 110px; /*change to 80px later for mobile */
   right: auto;
   bottom: auto;
   left: auto;

@@ -1,3 +1,4 @@
+<!--JAVA SCRIPT POPUP-ONE IS ADDED TO THIS FILE ON LINE 24-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +21,11 @@
   <!-- JavaScript files -->
   <script src="components/component-loader.js" defer></script>
   <script src="js/navbar.js" defer></script>
+  <script src="js/popup-one.js" defer></script>
+
   
   <!-- Template CSS -->
-  <link rel="stylesheet" href="styles/popup-template.css">
+  <link rel="stylesheet" href="styles/popup-one-template.css">
 </head>
 <body>
   <header>
@@ -34,43 +37,34 @@
   </header>
 
   <main>
+  <div class="open-popup-wrapper">
+    <button id="open-popup">Open Popup</button>
+  </div>
 
   <!-- POPUP WRAPPER -->
   <div class="pop-up-wrapper">
 
-    <!-- POPUP CONTENT -->
     <div class="pop-up-content">
 
-      <!-- TOP WRAPPER -->
       <div class="top-wrapper">
 
-        <!-- PERSON IMAGE -->
-        <img
-          class="person-image"
-          src="person-placeholder.jpg"
-          alt="Profile photo"
-        />
+        <img class="person-image"
+             src="person-placeholder.jpg"
+             alt="Profile photo">
 
-        <!-- CLOSE BUTTON -->
-        <button class="button-close">
-          Close
-        </button>
+        <button class="button-close">Close</button>
 
       </div>
 
-      <!-- PERSON NAME -->
-      <h2 class="persons-name">
-        Person’s Name
-      </h2>
+      <h2 class="persons-name">Person's Name</h2>
 
-      <!-- ABOUT PERSON TEXT BLOCK -->
       <div class="about-person">
-        This is an example about-person text block. Replace this text with your own
-        biography or description content. The container scrolls if content exceeds
-        the height.
+        This is an example about-person text block…
       </div>
 
     </div>
+
+  </div>
 
   </main>
   

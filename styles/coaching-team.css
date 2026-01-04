@@ -8,7 +8,7 @@ overridden by media queries. === */
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
- /* === ***** YOUR HONOR MOBILE "LANDSCAPE" HERE, NOT PORTRAIT ***** === */
+ /* === ***** YOUR HONOR MOBILE STYLES FIRST ***** === */
 
  /* === PAGE HEADING H1 STYLES === */
 
