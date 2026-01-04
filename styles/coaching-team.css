@@ -140,6 +140,133 @@ h1, h2, p {
   transform: translateY(-5px); /* Pushes the button up when hovered */
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+/* POPUP CSS - STYLES FOR POPUP CONTENT */
+
+/* =========================================
+   POP UP WRAPPER — MOBILE FIRST
+   ========================================= */
+
+.pop-up-wrapper {
+  display: none; /* default is none, flex visible */
+  position: fixed;
+  top: 110px; /*change to 80px later for mobile */
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 20;
+
+  display: none; /* interaction default */
+  background: transparent;
+
+  /* flex layout when activated */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Helper class to activate popup */
+.pop-up-wrapper.is-active {
+  display: flex;
+}
+
+/* =========================================
+   POP UP CONTENT
+   ========================================= */
+
+.pop-up-content {
+  display: block;
+  margin-left: 8px;
+
+  background: #f1f1f1;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+/* =========================================
+   TOP WRAPPER
+   ========================================= */
+
+.top-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 140px;
+  background: transparent;
+}
+
+/* =========================================
+   PERSON IMAGE
+   ========================================= */
+
+.person-image {
+  padding-top: 3px;
+  padding-left: 20px;
+
+  width: 95px;
+  height: 100px;
+
+  border-radius: 50vh;
+  object-fit: cover;
+}
+
+/* =========================================
+   CLOSE BUTTON
+   ========================================= */
+
+.button-close {
+  display: block;
+
+  padding: 5px 0px 3px 10px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #ffffff;
+  text-align: center;
+
+  background: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+/* =========================================
+   PERSON NAME
+   ========================================= */
+
+.persons-name {
+  padding-left: 20px;
+
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #000000;
+}
+
+/* =========================================
+   ABOUT PERSON TEXT BLOCK
+   ========================================= */
+
+.about-person {
+  display: block;
+  position: static;
+  overflow: auto;
+
+  padding: 5px 5px 5px 10px;
+  margin: 0px 10px 10px 0px;
+
+  width: auto;
+  height: 280px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #000000;
+
+  text-align: left;
+}
+
 
  /* === RESPONSIVE BREAKPOINTS === */
 

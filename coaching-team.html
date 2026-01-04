@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/design-credit.css"> <!--my name and my contact email-->
+  <script src="js/popup-multiple.js" defer></script> <!--Popup multiple controls for coaches-->
+
   
   <!-- Favicon links -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-images/apple-touch-icon.png">
@@ -50,9 +52,13 @@
         <p class="about-coach">
           Table Tennis England Level 2 Coach Coaching for Adults and Juniors One to One bookings available.<br>
         </p>
+        
+        <!-- JScript"read-more" is the class of the button, "data-popup" is the id of the popup-->
 
         <div class="button-wrapper">
-          <button class="read-more">Read More</button>
+          <button class="read-more" data-popup="keith">
+            Read More <!-- text in button-->
+          </button>
 
           <!-- WhatsApp link -->
           <a class="contact-coach" href="https://wa.me/+447928374737" target="_blank">
@@ -194,6 +200,26 @@
             Contact Coach
           </a>
         </div>
+      </div>
+    </div>
+    
+     <!-- ========================= -->
+     <!-- POPUP 1 — Keith Fung -->
+     <!-- ========================= -->
+    <div class="pop-up-wrapper" data-popup="keith">
+      <div class="pop-up-content">
+
+       <div class="top-wrapper">
+         <img class="person-image" src="images/coach-images/keith.avif" alt="Keith">
+         <button class="button-close">Close</button>
+       </div>
+
+       <h2 class="persons-name">Keith</h2>
+
+       <div class="about-person">
+        Keith's description goes here…
+       </div>
+
       </div>
     </div>
   </main>
