@@ -154,6 +154,7 @@ h1, h2, p {
   bottom: auto;
   left: auto;
   z-index: 20;
+  max-width: 300px;
 
   display: none; /* interaction default */
   background: transparent;
@@ -182,7 +183,7 @@ h1, h2, p {
 }
 
 /* =========================================
-   TOP WRAPPER
+   TOP WRAPPER / POPUP
    ========================================= */
 
 .top-wrapper {
@@ -194,22 +195,22 @@ h1, h2, p {
 }
 
 /* =========================================
-   PERSON IMAGE
+   PERSON IMAGE / POPUP
    ========================================= */
-
+/* IMAGE RATIO 1.0 make image square */
 .person-image {
   padding-top: 3px;
   padding-left: 20px;
 
-  width: 95px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 
   border-radius: 50vh;
   object-fit: cover;
 }
 
 /* =========================================
-   CLOSE BUTTON
+   CLOSE BUTTON / POPUP
    ========================================= */
 
 .button-close {
@@ -230,7 +231,7 @@ h1, h2, p {
 }
 
 /* =========================================
-   PERSON NAME
+   PERSON NAME / POPUP
    ========================================= */
 
 .persons-name {
@@ -244,7 +245,7 @@ h1, h2, p {
 }
 
 /* =========================================
-   ABOUT PERSON TEXT BLOCK
+   ABOUT PERSON TEXT BLOCK / POPUP
    ========================================= */
 
 .about-person {
@@ -253,7 +254,7 @@ h1, h2, p {
   overflow: auto;
 
   padding: 5px 5px 5px 10px;
-  margin: 0px 10px 10px 0px;
+  margin: 10px 10px 35px 10px;
 
   width: auto;
   height: 280px;
