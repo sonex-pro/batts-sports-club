@@ -154,8 +154,7 @@ h1, h2, p {
   bottom: auto;
   left: auto;
   z-index: 20;
-  max-width: 300px;
-
+  max-width: 400px;
   display: none; /* interaction default */
   background: transparent;
 
@@ -176,7 +175,6 @@ h1, h2, p {
 .pop-up-content {
   display: block;
   margin-left: 8px;
-
   background: #f1f1f1;
   border: 1px solid blue;
   border-radius: 5px;
@@ -190,22 +188,21 @@ h1, h2, p {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 140px;
+  gap: 100px;
   background: transparent;
 }
 
 /* =========================================
    PERSON IMAGE / POPUP
    ========================================= */
-/* IMAGE RATIO 1.0 make image square */
+/* IMAGE RATIO 1.0 make image square in gimp */
 .person-image {
-  padding-top: 3px;
-  padding-left: 20px;
+  margin: 15px 0px 0px 20px;
 
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 
-  border-radius: 50vh;
+  border-radius: 50vh; /* first create image as a square, this makes image circle */
   object-fit: cover;
 }
 
@@ -215,9 +212,8 @@ h1, h2, p {
 
 .button-close {
   display: block;
-
-  padding: 5px 0px 3px 10px;
-
+  padding: 4px 8px 4px 8px;
+  margin-top: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -245,7 +241,7 @@ h1, h2, p {
 }
 
 /* =========================================
-   ABOUT PERSON TEXT BLOCK / POPUP
+   ABOUT PERSON DIV BLOCK / POPUP
    ========================================= */
 
 .about-person {
@@ -254,7 +250,7 @@ h1, h2, p {
   overflow: auto;
 
   padding: 5px 5px 5px 10px;
-  margin: 10px 10px 35px 10px;
+  margin: 10px 10px 50px 10px;
 
   width: auto;
   height: 280px;
@@ -267,6 +263,18 @@ h1, h2, p {
 
   text-align: left;
 }
+/* =========================================
+   ABOUT PERSON TEXT PARAGRAPH / POPUP
+   ========================================= */
+   .person-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #000000;
+    text-align: left;
+   }
+
 
 
  /* === RESPONSIVE BREAKPOINTS === */
