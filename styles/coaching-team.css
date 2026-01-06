@@ -149,7 +149,7 @@ h1, h2, p {
 .pop-up-wrapper {
   display: none; /* default is none, flex visible */
   position: fixed;
-  top: 110px; /*change to 80px later for mobile */
+  top: 90px;
   right: auto;
   bottom: auto;
   left: auto;
@@ -269,8 +269,8 @@ h1, h2, p {
    .person-text {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.4rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
     color: #000000;
     text-align: left;
    }
@@ -285,6 +285,17 @@ h1, h2, p {
 
   .card {
     width: 70%;
+  }
+  .pop-up-wrapper {
+    position: fixed;
+    top: 110px;
+  }
+  .pop-up-content {
+    width: 400px;
+  }
+  .person-text {
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 
 }
