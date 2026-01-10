@@ -13,6 +13,7 @@ h1, h2, p {
 
 .page-heading {
   margin-top: 4px;
+  padding: 3px;
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
@@ -51,6 +52,7 @@ h1, h2, p {
 .card-header {
   font-size: 1.1rem;
   font-weight: 600;
+  padding-left: 10px;
   margin-bottom: 12px;
   color: #008080;
 }
@@ -61,18 +63,19 @@ h1, h2, p {
   display: flex;
   flex: 1;
   gap: 16px;
+  padding-left: 10px;
 }
 
 /* Left side */
 
-.card-left {
+.card-left { /* text size made in div block */
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: left;
-  width: 145px;
   font-size: 0.9rem;
   line-height: 1.2rem;
+  text-align: left;
+  width: 145px;
 }
 
 /* Right side */
@@ -90,13 +93,16 @@ h1, h2, p {
 
 .card-image {
   
-  width: 110px;
+  width: 120px;
   height: auto;
   display: block;
 }
 
 .card-left p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   margin-top: auto; /* Pushes the paragraph to the bottom of the card */
+  margin-bottom: 5px;
   padding-left: 16px;
 }
 
@@ -127,151 +133,61 @@ h1, h2, p {
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
-/* === ***** YOUR HONOR MOBILE PORTRAIT HERE (< 768px) ***** === */
 
-/* === screens smaller than 768px in width === */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-
-  .wrapper-flex
-  {
-    padding: 5px;
-  }
-
-  .card-left p {
-  margin-top: auto;
-}
+ /* === TABLET 950px+ (MY HONOR TABLET 1143PX WIDE === */
+ /* === SCREENS 950px OR LARGER IN WIDTH ===*/
+@media (min-width: 950px) {
 
   .card {
-    width: 345px;
-    height: 260px;
+    width: 405px;
+    height: 320px;
   }
+
   .card-header {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .card-inner {
+    padding-left: 20px;
+  }
+
+  .card-image {
+    width: 150px;
+  }
+
+  .card-left {/* text size made in div block */
     font-size: 1.1rem;
+    line-height: 1.5rem;
+  
   }
-  .card-left {
-  width: 145px;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-}
-.card-right {
-  width: auto;
-}
-.card-image {
-  max-width: 110px;
+
+  .card-left p { 
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
 }
 
-  
-  .competitions-card-wrapper {
-    gap: 0.8rem;
-  }
-  
-  .page-heading {
-    padding: 3px;
-  }
-  
-}
-
-/* === TABLET PORTRAIT ? (768px+) === */
-/* === screens 768px or larger ===*/
-@media (min-width: 768px) {
-
-  .card-left p {
-  margin-top: auto;
-}
-
-  .card-image {
-  max-width: 100%;
-}
-  .competitions-card-wrapper {
-    gap: 1rem;
-  }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-  
-}
-
-/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
-/* === screens 768px or larger but not exceeding 1024px in width ===*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-    .card-left p {
-  margin-top: auto;
-}
-  
-  .card-image {
-    max-width: 100%;
-  }
-  
-  .competitions-card-wrapper {
-    gap: 1rem;
-  }
-}
-
-/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
-/* === screens 992px or larger in width ===*/
-@media (min-width: 992px) {
-
-
-  .card {
-    width: 380px;
-    height: 280px;
-  }
-  .card-header {
-    font-size: 1.6rem;
-  }
-    .card-left {
-  width: 170px;
-  font-size: 1.075rem;
-  line-height: 1.2rem;
-}
-.card-right {
-  width: auto;
-}
-.card-image {
-  max-width: 100%;
-}
-  
-  .competitions-card-wrapper {
-    gap: 1rem;
-  }
-  
-  .page-heading {
-    padding: 0.8rem;
-  }
-  
-}
-/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
-/* === screens 1200px or larger in width ===*/
+ /* === LAPTOP 1200px+) === */
+ /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
 
 
-  .card {
-    width: 380px;
-    height: 280px;
-  }
-  .card-header {
-    font-size: 1.6rem;
-  }
-  .card-left {
-  width: 170px;
-  font-size: 1.075rem;
-  line-height: 1.2rem;
-}
-.card-right {
-  width: auto;
-}
-.card-image {
-  max-width: 100%;
+
 }
 
-  .competitions-card-wrapper {
-    gap: 1rem;
+/* === LARGE DESKTOP HERE (1750px+) === */
+/* === screens 1750px or larger in width ===*/
+@media (min-width: 1750px) {
+
+   .card {
+    width: 445px;
+    height: 360px;
   }
-  
-  .page-heading {
-    padding: 1rem;
+  .card-image {
+    width: 180px;
   }
-  
+
+
 }
