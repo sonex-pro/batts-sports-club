@@ -15,9 +15,8 @@ h1, h2, p {
   margin-top: 4px;
   padding: 3px;
   text-align: center;
-  color: #000000;/* text colour for h1 heading */
   font-weight: bold;
-  color: #008080;
+  color: #008080;/* text colour for h1 heading */
 }
 
 /* Main section */
@@ -104,6 +103,7 @@ h1, h2, p {
   margin-top: auto; /* Pushes the paragraph to the bottom of the card */
   margin-bottom: 5px;
   padding-left: 5px;
+  color: #000000;
 }
 
 /* Button */
@@ -113,7 +113,7 @@ h1, h2, p {
   margin-top: auto; /* Pushes the button to the bottom of the card */
   display: block;
   padding: 3px 4px;
-  width: 146px;
+  width: auto;
   height: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;

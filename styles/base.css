@@ -44,9 +44,9 @@ p {
   font-weight: 500;
 }
 
-/* === TABLET PORTRAIT (768px+) === */
-/* === screens 768px or larger ===*/
-@media (min-width: 768px) {
+ /* === TABLET 950px+ (MY HONOR TABLET 1143PX WIDE === */
+ /* === SCREENS 950px OR LARGER IN WIDTH ===*/
+ @media (min-width: 950px) {
   h1 {
     font-size: 1.8rem;
     line-height: 1.6;
