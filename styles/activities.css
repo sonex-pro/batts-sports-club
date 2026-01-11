@@ -46,9 +46,8 @@ body {
   flex-direction: column;
   background: #a0aebc;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
-  padding: 18px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
 }
 
 
@@ -88,7 +87,6 @@ body {
   color: #a62f2f;/* text colour dull red */
   font-size: 1.1rem;
   line-height: 1.4rem;
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -149,10 +147,6 @@ body {
     padding-right: 15px;
   }
 
-  .top-about-wrapper {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
 
   .h2-about-heading,
   .h2-card-left-title {
