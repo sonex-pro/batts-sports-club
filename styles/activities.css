@@ -18,7 +18,7 @@ body {
  /* === PAGE HEADING H1 STYLES === */
 
 .page-heading {
-  margin-top: 5px;
+  margin-top: 10px;
   text-align: center;
   color: #982e2e;/* text colour dull red for h1 heading */
   font-weight: bold;
@@ -46,7 +46,9 @@ body {
   flex-direction: column;
   background: #a0aebc;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
-  padding: 12px 15px;
+  padding: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 
@@ -59,6 +61,8 @@ body {
   gap: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* LEFT INNER WRAPPER, WRAPS H2-CARD-LEFT-TITLE AND CARD-TEXT-LEFT-DESCRIPTION */
@@ -82,7 +86,7 @@ body {
 .h2-about-heading,
 .h2-card-left-title {
   color: #a62f2f;/* text colour dull red */
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.4rem;
   margin-bottom: 10px;
   text-align: center;
@@ -93,8 +97,8 @@ body {
 .top-text {
   font-family: "Merriweather", serif;
   font-weight: 500;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
   color: black; /* default text colour (reinforced here for clarity) */
   margin: 0;
 }
@@ -104,7 +108,7 @@ body {
   color: #bb3f3f;/* colour dull red */
   font-weight: bold;
   font-family: "Merriweather", serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.3rem;
 }
 
@@ -139,6 +143,17 @@ body {
     margin-top: 25px;
     margin-bottom: 10px;
   }
+
+  .card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .top-about-wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
   .h2-about-heading,
   .h2-card-left-title {
     font-size: 1.5rem;
@@ -147,8 +162,8 @@ body {
 /* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
 .card-text-left-description,
 .top-text {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 /* THE IMAGE WRAPPER */
@@ -163,4 +178,16 @@ body {
   font-size: 1.4rem;
 }
   
+}
+ /* === LAPTOP 1200px+) === */
+ /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
+@media (min-width: 1200px) {
+
+  /* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
+.card-text-left-description,
+.top-text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
 }
