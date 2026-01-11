@@ -18,9 +18,9 @@ body {
  /* === PAGE HEADING H1 STYLES === */
 
 .page-heading {
-  margin-top: 4px;
+  margin-top: 5px;
   text-align: center;
-  color: #bb3f3f;/* text colour dull red for h1 heading */
+  color: #982e2e;/* text colour dull red for h1 heading */
   font-weight: bold;
   font-family: "Merriweather", serif;
   font-size: 1.3rem;
@@ -39,7 +39,7 @@ body {
   margin: 0 auto;
   padding: 8px;
 }
-.top-text-wrapper {
+.top-about-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -49,21 +49,9 @@ body {
   padding: 12px 15px;
 }
 
-/* TOP TEXT (not inside a card) */
-.top-text {
-  background: transparent;
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.4rem;
-  height: 100%;
-  width: 100%;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-}
 
-/* CARD WRAPPER — contains left text + right image */
-.class-card {
+/* CARD — contains left text + right image */
+.card {
   background: transparent;
   display: flex;
   flex-wrap: wrap;
@@ -73,37 +61,36 @@ body {
   margin-bottom: 10px;
 }
 
-/* LEFT CONTENT PANEL */
-.left-description {
+/* LEFT INNER WRAPPER, WRAPS H2-CARD-LEFT-TITLE AND CARD-TEXT-LEFT-DESCRIPTION */
+.card-left-inner-wrapper {
   display: flex;
   flex-direction: column;
   background: #a0aebc;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
   padding: 12px 20px;
-
+  flex: 1 1 300px;
   /*
-    flex: 1 1 300px;
+    flex: 1 1 100px;
     flex-grow:   1 → allows this panel to expand if space is available
     flex-shrink: 1 → allows it to shrink on small screens
     flex-basis: 300px → preferred starting width
     RESULT: responsive panel that starts at 300px and adjusts as needed
   */
-  flex: 1 1 300px;
 }
 
-/* ACTIVITY TITLE */
-.activity-title {
-  color: #bb3f3f;/* text colour dull red */
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+/* TOP WRAPPER TITLE AND CARD LEFT TITLE */
+.h2-about-heading,
+.h2-card-left-title {
+  color: #a62f2f;/* text colour dull red */
+  font-size: 1rem;
+  line-height: 1.4rem;
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* DESCRIPTION TEXT IN CARD */
-.activity-text {
+/* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
+.card-text-left-description
+.top-text {
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 1.1rem;
@@ -112,15 +99,7 @@ body {
   margin: 0;
 }
 
-/*
-  PRICE LABEL + AMOUNT
-  These are inside <span> tags because span = inline element
-  It lets us style only parts of the sentence without breaking lines
-*/
-.price-label {
-  color: black; /* "Price:" text remains black */
-}
-
+/* FIND THIS SPAN TAG IN THE TEXT */
 .price-amount {
   color: #bb3f3f;/* colour dull red */
   font-weight: bold;
@@ -131,7 +110,7 @@ body {
 
 /* DIV BLOCK IMAGE WRAPPER (right side of card) aspect ratio 1.333*/
 /* SET .image-right-side img THE SAME SIZE*/
-.image-right-side {
+.image-wrapper-right-side {
   width: 100%;
   height: auto;
   padding: 12px 20px;
@@ -142,144 +121,34 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* THE IMAGE ITSELF */
 /* aspect ratio 1.333 */
-.image-right-side img {
+.image-wrapper-right-side img {
   width: 100%;
   height: auto;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
 
-/* === ***** YOUR HONOR MOBILE PORTRAIT HERE (< 768px) ***** === */
+ /* === TABLET 950px+ (MY HONOR TABLET 1143PX WIDE === */
+ /* === SCREENS 950px OR LARGER IN WIDTH ===*/
+@media (min-width: 950px) {
 
-/* === screens smaller than 768px in width === */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-
-  .outer-activity-wrapper {
-    padding: 6px;
-  }
-
-  .left-description {
-    width:  100%;
-    height: auto;
-  }
-  .image-right-side {
-    width: 100%;
-    height: auto;
-  }
-  .image-right-side img {
-    width: 100%;
-    height: auto;
-  }
-  
-  
   .page-heading {
-    padding: 3px;
+    font-size: 1.8rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
-  
-}
-
-/* === TABLET PORTRAIT ? (768px+) === */
-/* === screens 768px or larger ===*/
-@media (min-width: 768px) {
-
-  .image-right-side img {
-    width: 100%;
-    height: auto;
-  }
-  .image-right-side img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-/* === TABLET LANDSCAPE (768px-1024px, landscape) === */
-/* === screens 768px or larger but not exceeding 1024px in width ===*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
- 
-  
-}
-
-/* === SMALL DESKTOP "NOT YOUR LAPTOP" 992px+) === */
-/* === screens 992px or larger in width ===*/
-@media (min-width: 992px) {
-  
-  .page-heading {
-    font-size: 2rem;
-    line-height: 2.4rem;
-    margin-bottom: 20px;
-  }
-  
-  .top-text {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-
-  .activity-title {
+  .h2-about-heading,
+  .h2-card-left-title {
     font-size: 1.5rem;
-    line-height: 1.6rem;
-    margin-bottom: 15px;
   }
-  .activity-text {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-  .price-amount {
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-  }
-   /* aspect ratio 1.333 */
-   .image-right-side {
-    width: 450px;
-    height: 337px;
-  }
-    /* aspect ratio 1.333 */
-    .image-right-side img {
-      width: 450px;
-      height: 337px;
-    }
-  
+
+/* THE IMAGE WRAPPER */
+/* aspect ratio 1.333 */
+.image-wrapper-right-side {
+  width: 450px;
+  height: 337px;
 }
-/* === YOUR LAPTOP AND LARGE DESKTOP WORK HERE (1200px+) === */
-/* === screens 1200px or larger in width ===*/
-@media (min-width: 1200px) {
-
-  .page-heading {
-    font-size: 2rem;
-    line-height: 2.4rem;
-    margin-bottom: 20px;
-  }
-
-  .top-text {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-
-  .activity-title {
-    font-size: 1.5rem;
-    line-height: 1.6rem;
-    margin-bottom: 15px;
-  }
-  .activity-text {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-
-  .price-amount {
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-  }
-
-  /* aspect ratio 1.333 */
-  .image-right-side {
-    width: 450px;
-    height: 337px;
-  }
-
-   /* aspect ratio 1.333 */
-  .image-right-side img {
-    width: 450px;
-    height: 337px;
-  }
+  
 }
