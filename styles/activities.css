@@ -89,12 +89,12 @@ body {
 }
 
 /* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
-.card-text-left-description
+.card-text-left-description,
 .top-text {
   font-family: "Merriweather", serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.1rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   color: black; /* default text colour (reinforced here for clarity) */
   margin: 0;
 }
@@ -144,11 +144,23 @@ body {
     font-size: 1.5rem;
   }
 
+/* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
+.card-text-left-description,
+.top-text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
 /* THE IMAGE WRAPPER */
 /* aspect ratio 1.333 */
 .image-wrapper-right-side {
   width: 450px;
   height: 337px;
+}
+
+/* FIND THIS SPAN TAG IN THE TEXT */
+.price-amount {
+  font-size: 1.4rem;
 }
   
 }
