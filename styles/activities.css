@@ -66,7 +66,7 @@ body {
   flex-direction: column;
   background: #a0aebc;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,.25);
-  padding: 12px 20px;
+  padding: 12px 10px;
   flex: 1 1 300px;
   /*
     flex: 1 1 100px;
@@ -90,7 +90,6 @@ body {
 .price-amount {
   color: #bb3f3f;/* colour dull red */
   font-weight: bold;
-  font-family: "Merriweather", serif;
   font-size: 1rem;
   line-height: 1.3rem;
 }
@@ -142,7 +141,7 @@ body {
 
 /* FIND THIS SPAN TAG IN THE TEXT */
 .price-amount {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
   
 }
@@ -151,7 +150,7 @@ body {
 @media (min-width: 1200px) {
 
   /* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
-  
+
 .card-text-left-description,
 .top-text {
   font-size: 1.2rem;
