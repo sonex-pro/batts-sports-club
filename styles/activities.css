@@ -21,8 +21,6 @@ body {
   margin-top: 10px;
   text-align: center;
   color: #982e2e;/* text colour dull red for h1 heading */
-  font-size: 1.3rem;
-  line-height: 1.4rem;
   margin-bottom: 10px;
 }
 
@@ -83,21 +81,10 @@ body {
 .h2-about-heading,
 .h2-card-left-title {
   color: #a62f2f;/* text colour dull red */
-  font-size: 1.1rem;
-  line-height: 1.4rem;
   text-align: center;
 }
 
 /* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
-.card-text-left-description,
-.top-text {
-  font-family: "Merriweather", serif;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.4rem;
-  color: black; /* default text colour (reinforced here for clarity) */
-  margin: 0;
-}
 
 /* FIND THIS SPAN TAG IN THE TEXT */
 .price-amount {
@@ -135,7 +122,6 @@ body {
 @media (min-width: 950px) {
 
   .page-heading {
-    font-size: 1.8rem;
     margin-top: 25px;
     margin-bottom: 10px;
   }
@@ -145,18 +131,7 @@ body {
     padding-right: 15px;
   }
 
-
-  .h2-about-heading,
-  .h2-card-left-title {
-    font-size: 1.5rem;
-  }
-
 /* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
-.card-text-left-description,
-.top-text {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-}
 
 /* THE IMAGE WRAPPER */
 /* aspect ratio 1.333 */
@@ -176,10 +151,11 @@ body {
 @media (min-width: 1200px) {
 
   /* PARAGRAPH DESCRIPTION TEXT LEFT SIDE AND TEXT IN TOP WRAPPER */
+  
 .card-text-left-description,
 .top-text {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 }
