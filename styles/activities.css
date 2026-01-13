@@ -114,6 +114,10 @@ body {
   height: auto;
 }
 
+.whatsapp-link {
+  text-decoration: underline;
+}
+
 /* === RESPONSIVE BREAKPOINTS === */
 
  /* === TABLET 950px+ (MY HONOR TABLET 1143PX WIDE === */
@@ -143,7 +147,7 @@ body {
 .price-amount {
   font-size: 1.2rem;
 }
-  
+
 }
  /* === LAPTOP 1200px+) === */
  /* === SCREENS 1200px OR LARGER IN WIDTH ===*/

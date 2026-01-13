@@ -21,11 +21,12 @@ h1, h2, p {
                1px 1px 0 #000;
   font-weight: bold;
 }
-/* Override body background color for index page */
+/* Override body background color and text decoration for index page */
 body {
   background-color: #0e0f26 !important; /* dark blue theme */
   margin: 0;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 .main-header {
