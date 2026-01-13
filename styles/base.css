@@ -9,8 +9,11 @@ overridden by media queries. === */
     padding: 0;
     box-sizing: border-box;
 }
-/* class home is used to remove underline from links index.html */
+/* class home and table-tennis is used to remove underline from links in html files */
 .home a {
+  text-decoration: none;
+}
+.table-tennis a {
   text-decoration: none;
 }
 
