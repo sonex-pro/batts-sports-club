@@ -1,0 +1,80 @@
+/* === Mobile-First design (code for smaller screens first) ===*/
+/* === BASE STYLES Applies to all screen by default unless
+overridden by media queries. === */
+/* === TEMPLATE CSS - Common styles for all pages based on template.html === */
+
+/* h1 h2 and p colours are set here and not in base.css */
+/* h1 h2 and p sizes are set in base.css */
+h1, h2, p {
+  color: #000000;/* if no colours are set in the file this will be the default colour */
+}
+/* === ***** YOUR HONOR MOBILE STYLES FIRST ***** === */
+
+ /* === PAGE HEADING H1 STYLES === */
+
+.page-heading {
+  margin-top: 4px;
+  text-align: center;
+  color: #000000;/* text colour for h1 heading */
+  font-weight: bold;
+}
+
+/* === PAGE SECTION 1 STYLES === */
+/* Main section styles with 3px spacing below navbar */
+.section1  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 6px;
+}
+
+/* === CONTENT WRAPPER STYLES === */
+.tempory-wrapper {
+  max-width: 1200px;  /* Limit max width for better readability */
+  margin: 0 auto; /* Center the content */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+}
+.tempory-wrapper p {
+  text-align: center;
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+
+ /* === TABLET 950px+ (MY HONOR TABLET IS 1143PX WIDE === */
+ /* === SCREENS 950px OR LARGER IN WIDTH ===*/
+@media (min-width: 950px) {
+
+.tempory-wrapper {
+  width: 70%;
+}
+}
+
+ /* === LAPTOP 1200px+) === */
+ /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
+@media (min-width: 1200px) {
+
+.tempory-wrapper {
+  width: 65%;
+}
+}
+
+/* === LARGE DESKTOP HERE (1750px+) === */
+/* === screens 1750px or larger in width ===*/
+@media (min-width: 1750px) {
+
+.tempory-wrapper {
+  width: 60%;
+}
+
+}
+

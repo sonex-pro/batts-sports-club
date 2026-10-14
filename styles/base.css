@@ -22,7 +22,7 @@ overridden by media queries. === */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@500;700&display=swap');
 
 body {
-    background-color: #a0aebc;/* blue-grey*/
+    background-color: #cce5f0;/* Off-blue */
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1rem;
