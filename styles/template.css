@@ -8,6 +8,13 @@ overridden by media queries. === */
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
+/* This is where the background colour is overridden from base.css */
+/*-----*/
+/* Delete this below to use base.css background colour #cce5f0;/* Off-blue*/
+body {
+    background-color: #ffffff;/* white for template change for a new colour*/
+}
+/*-----*/
 /* === ***** YOUR HONOR MOBILE STYLES FIRST ***** === */
 
  /* === PAGE HEADING H1 STYLES === */

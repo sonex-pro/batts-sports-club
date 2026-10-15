@@ -8,6 +8,10 @@ overridden by media queries. === */
 h1, h2, p {
   color: #000000;/* if no colours are set in the file this will be the default colour */
 }
+/* override base.css background color */
+body {
+    background-color: #a0aebc;/* blue grey */
+}
 /* === ***** YOUR HONOR MOBILE STYLES FIRST ***** === */
 
  /* === PAGE HEADING H1 STYLES === */
