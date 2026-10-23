@@ -10,7 +10,7 @@ overridden by media queries. === */
 }
 
 .footer-container {
-    background-color: rgba(193, 187, 224, 0.6); /* #c1bbe0, 0.6 means the color is 60% (solid colour). 40% transparency */
+    background-color: #b2b6d0; /* footer-blue colour */
     border: 2px solid white;
     max-width: 1500px;
     margin: 0 auto;
