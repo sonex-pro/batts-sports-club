@@ -3,7 +3,7 @@
  */
 
 const popups = document.querySelectorAll(".pop-up-wrapper");
-const openButtons = document.querySelectorAll(".read-more");
+const openButtons = document.querySelectorAll(".read-more, .contact-coach");
 
 // ---- Open popup ----
 function openPopup(name) {

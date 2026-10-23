@@ -38,7 +38,7 @@ body {
 }
 
 /* === CONTENT WRAPPER STYLES === */
-.tempory-wrapper {
+.header-wrapper {
   max-width: 1200px;  /* Limit max width for better readability */
   margin: 0 auto; /* Center the content */
   display: flex;
@@ -48,7 +48,7 @@ body {
   gap: 0.8rem;
   width: 100%;
 }
-.tempory-wrapper p {
+.header-wrapper p {
   text-align: center;
 }
 
@@ -58,7 +58,7 @@ body {
  /* === SCREENS 950px OR LARGER IN WIDTH ===*/
 @media (min-width: 950px) {
 
-.tempory-wrapper {
+.header-wrapper {
   width: 70%;
 }
 }
@@ -67,7 +67,7 @@ body {
  /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
 
-.tempory-wrapper {
+.header-wrapper {
   width: 65%;
 }
 }
@@ -76,7 +76,7 @@ body {
 /* === screens 1750px or larger in width ===*/
 @media (min-width: 1750px) {
 
-.tempory-wrapper {
+.header-wrapper {
   width: 60%;
 }
 
