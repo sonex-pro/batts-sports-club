@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
   width: 100%;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
@@ -50,7 +50,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 0.8rem;
+  gap: 0.5rem;
   width: auto;
   max-width: 90%;
 }
@@ -59,7 +59,7 @@ body {
 }
 .pirate-div-block {
   font-size: 1.5rem;
-  margin: 15px auto;/* this centers the heading horizontally */
+  margin: 10px auto;/* this centers the heading horizontally */
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
@@ -72,7 +72,7 @@ body {
 }
 .paragrath-pball {
   font-size: 1rem;
-  margin: 15px auto;/* this centers the heading horizontally */
+  margin: 10px auto;/* this centers the heading horizontally */
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
@@ -83,11 +83,11 @@ body {
   background-color: #f1f1f1;/* off white */
 }
 .pirate-image {
-  width: 100%;
+  max-width: 95%;
   height: auto;
 }
 .pickle-team-image {
-  width: 100%;
+  max-width: 95%;
   height: auto;
 }
 /* Separation Line */
@@ -107,6 +107,14 @@ body {
 .header-wrapper {
   width: 70%;
 }
+.pirate-image {
+  width: 120px;
+  height: auto;
+}
+.pickle-team-image {
+  width: 120px;
+  height: auto;
+}
 }
 
  /* === LAPTOP 1200px+) === */
@@ -124,6 +132,14 @@ body {
 
 .header-wrapper {
   width: 60%;
+}
+.pirate-image {
+  width: 140px;
+  height: auto;
+}
+.pickle-team-image {
+  width: 140px;
+  height: auto;
 }
 
 }
