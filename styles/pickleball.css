@@ -82,6 +82,14 @@ body {
   height: auto;
   background-color: #f1f1f1;/* off white */
 }
+.pirate-image {
+  width: 100%;
+  height: auto;
+}
+.pickle-team-image {
+  width: 100%;
+  height: auto;
+}
 /* Separation Line */
 .footer-separator {
     width: calc(100% - 20px);
