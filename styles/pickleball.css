@@ -17,19 +17,24 @@ body {
  /* === PAGE HEADING H1 STYLES === */
 
 .page-heading {
-  margin-top: 4px;
+  font-size: 1.2rem;
+  margin: 15px auto;/* this centers the heading horizontally */
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
+  border: 2px solid #000000;
+  padding: 8px;
+  width: 25%;
+  background-color: #f1f1f1;/* off white */
 }
 
 /* === PAGE SECTION 1 STYLES === */
 /* Main section styles with 3px spacing below navbar */
 .section1  {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.8rem;
   width: 100%;
   margin-top: 0.4rem;
@@ -42,7 +47,7 @@ body {
   max-width: 1200px;  /* Limit max width for better readability */
   margin: 0 auto; /* Center the content */
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 0.8rem;
@@ -50,6 +55,37 @@ body {
 }
 .header-wrapper p {
   text-align: center;
+}
+.pirate-div-block {
+  font-size: 1.5rem;
+  margin: 15px auto;/* this centers the heading horizontally */
+  text-align: center;
+  color: #000000;/* text colour for h1 heading */
+  font-weight: bold;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  background-color: #a0aebc;/* blue grey */
+}
+.paragrath-pball {
+  font-size: 1rem;
+  margin: 15px auto;/* this centers the heading horizontally */
+  text-align: center;
+  color: #000000;/* text colour for h1 heading */
+  font-weight: bold;
+  border: 2px solid #000000;
+  padding: 8px;
+  width: auto;
+  height: auto;
+  background-color: #f1f1f1;/* off white */
+}
+/* Separation Line */
+.footer-separator {
+    width: calc(100% - 20px);
+    height: 2px;
+    background-color: #000000;
+    margin: 5px 10px;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
