@@ -24,7 +24,7 @@ body {
   font-weight: bold;
   border: 2px solid #000000;
   padding: 8px;
-  width: 25%;
+  width: 50%;
   background-color: #f1f1f1;/* off white */
 }
 
@@ -51,7 +51,8 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 0.8rem;
-  width: 100%;
+  width: auto;
+  max-width: 90%;
 }
 .header-wrapper p {
   text-align: center;
@@ -65,6 +66,7 @@ body {
   border: 2px solid #000000;
   padding: 5px;
   width: auto;
+  max-width: 90%;
   height: auto;
   background-color: #a0aebc;/* blue grey */
 }
