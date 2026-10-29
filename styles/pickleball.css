@@ -67,7 +67,7 @@ body {
   font-size: 1.1rem;
   margin: 10px auto;/* this centers the heading horizontally */
   text-align: center;
-  color: #000000;/* text colour for h1 heading */
+  color: #000000;
   font-weight: bold;
   padding: 5px;
   width: auto;
@@ -125,7 +125,7 @@ body {
   align-items: center;
 }
 
-/* Separation Line */
+/* Separation Line 1*/
 .footer-separator {
   align-self: center;
   width: 70%;
@@ -147,11 +147,27 @@ body {
   gap: 0.5rem;
   align-items: center;
   font-size: 1.1rem;
+  margin: 10px auto;/* this centers the heading horizontally */
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  background-color: #f1f1f1;/* off white */
 }
 .assassins-image {
   padding: 10px;
   max-width: 95%;
   height: auto;
+}
+/* Separation Line 2*/
+.footer-separator-2 {
+  align-self: center;
+  width: 70%;
+  height: 2px;
+  background-color: #000000;
+  margin: 5px 10px;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
@@ -187,8 +203,11 @@ body {
 .pirate-heading {
   font-size: 1.2rem;
 }
+.coach-div-block {
+  max-width: 98%;
+}
 .assassins-image {
-  width: 120px;
+  width: 140px;
   height: auto;
 }
 
@@ -214,7 +233,7 @@ body {
   font-size: 1.4rem;
 }
 .assassins-image {
-  width: 150px;
+  width: 170px;
   height: auto;
 }
 }
