@@ -119,6 +119,7 @@ body {
 }
 .section2 {
   margin-top: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,8 +142,11 @@ body {
 .coach-div-block {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
   align-items: center;
-  gap: 1rem;
+  font-size: 1.1rem;
 }
 .assassins-image {
   padding: 10px;
