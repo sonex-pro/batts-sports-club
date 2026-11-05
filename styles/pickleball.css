@@ -17,15 +17,12 @@ body {
  /* === PAGE HEADING H1 STYLES === */
 
 .page-heading {
-  font-size: 1.2rem;
   margin: 15px auto;/* this centers the heading horizontally */
   text-align: center;
   color: #000000;/* text colour for h1 heading */
   font-weight: bold;
-  border: 2px solid #000000;
   padding: 8px;
   width: 50%;
-  background-color: #f1f1f1;/* off white */
 }
 
 /* === PAGE SECTION 1 STYLES === */
@@ -49,7 +46,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   gap: 0.2rem;
   width: auto;
   max-width: 90%;
@@ -64,11 +60,9 @@ body {
   justify-content: center;
   gap: 0.5rem;
   align-items: center;
-  font-size: 1.1rem;
   margin: 10px auto;/* this centers the heading horizontally */
   text-align: center;
   color: #000000;
-  font-weight: bold;
   padding: 5px;
   width: auto;
   height: auto;
@@ -80,17 +74,13 @@ body {
   border: 2px solid #000000;
 }
 .pirate-heading {
-  font-size: 1.1rem;
   text-align: center;
-  font-weight: bold;
   margin: 10px auto;
 }
 .paragrath-pball {
-  font-size: 1rem;
   margin: 10px auto;/* this centers the heading horizontally */
   text-align: center;
   color: #000000;/* text colour for h1 heading */
-  font-weight: bold;
   border: 2px solid #000000;
   padding: 8px;
   width: auto;
@@ -108,22 +98,24 @@ body {
   border: 1px solid #000000;
 }
 .text-pirates {
-  font-size: 0.9rem;
   margin: 10px auto;/* this centers the heading horizontally */
   text-align: left;
   color: #000000;/* text colour for h1 heading */
-  font-weight: bold;
   padding: 8px;
   height: auto;
   background-color: #f1f1f1;/* off white */
 }
 /* === SECTION 2 === */
 .section2 {
-  margin-top: 20px;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 6px;
 }
 
 /* === SEPARATION LINE 1 === */
@@ -148,21 +140,18 @@ body {
   justify-content: center;
   gap: 0.5rem;
   align-items: center;
-  font-size: 1.1rem;
   margin: 10px auto;/* this centers the heading horizontally */
   text-align: center;
   color: #000000;
-  font-weight: bold;
   padding: 5px;
   width: auto;
   height: auto;
   background-color: #f1f1f1;/* off white */
 }
 .coach-heading {
-  font-size: 1.1rem;
+  margin: 10px auto;/* this centers the heading horizontally */
   padding-top: 15px;
   text-align: center;
-  margin: 0 auto;
 }
 .assassins-image {
   padding: 10px;
@@ -178,14 +167,13 @@ body {
   margin: 5px 10px;
 }
 
-/* === RESPONSIVE BREAKPOINTS === */
+/* ==== RESPONSIVE BREAKPOINTS ==== */
 
  /* === TABLET 950px+ (MY HONOR TABLET IS 1143PX WIDE === */
  /* === SCREENS 950px OR LARGER IN WIDTH ===*/
 
 @media (min-width: 950px) {
   .page-heading {
-  font-size: 1.4rem;
   width: 30%;
   }
 
@@ -202,14 +190,12 @@ body {
   height: auto;
 }
 .text-pirates {
-  font-size: 1.1rem;
   width: 70%;
 }
 .pirate-div-block {
   max-width: 98%;
 }
 .pirate-heading {
-  font-size: 1.3rem;
   margin: 10px auto;
 }
 .coach-div-block {
@@ -220,7 +206,6 @@ body {
   height: auto;
 }
 .coach-heading {
-  font-size: 1.3rem;
   margin: 0 auto;
 }
 
@@ -243,10 +228,9 @@ body {
   max-width: 98%;
 }
 .pirate-heading {
-  font-size: 1.4rem;
+  margin: 10px auto;
 }
 .coach-heading {
-  font-size: 1.4rem;
   margin: 0 auto;
 }
 .assassins-image {
@@ -266,7 +250,7 @@ body {
   max-width: 98%;
 }
 .pirate-heading {
-  font-size: 1.4rem;
+  margin: 10px auto;
 }
 }
 
