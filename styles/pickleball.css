@@ -83,7 +83,7 @@ body {
   font-size: 1.1rem;
   text-align: center;
   font-weight: bold;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 .paragrath-pball {
   font-size: 1rem;
@@ -117,6 +117,7 @@ body {
   height: auto;
   background-color: #f1f1f1;/* off white */
 }
+/* === SECTION 2 === */
 .section2 {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -125,7 +126,7 @@ body {
   align-items: center;
 }
 
-/* Separation Line 1*/
+/* === SEPARATION LINE 1 === */
 .footer-separator {
   align-self: center;
   width: 70%;
@@ -139,6 +140,7 @@ body {
   background-color: #f1f1f1;/* off white */
   border: 2px solid #000000;
 }
+
 .coach-div-block {
   display: flex;
   flex-direction: row;
@@ -156,9 +158,15 @@ body {
   height: auto;
   background-color: #f1f1f1;/* off white */
 }
+.coach-heading {
+  font-size: 1.1rem;
+  padding-top: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
 .assassins-image {
   padding: 10px;
-  max-width: 95%;
+  width: 94%;
   height: auto;
 }
 /* Separation Line 2*/
@@ -201,7 +209,8 @@ body {
   max-width: 98%;
 }
 .pirate-heading {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  margin: 10px auto;
 }
 .coach-div-block {
   max-width: 98%;
@@ -209,6 +218,10 @@ body {
 .assassins-image {
   width: 140px;
   height: auto;
+}
+.coach-heading {
+  font-size: 1.3rem;
+  margin: 0 auto;
 }
 
  /* === LAPTOP 1200px+) === */
@@ -231,6 +244,10 @@ body {
 }
 .pirate-heading {
   font-size: 1.4rem;
+}
+.coach-heading {
+  font-size: 1.4rem;
+  margin: 0 auto;
 }
 .assassins-image {
   width: 170px;
