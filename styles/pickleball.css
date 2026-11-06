@@ -24,6 +24,14 @@ body {
   padding: 8px;
   width: 50%;
 }
+h2.page-heading {
+  margin: 5px auto;/* this centers the heading horizontally */
+  text-align: center;
+  color: #000000;/* text colour for h2 heading */
+  font-weight: bold;
+  padding: 8px;
+  width: 50%;
+}
 
 /* === PAGE SECTION 1 STYLES === */
 /* Main section styles with 3px spacing below navbar */
@@ -74,6 +82,10 @@ body {
   border: 2px solid #000000;
 }
 .pirate-heading {
+  text-align: center;
+  margin: 10px auto;
+}
+h2.pirate-heading {
   text-align: center;
   margin: 10px auto;
 }
@@ -153,6 +165,11 @@ body {
   padding-top: 15px;
   text-align: center;
 }
+h2.coach-heading {
+  margin: 10px auto;/* this centers the heading horizontally */
+  padding-top: 15px;
+  text-align: center;
+}
 .assassins-image {
   padding: 10px;
   width: 94%;
@@ -221,95 +238,94 @@ body {
 
 @media (min-width: 950px) {
   .page-heading {
-  width: 30%;
+    width: 30%;
   }
-
-.header-wrapper {
-  width: 70%;
-  gap: 0.5rem;
-}
-.pirate-image {
-  width: 120px;
-  height: auto;
-}
-.pickle-team-image {
-  width: 120px;
-  height: auto;
-}
-.text-pirates {
-  width: 70%;
-}
-.pirate-div-block {
-  max-width: 98%;
-}
-.pirate-heading {
-  margin: 10px auto;
-}
-.paragrath-pball {
-  padding: 10px;
-  width: 95%;
-}
-.coach-div-block {
-  max-width: 98%;
-}
-.assassins-image {
-  width: 140px;
-  height: auto;
-}
-.coach-heading {
-  margin: 0 auto;
-}
+  .header-wrapper {
+    width: 70%;
+    gap: 0.5rem;
+  }
+  .pirate-image {
+    width: 120px;
+    height: auto;
+  }
+  .pickle-team-image {
+    width: 120px;
+    height: auto;
+  }
+  .text-pirates {
+    width: 70%;
+  }
+  .pirate-div-block {
+    max-width: 98%;
+  }
+  .pirate-heading {
+    margin: 10px auto;
+  }
+  .paragrath-pball {
+    padding: 10px;
+    width: 95%;
+  }
+  .coach-div-block {
+    max-width: 98%;
+  }
+  .assassins-image {
+    width: 140px;
+    height: auto;
+  }
+  .coach-heading {
+    margin: 0 auto;
+  }
 
  /* === LAPTOP 1200px+) === */
  /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
 @media (min-width: 1200px) {
 
-.header-wrapper {
-  width: 65%;
-}
-.pirate-image {
-  width: 150px;
-  height: auto;
-}
-.pickle-team-image {
-  width: 150px;
-  height: auto;
-}
-.paragrath-pball {
-  padding: 10px;
-  width: 95%;
-}
-.pirate-div-block {
-  max-width: 98%;
-}
-.pirate-heading {
-  margin: 10px auto;
-}
-.coach-heading {
-  margin: 0 auto;
-}
-.assassins-image {
-  width: 170px;
-  height: auto;
-}
+  .header-wrapper {
+    width: 65%;
+  }
+  .pirate-image {
+    width: 150px;
+    height: auto;
+  }
+  .pickle-team-image {
+    width: 150px;
+    height: auto;
+  }
+  .paragrath-pball {
+    padding: 10px;
+    width: 95%;
+  }
+  .pirate-div-block {
+    max-width: 98%;
+  }
+  .pirate-heading {
+    margin: 10px auto;
+  }
+  .coach-heading {
+    margin: 0 auto;
+  }
+  .assassins-image {
+    width: 170px;
+    height: auto;
+  }
 }
 
 /* === LARGE DESKTOP HERE (1750px+) === */
 /* === screens 1750px or larger in width ===*/
 @media (min-width: 1750px) {
 
-.header-wrapper {
-  width: 60%;
-}
-.pirate-div-block {
-  max-width: 98%;
-}
-.pirate-heading {
-  margin: 10px auto;
-}
-.paragrath-pball {
-  padding: 10px;
-  width: 95%;
-}
+  .header-wrapper {
+    width: 60%;
+  }
+  .pirate-div-block {
+    max-width: 98%;
+  }
+  .pirate-heading {
+    margin: 10px auto;
+  }
+  .paragrath-pball {
+    padding: 10px;
+    width: 95%;
+  }
 }
 
