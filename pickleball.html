@@ -20,6 +20,7 @@
   <!-- JavaScript files -->
   <script src="components/component-loader.js" defer></script>
   <script src="js/navbar.js" defer></script>
+  <script src="js/popup-multiple.js" defer></script>
   
   <!-- From Template CSS -->
   <link rel="stylesheet" href="styles/pickleball.css">
@@ -36,10 +37,10 @@
   <main>
     <!-- Main content container - responsive wrapper -->
      <!-- Section 1 Pickleball Pirates -->
-    <section class="section1">
+    <section class="section1" id="pirates">
       <div class="header-wrapper">
         <p class="paragrath-pball">For general enquiries regarding pickleball court hire and U3A please contact the Batts manager:<br>Neil Brierley: <a href="https://wa.me/+447814623879" target="_blank">WhatsApp Link</a></p>
-        <p class="paragrath-pball">For Pickleball coaching click This Link</p>
+        <p class="paragrath-pball">For Pickleball coaching click <a href="#coaching">This Link</a></p>
         <p class="paragrath-pball">Open Pickleball Sessions are for Adults 18+</p>
       </div>
       <h2 class="pirate-heading">Pickleball Pirates @ Batts</h2>
@@ -52,12 +53,12 @@
       </div>  
     </section>
     <!-- Section 2 Pickleball Coaching -->
-    <section class="section2">
+    <section class="section2" id="coaching">
       <!-- Separation Line -->
       <div class="footer-separator"></div>
       <div class="header-wrapper">
         <h2 class="coach-heading">Welcome to Batts Pickleball Coaching</h2>
-        <p class="paragrath-pball">Batts Official Pickleball Coach Paolo Toffolo book sessions now with: David Iszatt</p>
+        <p class="paragrath-pball">Batts Official Pickleball Coach Paolo Toffolo book sessions now with: David Iszatt: <button class="read-more" data-popup="booking">Booking Information</button></p>
         <p class="paragrath-pball">Contact us on : +44 07393 891455 Join our Spond Group : Assassins Pickleball Coaching  Code: MOLMT</p>
       </div>
       <div class="coach-wrapper">
@@ -72,7 +73,7 @@
       </div>
     </section>
     <!-- Section 3 About Pickleball -->
-    <section class="section3">
+    <section class="section3" id="about">
       <!-- Separation Line -->
       <div class="footer-separator"></div>
       <div class="about-wrapper">
@@ -89,6 +90,30 @@
         <p class="paragrath-pball"><strong>Brief Description of a match.</strong><br>Decide the starting team based on local rules or a coin toss, the player on the right side of the court serves first. The first server announces "0-0-2" as the starting score.<br>Players serve (out of the air or off the bounce) to the diagonal side. If the service is "good", play continues. After the first point is over (if won by the serving team), the next serve is hit from the left side of the server's court. Points then alternate from left to right until the serve "sides out".</p>
       </div>
     </section>
+    <!-- Popup for Booking Information -->
+    <div class="pop-up-wrapper" data-popup="booking">
+      <div class="pop-up-content">
+        <button class="button-close">Close</button>
+        <div class="top-wrapper">
+          <img class="person-image" src="images/pickleball-images/assassins-image.avif" alt="Pickleball Coaching">
+        </div>
+        <h2 class="persons-name">Booking Information</h2>
+        <div class="about-person">
+          <p class="person-text">
+            <strong>How to Book Sessions</strong>
+            <br>· Contact David Iszatt for session bookings
+            <br>· Phone: +44 07393 891455
+            <br>· Join our Spond Group: Assassins Pickleball Coaching
+            <br>· Spond Code: MOLMT
+            <br><br><strong>Session Types</strong>
+            <br>· One-to-one coaching sessions
+            <br>· Group coaching sessions
+            <br>· Practice match play
+            <br>· Tournament participation
+          </p>
+        </div>
+      </div>
+    </div>
   </main>
   
   <footer>

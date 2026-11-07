@@ -229,6 +229,124 @@ h2.coach-heading {
   text-align: left;
   background-color: #f1f1f1;/* off white */
 }
+/* POPUP CSS - STYLES FOR POPUP CONTENT */
+
+/* =========================================
+   POP UP WRAPPER — MOBILE FIRST
+   ========================================= */
+
+.pop-up-wrapper {
+  display: none; /* default is none, flex visible */
+  position: fixed;
+  top: 90px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 20;
+  max-width: 400px;
+  display: none; /* interaction default */
+  background: transparent;
+
+  /* flex layout when activated */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Helper class to activate popup */
+.pop-up-wrapper.is-active {
+  display: flex;
+}
+
+/* =========================================
+   POP UP CONTENT
+   ========================================= */
+
+.pop-up-content {
+  display: block;
+  margin-left: 8px;
+  background: #f1f1f1;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+/* =========================================
+   TOP WRAPPER / POPUP
+   ========================================= */
+
+.top-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+  background: transparent;
+}
+
+/* =========================================
+   PERSON IMAGE / POPUP
+   ========================================= */
+/* IMAGE RATIO 1.0 make image square in gimp */
+.person-image {
+  margin: 15px 0px 0px 20px;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50vh; /* first create image as a square, this makes image circle */
+  object-fit: cover;
+}
+
+/* =========================================
+   CLOSE BUTTON / POPUP
+   ========================================= */
+
+.button-close {
+  display: block;
+  padding: 4px 8px 4px 8px;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #000000;
+  background: #f1f1f1;
+  border: 1px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* =========================================
+   PERSONS NAME / POPUP
+   ========================================= */
+
+.persons-name {
+  margin: 5px 0px 5px 20px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: left;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* =========================================
+   ABOUT PERSON / POPUP
+   ========================================= */
+
+.about-person {
+  margin: 5px 0px 10px 20px;
+  background: transparent;
+}
+
+/* =========================================
+   PERSON TEXT / POPUP
+   ========================================= */
+
+.person-text {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-align: left;
+  color: #000000;
+}
 
 /* ==== RESPONSIVE BREAKPOINTS ==== */
 
