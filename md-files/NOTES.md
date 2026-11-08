@@ -8,7 +8,7 @@ Since you want to include all modified files, run:
 git  status
 git  add  .
 
-git  commit  -m  "Update index and another files"
+git  commit  -m  "Update index.html and another files"
 
 git  push  origin  main
 

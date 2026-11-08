@@ -223,7 +223,7 @@ h2.coach-heading {
 }
 .card-pball {
   padding: 4px;
-  width: 170px;
+  width: 140px;
   height: 190px;
   border: 2px solid #000000;
   text-align: left;
@@ -335,6 +335,7 @@ h2.coach-heading {
 .about-person {
   margin: 5px 0px 10px 20px;
   background: transparent;
+  padding-bottom: 15px;
 }
 
 /* =========================================
@@ -394,6 +395,10 @@ h2.coach-heading {
   }
   .card-wrapper {
     gap: 0.6rem;
+  }
+    .card-pball {
+    width: 250px;
+    height: 200px;
   }
 
  /* === LAPTOP 1200px+) === */
