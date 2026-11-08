@@ -238,7 +238,7 @@ h2.coach-heading {
 .pop-up-wrapper {
   display: none; /* default is none, flex visible */
   position: fixed;
-  top: 90px;
+  top: 75px;
   right: auto;
   bottom: auto;
   left: auto;
@@ -286,7 +286,7 @@ h2.coach-heading {
    ========================================= */
 /* IMAGE RATIO 1.0 make image square in gimp */
 .person-image {
-  margin: 15px 0px 0px 20px;
+  margin: 10px 0px 0px 20px;
 
   width: 100px;
   height: 100px;
@@ -302,7 +302,7 @@ h2.coach-heading {
 .button-close {
   display: block;
   padding: 4px 8px 4px 8px;
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
