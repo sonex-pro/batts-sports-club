@@ -16,13 +16,19 @@ body {
 
  /* === PAGE HEADING H1 STYLES === */
 
-.page-heading {
-  margin: 5px auto;/* this centers the heading horizontally */
-  text-align: center;
-  color: #000000;/* text colour for h1 heading */
-  font-weight: bold;
-  padding: 8px;
-  width: 50%;
+ .heading-top-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 10px;
+ }
+
+.pball-yellow {
+  width: 20px;
+  height: 20px;
 }
 h2.page-heading {
   margin: 5px auto;/* this centers the heading horizontally */
@@ -355,9 +361,6 @@ h2.coach-heading {
  /* === SCREENS 950px OR LARGER IN WIDTH ===*/
 
 @media (min-width: 950px) {
-  .page-heading {
-    width: 30%;
-  }
   .header-wrapper {
     width: 70%;
     gap: 0.5rem;
