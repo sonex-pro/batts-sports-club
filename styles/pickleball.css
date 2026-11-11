@@ -270,7 +270,7 @@ h2.coach-heading {
   display: block;
   margin-left: 8px;
   background: #f1f1f1;
-  border: 1px solid blue;
+  border: 1px solid #000000;
   border-radius: 5px;
 }
 
@@ -308,14 +308,15 @@ h2.coach-heading {
   display: block;
   padding: 4px 8px 4px 8px;
   margin-top: 20px;
+  margin-left: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.4rem;
   text-align: center;
   color: #000000;
-  background: #f1f1f1;
-  border: 1px solid blue;
+  background-color: #f1f1f1; /* off white */
+  border: 1px solid #000000;
   border-radius: 5px;
   cursor: pointer;
 }
