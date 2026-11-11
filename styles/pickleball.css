@@ -55,7 +55,6 @@ h2.page-heading {
 
 /* === CONTENT WRAPPER STYLES === */
 .header-wrapper {
-  max-width: 1200px;  /* Limit max width for better readability */
   margin: 0 auto; /* Center the content */
   display: flex;
   flex-direction: column;
@@ -251,7 +250,6 @@ h2.coach-heading {
   left: auto;
   z-index: 20;
   max-width: 400px;
-  display: none; /* interaction default */
   background: transparent;
 
   /* flex layout when activated */
@@ -404,6 +402,7 @@ h2.coach-heading {
     width: 250px;
     height: 200px;
   }
+}
 
  /* === LAPTOP 1200px+) === */
  /* === SCREENS 1200px OR LARGER IN WIDTH ===*/
